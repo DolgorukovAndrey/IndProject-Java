@@ -1,0 +1,45 @@
+\doxysection{com.\+price.\+controller.\+Home\+Controller Class Reference}
+\hypertarget{classcom_1_1price_1_1controller_1_1_home_controller}{}\label{classcom_1_1price_1_1controller_1_1_home_controller}\index{com.price.controller.HomeController@{com.price.controller.HomeController}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_home_controller_aa93d6c28830b5f1319ede9842341278a}{home}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Контроллер для обработки запросов к корневому URL приложения. 
+
+Этот контроллер предоставляет простую логику перенаправления с домашней страницы на основную страницу с ценами. Является точкой входа в веб-\/интерфейс приложения.
+
+{\bfseries{Маршруты\+:}} 
+\begin{DoxyItemize}
+\item {\ttfamily GET /} -\/ перенаправляет на страницу со всеми ценами 
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+Controller 
+
+Get\+Mapping 
+\end{DoxySeeAlso}
+
+
+\label{doc-func-members}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_home_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_home_controller_aa93d6c28830b5f1319ede9842341278a}\index{com.price.controller.HomeController@{com.price.controller.HomeController}!home@{home}}
+\index{home@{home}!com.price.controller.HomeController@{com.price.controller.HomeController}}
+\doxysubsubsection{\texorpdfstring{home()}{home()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_home_controller_aa93d6c28830b5f1319ede9842341278a} 
+String com.\+price.\+controller.\+Home\+Controller.\+home (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Обрабатывает запрос к корневому URL приложения. 
+
+Выполняет перенаправление (redirect) на страницу со всеми ценами услуг.
+
+\begin{DoxyReturn}{Returns}
+строка с командой перенаправления на {\ttfamily /all\+Prices}
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Get\+Mapping 
+\end{DoxySeeAlso}

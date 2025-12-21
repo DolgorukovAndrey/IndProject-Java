@@ -1,0 +1,126 @@
+\doxysection{com.\+price.\+controller.\+Service\+Price\+Controller Class Reference}
+\hypertarget{classcom_1_1price_1_1controller_1_1_service_price_controller}{}\label{classcom_1_1price_1_1controller_1_1_service_price_controller}\index{com.price.controller.ServicePriceController@{com.price.controller.ServicePriceController}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_service_price_controller_ae7faf364ba72af6f2feb94343855e240}{Service\+Price\+Controller}} (\mbox{\hyperlink{classcom_1_1price_1_1service_1_1_service_price_service}{Service\+Price\+Service}} service\+Price\+Service)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_service_price_controller_ad6a2c2a6eb6696a0c4e4b3d57c45b112}{list\+Service\+Price}} (Model model)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_service_price_controller_afa0feff1afa601fd4bb0f65c4818f9ff}{view\+Service\+Price}} (@Path\+Variable("{}id"{}) Long id, Model model, Redirect\+Attributes redirect\+Attributes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Контроллер для отображения информации о ценах на услуги. 
+
+Обрабатывает HTTP-\/запросы для просмотра списка цен на услуги и детальной информации о конкретной цене. Предоставляет только операции чтения (read-\/only), без возможности создания, обновления или удаления записей через этот контроллер.
+
+{\bfseries{Примечание\+:}} В сообщениях об ошибках используется некорректное слово "{}альбом"{} вместо "{}цена услуги"{} -\/ это опечатка, которую стоит исправить.
+
+{\bfseries{Маршруты\+:}} 
+\begin{DoxyTable}{3}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Метод&\SetCell{bg=\tableheadbgcolor,font=\bfseries}URL&\SetCell{bg=\tableheadbgcolor,font=\bfseries}Описание\\
+GET&/service\+Prices&Список всех цен на услуги\\
+GET&/service\+Prices/view/\{id\}&Детальная информация о конкретной цене услуги\\
+\end{DoxyTable}
+
+
+\begin{DoxySeeAlso}{See also}
+Controller 
+
+Request\+Mapping 
+
+\doxylink{classcom_1_1price_1_1entity_1_1_service_price}{Service\+Price} 
+
+\doxylink{classcom_1_1price_1_1service_1_1_service_price_service}{Service\+Price\+Service} 
+\end{DoxySeeAlso}
+
+
+\label{doc-constructors}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_service_price_controller_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_service_price_controller_ae7faf364ba72af6f2feb94343855e240}\index{com.price.controller.ServicePriceController@{com.price.controller.ServicePriceController}!ServicePriceController@{ServicePriceController}}
+\index{ServicePriceController@{ServicePriceController}!com.price.controller.ServicePriceController@{com.price.controller.ServicePriceController}}
+\doxysubsubsection{\texorpdfstring{ServicePriceController()}{ServicePriceController()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_service_price_controller_ae7faf364ba72af6f2feb94343855e240} 
+com.\+price.\+controller.\+Service\+Price\+Controller.\+Service\+Price\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1price_1_1service_1_1_service_price_service}{Service\+Price\+Service}}}]{service\+Price\+Service}{}\end{DoxyParamCaption})}
+
+Конструктор с инъекцией зависимости сервиса.
+
+
+\begin{DoxyParams}{Parameters}
+{\em service\+Price\+Service} & сервис для работы с ценами на услуги; не должен быть {\ttfamily null}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily service\+Price\+Service} равен {\ttfamily null} \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_service_price_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_service_price_controller_ad6a2c2a6eb6696a0c4e4b3d57c45b112}\index{com.price.controller.ServicePriceController@{com.price.controller.ServicePriceController}!listServicePrice@{listServicePrice}}
+\index{listServicePrice@{listServicePrice}!com.price.controller.ServicePriceController@{com.price.controller.ServicePriceController}}
+\doxysubsubsection{\texorpdfstring{listServicePrice()}{listServicePrice()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_service_price_controller_ad6a2c2a6eb6696a0c4e4b3d57c45b112} 
+String com.\+price.\+controller.\+Service\+Price\+Controller.\+list\+Service\+Price (\begin{DoxyParamCaption}\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+Отображает список всех цен на услуги. 
+
+Получает все записи о ценах на услуги из базы данных и передает их в представление вместе с общим количеством записей.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & объект модели для передачи данных в представление \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления для отображения списка цен на услуги
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Model 
+
+Get\+Mapping 
+
+\doxylink{classcom_1_1price_1_1service_1_1_service_price_service_a3c566e219e2c68f94c63aceecd447086}{Service\+Price\+Service.\+get\+All\+Service\+Price()} 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_service_price_controller_afa0feff1afa601fd4bb0f65c4818f9ff}\index{com.price.controller.ServicePriceController@{com.price.controller.ServicePriceController}!viewServicePrice@{viewServicePrice}}
+\index{viewServicePrice@{viewServicePrice}!com.price.controller.ServicePriceController@{com.price.controller.ServicePriceController}}
+\doxysubsubsection{\texorpdfstring{viewServicePrice()}{viewServicePrice()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_service_price_controller_afa0feff1afa601fd4bb0f65c4818f9ff} 
+String com.\+price.\+controller.\+Service\+Price\+Controller.\+view\+Service\+Price (\begin{DoxyParamCaption}\item[{@Path\+Variable("{}id"{}) Long}]{id}{, }\item[{Model}]{model}{, }\item[{Redirect\+Attributes}]{redirect\+Attributes}{}\end{DoxyParamCaption})}
+
+Отображает детальную информацию о конкретной цене услуги. 
+
+Находит цену услуги по идентификатору и отображает ее детальную информацию. Если цена с указанным ID не найдена, перенаправляет на список с сообщением об ошибке.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & идентификатор цены услуги; не должен быть {\ttfamily null} \\
+\hline
+{\em model} & объект модели для передачи данных в представление \\
+\hline
+{\em redirect\+Attributes} & атрибуты для передачи данных при перенаправлении \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления для детального просмотра или команда перенаправления
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily id} равен {\ttfamily null}\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+Get\+Mapping 
+
+Path\+Variable 
+
+Redirect\+Attributes 
+
+\doxylink{classcom_1_1price_1_1service_1_1_service_price_service_a36b0d578782c5a2e9e136d276ef9b27f}{Service\+Price\+Service.\+get\+Service\+Price\+By\+Id(\+Long)} 
+\end{DoxySeeAlso}

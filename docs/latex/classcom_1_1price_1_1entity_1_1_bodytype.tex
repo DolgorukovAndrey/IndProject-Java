@@ -1,0 +1,136 @@
+\doxysection{com.\+price.\+entity.\+Bodytype Class Reference}
+\hypertarget{classcom_1_1price_1_1entity_1_1_bodytype}{}\label{classcom_1_1price_1_1entity_1_1_bodytype}\index{com.price.entity.Bodytype@{com.price.entity.Bodytype}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype_a675242e6b52ba3a2b853fcffc1dd787c}{Bodytype}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype_abf85b4a59f54964bbb102b89bfa99051}{Bodytype}} (String bodytype)
+\item 
+Long \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype_a74ff39db206c9907c78f78255f731c19}{get\+Id\+Bodytype}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype_af67cd92fbc35326053739c157b9e3f45}{set\+Id\+Bodytype}} (Long id\+Bodytype)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype_a2ca38e393c4bc718c91cb9e27f9f183e}{get\+Bodytype\+Name}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype_a8b1d97eca46ecd6371d434da6888e20d}{set\+Bodytype\+Name}} (String bodytype)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype_ac84336b9e2278359abe7c730acd79985}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Сущность, представляющая тип кузова автомобиля. 
+
+Этот класс отображается на таблицу {\ttfamily bodytypes} в базе данных и хранит информацию о различных типах кузовов автомобилей (например, седан, внедорожник, универсал). Используется для классификации услуг автомойки в зависимости от типа кузова.
+
+\begin{DoxySeeAlso}{See also}
+Entity 
+
+Table 
+\end{DoxySeeAlso}
+
+
+\label{doc-constructors}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_bodytype_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_bodytype_a675242e6b52ba3a2b853fcffc1dd787c}\index{com.price.entity.Bodytype@{com.price.entity.Bodytype}!Bodytype@{Bodytype}}
+\index{Bodytype@{Bodytype}!com.price.entity.Bodytype@{com.price.entity.Bodytype}}
+\doxysubsubsection{\texorpdfstring{Bodytype()}{Bodytype()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_bodytype_a675242e6b52ba3a2b853fcffc1dd787c} 
+com.\+price.\+entity.\+Bodytype.\+Bodytype (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Конструктор по умолчанию. \Hypertarget{classcom_1_1price_1_1entity_1_1_bodytype_abf85b4a59f54964bbb102b89bfa99051}\index{com.price.entity.Bodytype@{com.price.entity.Bodytype}!Bodytype@{Bodytype}}
+\index{Bodytype@{Bodytype}!com.price.entity.Bodytype@{com.price.entity.Bodytype}}
+\doxysubsubsection{\texorpdfstring{Bodytype()}{Bodytype()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_bodytype_abf85b4a59f54964bbb102b89bfa99051} 
+com.\+price.\+entity.\+Bodytype.\+Bodytype (\begin{DoxyParamCaption}\item[{String}]{bodytype}{}\end{DoxyParamCaption})}
+
+Создает новый тип кузова с указанным названием.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bodytype} & название типа кузова. Не должно быть {\ttfamily null} или пустым\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily bodytype} равен {\ttfamily null} или пустой \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_bodytype_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_bodytype_a2ca38e393c4bc718c91cb9e27f9f183e}\index{com.price.entity.Bodytype@{com.price.entity.Bodytype}!getBodytypeName@{getBodytypeName}}
+\index{getBodytypeName@{getBodytypeName}!com.price.entity.Bodytype@{com.price.entity.Bodytype}}
+\doxysubsubsection{\texorpdfstring{getBodytypeName()}{getBodytypeName()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_bodytype_a2ca38e393c4bc718c91cb9e27f9f183e} 
+String com.\+price.\+entity.\+Bodytype.\+get\+Bodytype\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает название типа кузова.
+
+\begin{DoxyReturn}{Returns}
+название типа кузова 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_bodytype_a74ff39db206c9907c78f78255f731c19}\index{com.price.entity.Bodytype@{com.price.entity.Bodytype}!getIdBodytype@{getIdBodytype}}
+\index{getIdBodytype@{getIdBodytype}!com.price.entity.Bodytype@{com.price.entity.Bodytype}}
+\doxysubsubsection{\texorpdfstring{getIdBodytype()}{getIdBodytype()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_bodytype_a74ff39db206c9907c78f78255f731c19} 
+Long com.\+price.\+entity.\+Bodytype.\+get\+Id\+Bodytype (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает уникальный идентификатор типа кузова.
+
+\begin{DoxyReturn}{Returns}
+идентификатор типа кузова 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_bodytype_a8b1d97eca46ecd6371d434da6888e20d}\index{com.price.entity.Bodytype@{com.price.entity.Bodytype}!setBodytypeName@{setBodytypeName}}
+\index{setBodytypeName@{setBodytypeName}!com.price.entity.Bodytype@{com.price.entity.Bodytype}}
+\doxysubsubsection{\texorpdfstring{setBodytypeName()}{setBodytypeName()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_bodytype_a8b1d97eca46ecd6371d434da6888e20d} 
+void com.\+price.\+entity.\+Bodytype.\+set\+Bodytype\+Name (\begin{DoxyParamCaption}\item[{String}]{bodytype}{}\end{DoxyParamCaption})}
+
+Устанавливает название типа кузова.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bodytype} & новое название типа кузова. Не должно быть {\ttfamily null} или пустым\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily bodytype} равен {\ttfamily null} или пустой \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_bodytype_af67cd92fbc35326053739c157b9e3f45}\index{com.price.entity.Bodytype@{com.price.entity.Bodytype}!setIdBodytype@{setIdBodytype}}
+\index{setIdBodytype@{setIdBodytype}!com.price.entity.Bodytype@{com.price.entity.Bodytype}}
+\doxysubsubsection{\texorpdfstring{setIdBodytype()}{setIdBodytype()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_bodytype_af67cd92fbc35326053739c157b9e3f45} 
+void com.\+price.\+entity.\+Bodytype.\+set\+Id\+Bodytype (\begin{DoxyParamCaption}\item[{Long}]{id\+Bodytype}{}\end{DoxyParamCaption})}
+
+Устанавливает уникальный идентификатор типа кузова. 
+
+Обычно вызывается фреймворком JPA, не рекомендуется для ручного использования.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Bodytype} & новый идентификатор \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_bodytype_ac84336b9e2278359abe7c730acd79985}\index{com.price.entity.Bodytype@{com.price.entity.Bodytype}!toString@{toString}}
+\index{toString@{toString}!com.price.entity.Bodytype@{com.price.entity.Bodytype}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_bodytype_ac84336b9e2278359abe7c730acd79985} 
+String com.\+price.\+entity.\+Bodytype.\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает строковое представление объекта. 
+
+Формат\+: {\ttfamily Bodytype\{id\+Bodytype = ..., bodytype = ...\}}
+
+\begin{DoxyReturn}{Returns}
+строковое представление объекта 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Object\#to\+String() 
+\end{DoxySeeAlso}

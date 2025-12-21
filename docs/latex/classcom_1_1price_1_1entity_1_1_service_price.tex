@@ -1,0 +1,317 @@
+\doxysection{com.\+price.\+entity.\+Service\+Price Class Reference}
+\hypertarget{classcom_1_1price_1_1entity_1_1_service_price}{}\label{classcom_1_1price_1_1entity_1_1_service_price}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_a06e8a864fa31584f6c6b21a523a30301}{Service\+Price}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_a3585bd9e16b34604ccef173a3fc712ff}{Service\+Price}} (\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_c}{ServiceC}} service, \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_carwash}{Carwash}} carwash, \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype}{Bodytype}} bodytype, int lead\+Time, int price, Local\+Date price\+Date)
+\item 
+Long \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_a1d534611980bdb253112affe46fb5f03}{get\+Id\+Service\+Price}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_ae7e0f7838d5a04badc942c01ed2adf49}{set\+Id\+Service\+Price}} (Long id\+Service\+Price)
+\item 
+\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_c}{ServiceC}} \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_a5b38faa4fd8b86af7cb2ac5af26e1d2e}{get\+Service}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_a75813861a495534d16d4a26f29b0469c}{set\+Service}} (\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_c}{ServiceC}} service)
+\item 
+\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_carwash}{Carwash}} \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_a97f568c6f630da8308f60223538eb8e5}{get\+Carwash}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_ab1a4bcc70ac573f78eaea809a2d734a9}{set\+Carwash}} (\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_carwash}{Carwash}} carwash)
+\item 
+\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype}{Bodytype}} \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_ae5cd198dd8f2f717a01d55f944efe403}{get\+Bodytype}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_af2d17da05b60a023a1ac24ed87cd3fe0}{set\+Bodytype}} (\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype}{Bodytype}} bodytype)
+\item 
+Integer \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_ad30bed50d736b41141a275c3d35b5a73}{get\+Price}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_ace17b61dc02cffe093c8c681134c4815}{set\+Price}} (Integer price)
+\item 
+Integer \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_aada6eeea2c8c0f1940f4c63605fd4490}{get\+Lead\+Time}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_a95eee5c006b328a6fdd0f5dcabcf289a}{set\+Lead\+Time}} (Integer lead\+Time)
+\item 
+Local\+Date \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_a00fbbfea8317425591644311ae7be250}{get\+Price\+Date}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_a210fd1490d9938e7d634f44c651aa630}{set\+Price\+Date}} (Local\+Date price\+Date)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_price_a1dbe2a26b563611c7b88ed72ba05483f}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Сущность, представляющая цену на услугу автомойки. 
+
+Этот класс отображается на таблицу {\ttfamily servicesprice} в базе данных и содержит информацию о стоимости услуги для конкретной автомойки, типа кузова и даты. Обеспечивает уникальность комбинации услуги, автомойки, типа кузова и даты через ограничение уникальности базы данных.
+
+{\bfseries{Бизнес-\/правила\+:}} 
+\begin{DoxyItemize}
+\item Для одной и той же услуги, автомойки и типа кузова не может быть двух цен на одну дату 
+\item Время выполнения услуги должно быть от 1 до 600 минут 
+\item Стоимость услуги должна быть от 0 до 1,000,000 рублей 
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+Entity 
+
+Table 
+
+Unique\+Constraint 
+\end{DoxySeeAlso}
+
+
+\label{doc-constructors}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_a06e8a864fa31584f6c6b21a523a30301}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!ServicePrice@{ServicePrice}}
+\index{ServicePrice@{ServicePrice}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{ServicePrice()}{ServicePrice()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_a06e8a864fa31584f6c6b21a523a30301} 
+com.\+price.\+entity.\+Service\+Price.\+Service\+Price (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Конструктор по умолчанию. \Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_a3585bd9e16b34604ccef173a3fc712ff}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!ServicePrice@{ServicePrice}}
+\index{ServicePrice@{ServicePrice}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{ServicePrice()}{ServicePrice()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_a3585bd9e16b34604ccef173a3fc712ff} 
+com.\+price.\+entity.\+Service\+Price.\+Service\+Price (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_c}{ServiceC}}}]{service}{, }\item[{\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_carwash}{Carwash}}}]{carwash}{, }\item[{\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype}{Bodytype}}}]{bodytype}{, }\item[{int}]{lead\+Time}{, }\item[{int}]{price}{, }\item[{Local\+Date}]{price\+Date}{}\end{DoxyParamCaption})}
+
+Создает новую запись о цене услуги с указанными параметрами.
+
+
+\begin{DoxyParams}{Parameters}
+{\em service} & услуга; не должно быть {\ttfamily null} \\
+\hline
+{\em carwash} & автомойка; не должно быть {\ttfamily null} \\
+\hline
+{\em bodytype} & тип кузова; не должно быть {\ttfamily null} \\
+\hline
+{\em lead\+Time} & время выполнения в минутах; должно быть от 1 до 600 \\
+\hline
+{\em price} & стоимость в рублях; должно быть от 0 до 1,000,000 \\
+\hline
+{\em price\+Date} & дата установки цены; не должно быть {\ttfamily null}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если любой из параметров не соответствует ограничениям \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_ae5cd198dd8f2f717a01d55f944efe403}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!getBodytype@{getBodytype}}
+\index{getBodytype@{getBodytype}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{getBodytype()}{getBodytype()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_ae5cd198dd8f2f717a01d55f944efe403} 
+\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype}{Bodytype}} com.\+price.\+entity.\+Service\+Price.\+get\+Bodytype (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает тип кузова, для которого предназначена услуга.
+
+\begin{DoxyReturn}{Returns}
+тип кузова 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_a97f568c6f630da8308f60223538eb8e5}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!getCarwash@{getCarwash}}
+\index{getCarwash@{getCarwash}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{getCarwash()}{getCarwash()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_a97f568c6f630da8308f60223538eb8e5} 
+\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_carwash}{Carwash}} com.\+price.\+entity.\+Service\+Price.\+get\+Carwash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает автомойку, предоставляющую услугу.
+
+\begin{DoxyReturn}{Returns}
+автомойка 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_a1d534611980bdb253112affe46fb5f03}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!getIdServicePrice@{getIdServicePrice}}
+\index{getIdServicePrice@{getIdServicePrice}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{getIdServicePrice()}{getIdServicePrice()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_a1d534611980bdb253112affe46fb5f03} 
+Long com.\+price.\+entity.\+Service\+Price.\+get\+Id\+Service\+Price (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает уникальный идентификатор записи о цене.
+
+\begin{DoxyReturn}{Returns}
+идентификатор записи 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_aada6eeea2c8c0f1940f4c63605fd4490}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!getLeadTime@{getLeadTime}}
+\index{getLeadTime@{getLeadTime}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{getLeadTime()}{getLeadTime()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_aada6eeea2c8c0f1940f4c63605fd4490} 
+Integer com.\+price.\+entity.\+Service\+Price.\+get\+Lead\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает время выполнения услуги.
+
+\begin{DoxyReturn}{Returns}
+время выполнения в минутах 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_ad30bed50d736b41141a275c3d35b5a73}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_ad30bed50d736b41141a275c3d35b5a73} 
+Integer com.\+price.\+entity.\+Service\+Price.\+get\+Price (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает стоимость услуги.
+
+\begin{DoxyReturn}{Returns}
+стоимость в рублях 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_a00fbbfea8317425591644311ae7be250}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!getPriceDate@{getPriceDate}}
+\index{getPriceDate@{getPriceDate}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{getPriceDate()}{getPriceDate()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_a00fbbfea8317425591644311ae7be250} 
+Local\+Date com.\+price.\+entity.\+Service\+Price.\+get\+Price\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает дату установки цены.
+
+\begin{DoxyReturn}{Returns}
+дата установки цены 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_a5b38faa4fd8b86af7cb2ac5af26e1d2e}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!getService@{getService}}
+\index{getService@{getService}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{getService()}{getService()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_a5b38faa4fd8b86af7cb2ac5af26e1d2e} 
+\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_c}{ServiceC}} com.\+price.\+entity.\+Service\+Price.\+get\+Service (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает услугу, для которой установлена цена.
+
+\begin{DoxyReturn}{Returns}
+услуга 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_af2d17da05b60a023a1ac24ed87cd3fe0}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!setBodytype@{setBodytype}}
+\index{setBodytype@{setBodytype}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{setBodytype()}{setBodytype()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_af2d17da05b60a023a1ac24ed87cd3fe0} 
+void com.\+price.\+entity.\+Service\+Price.\+set\+Bodytype (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype}{Bodytype}}}]{bodytype}{}\end{DoxyParamCaption})}
+
+Устанавливает тип кузова, для которого предназначена услуга.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bodytype} & тип кузова. Не должно быть {\ttfamily null}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily bodytype} равен {\ttfamily null} \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_ab1a4bcc70ac573f78eaea809a2d734a9}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!setCarwash@{setCarwash}}
+\index{setCarwash@{setCarwash}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{setCarwash()}{setCarwash()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_ab1a4bcc70ac573f78eaea809a2d734a9} 
+void com.\+price.\+entity.\+Service\+Price.\+set\+Carwash (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_carwash}{Carwash}}}]{carwash}{}\end{DoxyParamCaption})}
+
+Устанавливает автомойку, предоставляющую услугу.
+
+
+\begin{DoxyParams}{Parameters}
+{\em carwash} & автомойка. Не должно быть {\ttfamily null}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily carwash} равен {\ttfamily null} \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_ae7e0f7838d5a04badc942c01ed2adf49}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!setIdServicePrice@{setIdServicePrice}}
+\index{setIdServicePrice@{setIdServicePrice}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{setIdServicePrice()}{setIdServicePrice()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_ae7e0f7838d5a04badc942c01ed2adf49} 
+void com.\+price.\+entity.\+Service\+Price.\+set\+Id\+Service\+Price (\begin{DoxyParamCaption}\item[{Long}]{id\+Service\+Price}{}\end{DoxyParamCaption})}
+
+Устанавливает уникальный идентификатор записи о цене. 
+
+Обычно вызывается фреймворком JPA, не рекомендуется для ручного использования.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Service\+Price} & новый идентификатор \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_a95eee5c006b328a6fdd0f5dcabcf289a}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!setLeadTime@{setLeadTime}}
+\index{setLeadTime@{setLeadTime}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{setLeadTime()}{setLeadTime()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_a95eee5c006b328a6fdd0f5dcabcf289a} 
+void com.\+price.\+entity.\+Service\+Price.\+set\+Lead\+Time (\begin{DoxyParamCaption}\item[{Integer}]{lead\+Time}{}\end{DoxyParamCaption})}
+
+Устанавливает время выполнения услуги.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lead\+Time} & новое время выполнения в минутах; должно быть от 1 до 600\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily lead\+Time} не соответствует ограничениям \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_ace17b61dc02cffe093c8c681134c4815}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!setPrice@{setPrice}}
+\index{setPrice@{setPrice}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{setPrice()}{setPrice()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_ace17b61dc02cffe093c8c681134c4815} 
+void com.\+price.\+entity.\+Service\+Price.\+set\+Price (\begin{DoxyParamCaption}\item[{Integer}]{price}{}\end{DoxyParamCaption})}
+
+Устанавливает стоимость услуги.
+
+
+\begin{DoxyParams}{Parameters}
+{\em price} & новая стоимость в рублях; должно быть от 0 до 1,000,000\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily price} не соответствует ограничениям \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_a210fd1490d9938e7d634f44c651aa630}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!setPriceDate@{setPriceDate}}
+\index{setPriceDate@{setPriceDate}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{setPriceDate()}{setPriceDate()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_a210fd1490d9938e7d634f44c651aa630} 
+void com.\+price.\+entity.\+Service\+Price.\+set\+Price\+Date (\begin{DoxyParamCaption}\item[{Local\+Date}]{price\+Date}{}\end{DoxyParamCaption})}
+
+Устанавливает дату установки цены.
+
+
+\begin{DoxyParams}{Parameters}
+{\em price\+Date} & новая дата установки цены. Не должно быть {\ttfamily null}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily price\+Date} равен {\ttfamily null} \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_a75813861a495534d16d4a26f29b0469c}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!setService@{setService}}
+\index{setService@{setService}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{setService()}{setService()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_a75813861a495534d16d4a26f29b0469c} 
+void com.\+price.\+entity.\+Service\+Price.\+set\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_c}{ServiceC}}}]{service}{}\end{DoxyParamCaption})}
+
+Устанавливает услугу, для которой устанавливается цена.
+
+
+\begin{DoxyParams}{Parameters}
+{\em service} & услуга. Не должно быть {\ttfamily null}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily service} равен {\ttfamily null} \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_price_a1dbe2a26b563611c7b88ed72ba05483f}\index{com.price.entity.ServicePrice@{com.price.entity.ServicePrice}!toString@{toString}}
+\index{toString@{toString}!com.price.entity.ServicePrice@{com.price.entity.ServicePrice}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_price_a1dbe2a26b563611c7b88ed72ba05483f} 
+String com.\+price.\+entity.\+Service\+Price.\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает строковое представление объекта. 
+
+Формат\+: {\ttfamily Service\+Price\{id\+Serviceprice = ..., service\+Id = ...,\newlinecarwash\+Id = ..., bodytype\+Id = ..., price = ..., lead\+Time = ..., price\+Date = ...\}}
+
+\begin{DoxyReturn}{Returns}
+строковое представление объекта 
+\end{DoxyReturn}

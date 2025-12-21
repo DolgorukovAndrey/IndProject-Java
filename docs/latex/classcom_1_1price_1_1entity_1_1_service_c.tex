@@ -1,0 +1,170 @@
+\doxysection{com.\+price.\+entity.\+ServiceC Class Reference}
+\hypertarget{classcom_1_1price_1_1entity_1_1_service_c}{}\label{classcom_1_1price_1_1entity_1_1_service_c}\index{com.price.entity.ServiceC@{com.price.entity.ServiceC}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_c_acdb90b84f1c17a3bf511dc1924f6aedc}{ServiceC}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_c_aeddbfbdc7b2278d05fb50052341f2f21}{ServiceC}} (String service\+Name, String service\+Info)
+\item 
+Long \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_c_a93442e3c1aa4f477cdb21fbf5775a64a}{get\+Id\+Service}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_c_ac7f74330dbb93018849be7eea61a8f3b}{set\+Id\+Service}} (Long id\+Service)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_c_a96406fafc32bce7ed68a705469114e92}{get\+Service\+Name}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_c_a757fb75ffc18ebd38db473bc2f3f93a5}{set\+Service\+Name}} (String service)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_c_a52ac8f942465e073c25a712a9f75f86b}{get\+Service\+Info}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_c_a050dad5966d9cd696c22f4b91bedf7d5}{set\+Service\+Info}} (String service\+Info)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_service_c_ae7bb228de6bf54cb8d1fc40509654150}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Сущность, представляющая услугу автомойки. 
+
+Этот класс отображается на таблицу {\ttfamily services} в базе данных и содержит информацию об услугах, предоставляемых автомойками. Каждая услуга имеет название и дополнительное описание.
+
+{\bfseries{Примечание\+:}} Класс назван {\ttfamily ServiceC} во избежание конфликта с зарезервированным словом "{}service"{} в некоторых контекстах.
+
+\begin{DoxySeeAlso}{See also}
+Entity 
+
+Table 
+\end{DoxySeeAlso}
+
+
+\label{doc-constructors}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_c_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_c_acdb90b84f1c17a3bf511dc1924f6aedc}\index{com.price.entity.ServiceC@{com.price.entity.ServiceC}!ServiceC@{ServiceC}}
+\index{ServiceC@{ServiceC}!com.price.entity.ServiceC@{com.price.entity.ServiceC}}
+\doxysubsubsection{\texorpdfstring{ServiceC()}{ServiceC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_c_acdb90b84f1c17a3bf511dc1924f6aedc} 
+com.\+price.\+entity.\+Service\+C.\+ServiceC (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Конструктор по умолчанию. \Hypertarget{classcom_1_1price_1_1entity_1_1_service_c_aeddbfbdc7b2278d05fb50052341f2f21}\index{com.price.entity.ServiceC@{com.price.entity.ServiceC}!ServiceC@{ServiceC}}
+\index{ServiceC@{ServiceC}!com.price.entity.ServiceC@{com.price.entity.ServiceC}}
+\doxysubsubsection{\texorpdfstring{ServiceC()}{ServiceC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_c_aeddbfbdc7b2278d05fb50052341f2f21} 
+com.\+price.\+entity.\+Service\+C.\+ServiceC (\begin{DoxyParamCaption}\item[{String}]{service\+Name}{, }\item[{String}]{service\+Info}{}\end{DoxyParamCaption})}
+
+Создает новую услугу с указанными параметрами.
+
+
+\begin{DoxyParams}{Parameters}
+{\em service\+Name} & название услуги. Не должно быть {\ttfamily null} или пустым \\
+\hline
+{\em service\+Info} & дополнительная информация об услуге. Не должно быть {\ttfamily null} или пустым\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если любой из параметров равен {\ttfamily null} или пустой \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_c_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_c_a93442e3c1aa4f477cdb21fbf5775a64a}\index{com.price.entity.ServiceC@{com.price.entity.ServiceC}!getIdService@{getIdService}}
+\index{getIdService@{getIdService}!com.price.entity.ServiceC@{com.price.entity.ServiceC}}
+\doxysubsubsection{\texorpdfstring{getIdService()}{getIdService()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_c_a93442e3c1aa4f477cdb21fbf5775a64a} 
+Long com.\+price.\+entity.\+Service\+C.\+get\+Id\+Service (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает уникальный идентификатор услуги.
+
+\begin{DoxyReturn}{Returns}
+идентификатор услуги 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_c_a52ac8f942465e073c25a712a9f75f86b}\index{com.price.entity.ServiceC@{com.price.entity.ServiceC}!getServiceInfo@{getServiceInfo}}
+\index{getServiceInfo@{getServiceInfo}!com.price.entity.ServiceC@{com.price.entity.ServiceC}}
+\doxysubsubsection{\texorpdfstring{getServiceInfo()}{getServiceInfo()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_c_a52ac8f942465e073c25a712a9f75f86b} 
+String com.\+price.\+entity.\+Service\+C.\+get\+Service\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает дополнительную информацию об услуге.
+
+\begin{DoxyReturn}{Returns}
+информация об услуге 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_c_a96406fafc32bce7ed68a705469114e92}\index{com.price.entity.ServiceC@{com.price.entity.ServiceC}!getServiceName@{getServiceName}}
+\index{getServiceName@{getServiceName}!com.price.entity.ServiceC@{com.price.entity.ServiceC}}
+\doxysubsubsection{\texorpdfstring{getServiceName()}{getServiceName()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_c_a96406fafc32bce7ed68a705469114e92} 
+String com.\+price.\+entity.\+Service\+C.\+get\+Service\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает название услуги.
+
+\begin{DoxyReturn}{Returns}
+название услуги 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_c_ac7f74330dbb93018849be7eea61a8f3b}\index{com.price.entity.ServiceC@{com.price.entity.ServiceC}!setIdService@{setIdService}}
+\index{setIdService@{setIdService}!com.price.entity.ServiceC@{com.price.entity.ServiceC}}
+\doxysubsubsection{\texorpdfstring{setIdService()}{setIdService()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_c_ac7f74330dbb93018849be7eea61a8f3b} 
+void com.\+price.\+entity.\+Service\+C.\+set\+Id\+Service (\begin{DoxyParamCaption}\item[{Long}]{id\+Service}{}\end{DoxyParamCaption})}
+
+Устанавливает уникальный идентификатор услуги. 
+
+Обычно вызывается фреймворком JPA, не рекомендуется для ручного использования.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Service} & новый идентификатор \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_c_a050dad5966d9cd696c22f4b91bedf7d5}\index{com.price.entity.ServiceC@{com.price.entity.ServiceC}!setServiceInfo@{setServiceInfo}}
+\index{setServiceInfo@{setServiceInfo}!com.price.entity.ServiceC@{com.price.entity.ServiceC}}
+\doxysubsubsection{\texorpdfstring{setServiceInfo()}{setServiceInfo()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_c_a050dad5966d9cd696c22f4b91bedf7d5} 
+void com.\+price.\+entity.\+Service\+C.\+set\+Service\+Info (\begin{DoxyParamCaption}\item[{String}]{service\+Info}{}\end{DoxyParamCaption})}
+
+Устанавливает дополнительную информацию об услуге.
+
+
+\begin{DoxyParams}{Parameters}
+{\em service\+Info} & новая информация об услуге. Не должно быть {\ttfamily null} или пустым\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily service\+Info} равен {\ttfamily null} или пустой \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_c_a757fb75ffc18ebd38db473bc2f3f93a5}\index{com.price.entity.ServiceC@{com.price.entity.ServiceC}!setServiceName@{setServiceName}}
+\index{setServiceName@{setServiceName}!com.price.entity.ServiceC@{com.price.entity.ServiceC}}
+\doxysubsubsection{\texorpdfstring{setServiceName()}{setServiceName()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_c_a757fb75ffc18ebd38db473bc2f3f93a5} 
+void com.\+price.\+entity.\+Service\+C.\+set\+Service\+Name (\begin{DoxyParamCaption}\item[{String}]{service}{}\end{DoxyParamCaption})}
+
+Устанавливает название услуги.
+
+
+\begin{DoxyParams}{Parameters}
+{\em service} & новое название услуги. Не должно быть {\ttfamily null} или пустым\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily service} равен {\ttfamily null} или пустой \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_service_c_ae7bb228de6bf54cb8d1fc40509654150}\index{com.price.entity.ServiceC@{com.price.entity.ServiceC}!toString@{toString}}
+\index{toString@{toString}!com.price.entity.ServiceC@{com.price.entity.ServiceC}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_service_c_ae7bb228de6bf54cb8d1fc40509654150} 
+String com.\+price.\+entity.\+Service\+C.\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает строковое представление объекта. 
+
+Формат\+: {\ttfamily Service\+C\{id\+Service = ..., service\+Name = ..., service\+Info = ...\}}
+
+\begin{DoxyReturn}{Returns}
+строковое представление объекта 
+\end{DoxyReturn}

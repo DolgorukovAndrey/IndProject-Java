@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${action == 'edit'} ? 'Редактировать' : 'Добавить новую запись'">Форма услуги</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1 th:text="${action == 'edit'} ? 'Редактировать' : 'Добавить новую запись'">Форма услуги</h1>
+        <p class="subtitle">Заполните информацию об автомойке</p>
+    </header>
+
+    <div class="form-container">
+        <form th:action="${action == 'edit'} ?
+                 @{/allPrices/updateAllPrice/{id}(id=${allPrice.id})} :
+                 @{/allPrices}"
+              method="post"
+              class="service-form">
+
+            <div class="form-group">
+                <label for="carwashName">Название автомойки <span class="required">*</span></label>
+                <input type="text"
+                       id="carwashName"
+                       name="carwashName"
+                       th:value="${allPrice.carwashName}"
+                       maxlength="200"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="carwashAddress">Адрес автомойки <span class="required">*</span></label>
+                <input type="text"
+                       id="carwashAddress"
+                       name="carwashAddress"
+                       th:value="${allPrice.carwashAddress}"
+                       maxlength="200"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="bodytype">Тип кузова <span class="bodytype">*</span></label>
+                <input type="text"
+                       id="bodytype"
+                       name="bodytype"
+                       th:value="${allPrice.bodytype}"
+                       maxlength="200"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Название услуги <span class="service">*</span></label>
+                <input type="text"
+                       id="service"
+                       name="service"
+                       th:value="${allPrice.service}"
+                       maxlength="200"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="serviceInfo">Информация об услуге <span class="serviceInfo">*</span></label>
+                <input type="text"
+                       id="serviceInfo"
+                       name="serviceInfo"
+                       th:value="${allPrice.serviceInfo}"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="leadTime">Время работы <span class="leadTime">*</span></label>
+                <input type="number"
+                       id="leadTime"
+                       name="leadTime"
+                       th:value="${allPrice.leadTime}"
+                       min="0"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Цена <span class="price">*</span></label>
+                <input type="number"
+                       id="price"
+                       name="price"
+                       th:value="${allPrice.price}"
+                       min="0"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="priceDate">Дата установки цены <span class="priceDate">*</span></label>
+                <input type="date"
+                       id="priceDate"
+                       name="priceDate"
+                       th:value="${allPrice.priceDate}"
+                       required>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-large">
+                    <span th:text="${action == 'edit'} ? 'Сохранить изменения' : 'Добавить запись'"></span>
+                </button>
+                <a th:href="@{/allPrices}" class="btn btn-secondary btn-large">Отмена</a>
+            </div>
+
+            <p class="form-note"><span class="required">*</span> Обязательные поля</p>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,256 @@
+\doxysection{com.\+price.\+controller.\+Bodytype\+Controller Class Reference}
+\hypertarget{classcom_1_1price_1_1controller_1_1_bodytype_controller}{}\label{classcom_1_1price_1_1controller_1_1_bodytype_controller}\index{com.price.controller.BodytypeController@{com.price.controller.BodytypeController}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_bodytype_controller_af05b7bd72c82a79e0f2227db182a331f}{Bodytype\+Controller}} (\mbox{\hyperlink{classcom_1_1price_1_1service_1_1_bodytype_service}{Bodytype\+Service}} bodytype\+Service)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_bodytype_controller_a248c861339c1321f4840e5507b870872}{list\+Bodytype}} (Model model)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_bodytype_controller_a7e9710e551147274a83e2f81de1aa45a}{show\+Create\+Form}} (Model model)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_bodytype_controller_a36481a6cde4d8182ab3c08cd418a5896}{create\+Bodytype}} (@Valid @Model\+Attribute("{}bodytype"{}) \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype}{Bodytype}} bodytype, Binding\+Result result, Redirect\+Attributes redirect\+Attributes, Model model)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_bodytype_controller_aa8ed3b74d6f64d03a18fbf87b26fd7e9}{show\+Edit\+Form}} (@Path\+Variable("{}id"{}) Long id, Model model, Redirect\+Attributes redirect\+Attributes)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_bodytype_controller_ad831266ba33cb83b3bb81c2cb05112dc}{update\+Bodytype}} (@Path\+Variable("{}id"{}) Long id, @Valid @Model\+Attribute("{}bodytype"{}) \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype}{Bodytype}} bodytype, Binding\+Result result, Redirect\+Attributes redirect\+Attributes, Model model)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_bodytype_controller_abbb1cd7ef8328231e469a23bb1ea0f02}{delete\+Bodytype}} (@Path\+Variable("{}id"{}) Long id, Redirect\+Attributes redirect\+Attributes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Контроллер для управления типами кузовов автомобилей. 
+
+Обрабатывает HTTP-\/запросы, связанные с операциями CRUD для типов кузовов. Предоставляет веб-\/интерфейс для создания, просмотра, обновления и удаления записей о типах кузовов.
+
+{\bfseries{Маршруты\+:}} 
+\begin{DoxyTable}{3}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Метод&\SetCell{bg=\tableheadbgcolor,font=\bfseries}URL&\SetCell{bg=\tableheadbgcolor,font=\bfseries}Описание\\
+GET&/bodytypes&Список всех типов кузовов\\
+GET&/bodytypes/new\+Bodytype&Форма создания нового типа кузова\\
+POST&/bodytypes&Создание нового типа кузова\\
+GET&/bodytypes/edit\+Bodytype/\{id\}&Форма редактирования типа кузова\\
+POST&/bodytypes/update\+Bodytype/\{id\}&Обновление типа кузова\\
+GET&/bodytypes/delete\+Bodytype/\{id\}&Удаление типа кузова\\
+\end{DoxyTable}
+
+
+\begin{DoxySeeAlso}{See also}
+Controller 
+
+Request\+Mapping 
+
+\doxylink{classcom_1_1price_1_1entity_1_1_bodytype}{Bodytype} 
+
+\doxylink{classcom_1_1price_1_1service_1_1_bodytype_service}{Bodytype\+Service} 
+\end{DoxySeeAlso}
+
+
+\label{doc-constructors}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_bodytype_controller_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_bodytype_controller_af05b7bd72c82a79e0f2227db182a331f}\index{com.price.controller.BodytypeController@{com.price.controller.BodytypeController}!BodytypeController@{BodytypeController}}
+\index{BodytypeController@{BodytypeController}!com.price.controller.BodytypeController@{com.price.controller.BodytypeController}}
+\doxysubsubsection{\texorpdfstring{BodytypeController()}{BodytypeController()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_bodytype_controller_af05b7bd72c82a79e0f2227db182a331f} 
+com.\+price.\+controller.\+Bodytype\+Controller.\+Bodytype\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1price_1_1service_1_1_bodytype_service}{Bodytype\+Service}}}]{bodytype\+Service}{}\end{DoxyParamCaption})}
+
+Конструктор с инъекцией зависимости сервиса.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bodytype\+Service} & сервис для работы с типами кузовов; не должен быть {\ttfamily null}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily bodytype\+Service} равен {\ttfamily null} \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_bodytype_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_bodytype_controller_a36481a6cde4d8182ab3c08cd418a5896}\index{com.price.controller.BodytypeController@{com.price.controller.BodytypeController}!createBodytype@{createBodytype}}
+\index{createBodytype@{createBodytype}!com.price.controller.BodytypeController@{com.price.controller.BodytypeController}}
+\doxysubsubsection{\texorpdfstring{createBodytype()}{createBodytype()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_bodytype_controller_a36481a6cde4d8182ab3c08cd418a5896} 
+String com.\+price.\+controller.\+Bodytype\+Controller.\+create\+Bodytype (\begin{DoxyParamCaption}\item[{@Valid @Model\+Attribute("{}bodytype"{}) \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype}{Bodytype}}}]{bodytype}{, }\item[{Binding\+Result}]{result}{, }\item[{Redirect\+Attributes}]{redirect\+Attributes}{, }\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+Обрабатывает создание нового типа кузова. 
+
+Валидирует введенные данные и сохраняет новый тип кузова в базе данных. При успешном сохранении перенаправляет на список типов кузовов с сообщением об успехе.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bodytype} & объект типа кузова с данными из формы; проходит валидацию \\
+\hline
+{\em result} & результат валидации данных формы \\
+\hline
+{\em redirect\+Attributes} & атрибуты для передачи данных при перенаправлении \\
+\hline
+{\em model} & объект модели для передачи данных в представление при ошибках валидации \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления или команда перенаправления
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily bodytype} равен {\ttfamily null}\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+Valid 
+
+Model\+Attribute 
+
+Post\+Mapping 
+
+Redirect\+Attributes 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_bodytype_controller_abbb1cd7ef8328231e469a23bb1ea0f02}\index{com.price.controller.BodytypeController@{com.price.controller.BodytypeController}!deleteBodytype@{deleteBodytype}}
+\index{deleteBodytype@{deleteBodytype}!com.price.controller.BodytypeController@{com.price.controller.BodytypeController}}
+\doxysubsubsection{\texorpdfstring{deleteBodytype()}{deleteBodytype()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_bodytype_controller_abbb1cd7ef8328231e469a23bb1ea0f02} 
+String com.\+price.\+controller.\+Bodytype\+Controller.\+delete\+Bodytype (\begin{DoxyParamCaption}\item[{@Path\+Variable("{}id"{}) Long}]{id}{, }\item[{Redirect\+Attributes}]{redirect\+Attributes}{}\end{DoxyParamCaption})}
+
+Обрабатывает удаление типа кузова. 
+
+Удаляет тип кузова по указанному идентификатору. При успешном удалении перенаправляет на список типов кузовов с сообщением об успехе.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & идентификатор удаляемого типа кузова; не должен быть {\ttfamily null} \\
+\hline
+{\em redirect\+Attributes} & атрибуты для передачи данных при перенаправлении \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+команда перенаправления на список типов кузовов
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily id} равен {\ttfamily null}\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+Get\+Mapping 
+
+Path\+Variable 
+
+Redirect\+Attributes 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_bodytype_controller_a248c861339c1321f4840e5507b870872}\index{com.price.controller.BodytypeController@{com.price.controller.BodytypeController}!listBodytype@{listBodytype}}
+\index{listBodytype@{listBodytype}!com.price.controller.BodytypeController@{com.price.controller.BodytypeController}}
+\doxysubsubsection{\texorpdfstring{listBodytype()}{listBodytype()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_bodytype_controller_a248c861339c1321f4840e5507b870872} 
+String com.\+price.\+controller.\+Bodytype\+Controller.\+list\+Bodytype (\begin{DoxyParamCaption}\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+Отображает список всех типов кузовов.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & объект модели для передачи данных в представление \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления для отображения списка типов кузовов
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Model 
+
+Get\+Mapping 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_bodytype_controller_a7e9710e551147274a83e2f81de1aa45a}\index{com.price.controller.BodytypeController@{com.price.controller.BodytypeController}!showCreateForm@{showCreateForm}}
+\index{showCreateForm@{showCreateForm}!com.price.controller.BodytypeController@{com.price.controller.BodytypeController}}
+\doxysubsubsection{\texorpdfstring{showCreateForm()}{showCreateForm()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_bodytype_controller_a7e9710e551147274a83e2f81de1aa45a} 
+String com.\+price.\+controller.\+Bodytype\+Controller.\+show\+Create\+Form (\begin{DoxyParamCaption}\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+Отображает форму для создания нового типа кузова.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & объект модели для передачи данных в представление \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления формы создания типа кузова
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Model 
+
+Get\+Mapping 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_bodytype_controller_aa8ed3b74d6f64d03a18fbf87b26fd7e9}\index{com.price.controller.BodytypeController@{com.price.controller.BodytypeController}!showEditForm@{showEditForm}}
+\index{showEditForm@{showEditForm}!com.price.controller.BodytypeController@{com.price.controller.BodytypeController}}
+\doxysubsubsection{\texorpdfstring{showEditForm()}{showEditForm()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_bodytype_controller_aa8ed3b74d6f64d03a18fbf87b26fd7e9} 
+String com.\+price.\+controller.\+Bodytype\+Controller.\+show\+Edit\+Form (\begin{DoxyParamCaption}\item[{@Path\+Variable("{}id"{}) Long}]{id}{, }\item[{Model}]{model}{, }\item[{Redirect\+Attributes}]{redirect\+Attributes}{}\end{DoxyParamCaption})}
+
+Отображает форму для редактирования существующего типа кузова.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & идентификатор редактируемого типа кузова; не должен быть {\ttfamily null} \\
+\hline
+{\em model} & объект модели для передачи данных в представление \\
+\hline
+{\em redirect\+Attributes} & атрибуты для передачи данных при перенаправлении \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления формы редактирования или команда перенаправления
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Get\+Mapping 
+
+Path\+Variable 
+
+Redirect\+Attributes 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_bodytype_controller_ad831266ba33cb83b3bb81c2cb05112dc}\index{com.price.controller.BodytypeController@{com.price.controller.BodytypeController}!updateBodytype@{updateBodytype}}
+\index{updateBodytype@{updateBodytype}!com.price.controller.BodytypeController@{com.price.controller.BodytypeController}}
+\doxysubsubsection{\texorpdfstring{updateBodytype()}{updateBodytype()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_bodytype_controller_ad831266ba33cb83b3bb81c2cb05112dc} 
+String com.\+price.\+controller.\+Bodytype\+Controller.\+update\+Bodytype (\begin{DoxyParamCaption}\item[{@Path\+Variable("{}id"{}) Long}]{id}{, }\item[{@Valid @Model\+Attribute("{}bodytype"{}) \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_bodytype}{Bodytype}}}]{bodytype}{, }\item[{Binding\+Result}]{result}{, }\item[{Redirect\+Attributes}]{redirect\+Attributes}{, }\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+Обрабатывает обновление существующего типа кузова. 
+
+Валидирует введенные данные и обновляет тип кузова в базе данных. При успешном обновлении перенаправляет на список типов кузовов с сообщением об успехе.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & идентификатор обновляемого типа кузова; не должен быть {\ttfamily null} \\
+\hline
+{\em bodytype} & объект типа кузова с обновленными данными из формы; проходит валидацию \\
+\hline
+{\em result} & результат валидации данных формы \\
+\hline
+{\em redirect\+Attributes} & атрибуты для передачи данных при перенаправлении \\
+\hline
+{\em model} & объект модели для передачи данных в представление при ошибках валидации \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления или команда перенаправления
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily id} или {\ttfamily bodytype} равны {\ttfamily null} \\
+\hline
+{\em Runtime\+Exception} & если тип кузова с указанным ID не найден\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+Post\+Mapping 
+
+Path\+Variable 
+
+Valid 
+
+Model\+Attribute 
+\end{DoxySeeAlso}

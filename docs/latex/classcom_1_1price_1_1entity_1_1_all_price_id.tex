@@ -1,0 +1,318 @@
+\doxysection{com.\+price.\+entity.\+All\+Price\+Id Class Reference}
+\hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id}{}\label{classcom_1_1price_1_1entity_1_1_all_price_id}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_a9d7d2ea47f36705a39679556c9cf0c78}{All\+Price\+Id}} ()
+\item 
+\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_ab0e19b0a27ff1142973337bfdac284f5}{All\+Price\+Id}} (String carwash\+Name, String carwash\+Address, String service, Local\+Date price\+Date, String bodytype)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_ac5b071f41337388ba0e9fd8ef32caeec}{get\+Carwash\+Name}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_ad6e2716b7ab6923cbf0a3df8f935a4a7}{get\+Carwash\+Address}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_a2e488dc5c23fa1437db92b675aca4b25}{get\+Service}} ()
+\item 
+Local\+Date \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_a5d08e3b8af1533c315c8f5cf30088aca}{get\+Price\+Date}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_a1ab3237dc76d0cdb356bb0527824e23a}{set\+Carwash\+Name}} (String carwash\+Name)
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_a9d6c3d04ae2c4a9576721e8e6d932750}{set\+Carwash\+Address}} (String carwash\+Address)
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_a61793ee032f3d33a8b32d7db199403a3}{set\+Service}} (String service)
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_a0d001552afb2d1b502f9f56934cfc9db}{set\+Price\+Date}} (Local\+Date price\+Date)
+\item 
+void \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_a8ab7c5db5ed0e83fff1d4be022ac405c}{set\+Bodytype}} (String bodytype)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_abe56871c2f27dd30549384c4b6c28246}{get\+Bodytype}} ()
+\item 
+boolean \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_a32158188ade8413761b3aca4a7180779}{equals}} (Object object)
+\item 
+int \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_a62f47a3de3dfcd5736f050947074c48f}{hash\+Code}} ()
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_ad0f2dc778cc543727e2940f433d189ca}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_a9d7d2ea47f36705a39679556c9cf0c78}{All\+Price\+Id}} \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_a853b99801be67962d41b6aae4a1852a7}{from\+String}} (String str)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Составной первичный ключ для сущности {\ttfamily \doxylink{classcom_1_1price_1_1entity_1_1_all_price}{All\+Price}}. 
+
+Этот класс представляет собой уникальный идентификатор записи о цене услуги автомойки. Ключ состоит из пяти полей, которые в совокупности обеспечивают уникальность записи.
+
+{\bfseries{Структура ключа\+:}} 
+\begin{DoxyEnumerate}
+\item Название автомойки 
+\item Адрес автомойки 
+\item Название услуги 
+\item Дата установки цены 
+\item Тип кузова автомобиля 
+\end{DoxyEnumerate}
+
+{\bfseries{Важно\+:}} Класс реализует интерфейс {\ttfamily \doxylink{}{Serializable}} для корректной работы в распределенных системах и кэшировании.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{classcom_1_1price_1_1entity_1_1_all_price}{All\+Price} 
+
+Embeddable 
+
+Serializable 
+\end{DoxySeeAlso}
+
+
+\label{doc-constructors}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_a9d7d2ea47f36705a39679556c9cf0c78}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!AllPriceId@{AllPriceId}}
+\index{AllPriceId@{AllPriceId}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{AllPriceId()}{AllPriceId()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_a9d7d2ea47f36705a39679556c9cf0c78} 
+com.\+price.\+entity.\+All\+Price\+Id.\+All\+Price\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Конструктор по умолчанию. \Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_ab0e19b0a27ff1142973337bfdac284f5}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!AllPriceId@{AllPriceId}}
+\index{AllPriceId@{AllPriceId}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{AllPriceId()}{AllPriceId()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_ab0e19b0a27ff1142973337bfdac284f5} 
+com.\+price.\+entity.\+All\+Price\+Id.\+All\+Price\+Id (\begin{DoxyParamCaption}\item[{String}]{carwash\+Name}{, }\item[{String}]{carwash\+Address}{, }\item[{String}]{service}{, }\item[{Local\+Date}]{price\+Date}{, }\item[{String}]{bodytype}{}\end{DoxyParamCaption})}
+
+Создает новый составной идентификатор с указанными значениями, все параметры идентификатора не должны быть {\ttfamily null} или пустыми.
+
+
+\begin{DoxyParams}{Parameters}
+{\em carwash\+Name} & название автомойки \\
+\hline
+{\em carwash\+Address} & адрес автомойки \\
+\hline
+{\em service} & название услуги \\
+\hline
+{\em price\+Date} & дата установки цены \\
+\hline
+{\em bodytype} & тип кузова\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если любой из обязательных параметров равен {\ttfamily null} \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_a32158188ade8413761b3aca4a7180779}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!equals@{equals}}
+\index{equals@{equals}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_a32158188ade8413761b3aca4a7180779} 
+boolean com.\+price.\+entity.\+All\+Price\+Id.\+equals (\begin{DoxyParamCaption}\item[{Object}]{object}{}\end{DoxyParamCaption})}
+
+Сравнивает этот объект с другим объектом на равенство. 
+
+Два объекта {\ttfamily All\+Price\+Id} считаются равными, если равны все их поля.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & объект для сравнения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} если объекты равны, {\ttfamily false} в противном случае
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Objects\#equals(\+Object) 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_a853b99801be67962d41b6aae4a1852a7}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!fromString@{fromString}}
+\index{fromString@{fromString}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{fromString()}{fromString()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_a853b99801be67962d41b6aae4a1852a7} 
+\mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price_id_a9d7d2ea47f36705a39679556c9cf0c78}{All\+Price\+Id}} com.\+price.\+entity.\+All\+Price\+Id.\+from\+String (\begin{DoxyParamCaption}\item[{String}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Создает объект {\ttfamily All\+Price\+Id} из строкового представления. 
+
+Метод парсит строку в формате, возвращаемом методом {\ttfamily \doxylink{classcom_1_1price_1_1entity_1_1_all_price_id_ad0f2dc778cc543727e2940f433d189ca}{to\+String()}}. Поддерживает URL-\/encoded строки (автоматически декодирует).
+
+{\bfseries{Формат строки\+:}} {\ttfamily "{}название\+\_\+мойки,адрес\+\_\+мойки,услуга,тип\+\_\+кузова,дата"{}}
+
+{\bfseries{Пример\+:}} 
+\begin{DoxyPre}{\ttfamily \newline// Простая строка\newlineString str = "{}Мойка Центральная,ул. Ленина, 10,Полная мойка,Седан,2024-\/01-\/15"{};\newlineAllPriceId id = AllPriceId.fromString(str);\newline\newline// URL-\/encoded строка\newlineString encoded = "{}Мойка\%20Центральная,ул.\%20Ленина\%2C\%2010,Полная\%20мойка,Седан,2024-\/01-\/15"{};\newlineAllPriceId id2 = AllPriceId.fromString(encoded);\newline}\end{DoxyPre}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & строковое представление объекта в CSV формате \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+новый объект {\ttfamily All\+Price\+Id}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если строка имеет неверный формат \\
+\hline
+{\em Runtime\+Exception} & если возникает ошибка парсинга или декодирования\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\doxylink{classcom_1_1price_1_1entity_1_1_all_price_id_ad0f2dc778cc543727e2940f433d189ca}{to\+String()} 
+
+java.\+net.\+URLDecoder 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_abe56871c2f27dd30549384c4b6c28246}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!getBodytype@{getBodytype}}
+\index{getBodytype@{getBodytype}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{getBodytype()}{getBodytype()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_abe56871c2f27dd30549384c4b6c28246} 
+String com.\+price.\+entity.\+All\+Price\+Id.\+get\+Bodytype (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает тип кузова автомобиля.
+
+\begin{DoxyReturn}{Returns}
+тип кузова 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_ad6e2716b7ab6923cbf0a3df8f935a4a7}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!getCarwashAddress@{getCarwashAddress}}
+\index{getCarwashAddress@{getCarwashAddress}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{getCarwashAddress()}{getCarwashAddress()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_ad6e2716b7ab6923cbf0a3df8f935a4a7} 
+String com.\+price.\+entity.\+All\+Price\+Id.\+get\+Carwash\+Address (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает адрес автомойки.
+
+\begin{DoxyReturn}{Returns}
+адрес автомойки 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_ac5b071f41337388ba0e9fd8ef32caeec}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!getCarwashName@{getCarwashName}}
+\index{getCarwashName@{getCarwashName}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{getCarwashName()}{getCarwashName()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_ac5b071f41337388ba0e9fd8ef32caeec} 
+String com.\+price.\+entity.\+All\+Price\+Id.\+get\+Carwash\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает название автомойки.
+
+\begin{DoxyReturn}{Returns}
+название автомойки 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_a5d08e3b8af1533c315c8f5cf30088aca}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!getPriceDate@{getPriceDate}}
+\index{getPriceDate@{getPriceDate}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{getPriceDate()}{getPriceDate()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_a5d08e3b8af1533c315c8f5cf30088aca} 
+Local\+Date com.\+price.\+entity.\+All\+Price\+Id.\+get\+Price\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает дату установки цены.
+
+\begin{DoxyReturn}{Returns}
+дата установки цены 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_a2e488dc5c23fa1437db92b675aca4b25}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!getService@{getService}}
+\index{getService@{getService}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{getService()}{getService()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_a2e488dc5c23fa1437db92b675aca4b25} 
+String com.\+price.\+entity.\+All\+Price\+Id.\+get\+Service (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает название услуги.
+
+\begin{DoxyReturn}{Returns}
+название услуги 
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_a62f47a3de3dfcd5736f050947074c48f}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!hashCode@{hashCode}}
+\index{hashCode@{hashCode}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{hashCode()}{hashCode()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_a62f47a3de3dfcd5736f050947074c48f} 
+int com.\+price.\+entity.\+All\+Price\+Id.\+hash\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает хэш-\/код объекта. 
+
+Хэш-\/код вычисляется на основе всех полей объекта для обеспечения консистентности с методом {\ttfamily \doxylink{classcom_1_1price_1_1entity_1_1_all_price_id_a32158188ade8413761b3aca4a7180779}{equals(\+Object)}}.
+
+\begin{DoxyReturn}{Returns}
+хэш-\/код объекта
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Objects\#hash(\+Object...) 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_a8ab7c5db5ed0e83fff1d4be022ac405c}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!setBodytype@{setBodytype}}
+\index{setBodytype@{setBodytype}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{setBodytype()}{setBodytype()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_a8ab7c5db5ed0e83fff1d4be022ac405c} 
+void com.\+price.\+entity.\+All\+Price\+Id.\+set\+Bodytype (\begin{DoxyParamCaption}\item[{String}]{bodytype}{}\end{DoxyParamCaption})}
+
+Устанавливает тип кузова автомобиля.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bodytype} & новый тип кузова. Не может быть {\ttfamily null} или пустым \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_a9d6c3d04ae2c4a9576721e8e6d932750}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!setCarwashAddress@{setCarwashAddress}}
+\index{setCarwashAddress@{setCarwashAddress}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{setCarwashAddress()}{setCarwashAddress()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_a9d6c3d04ae2c4a9576721e8e6d932750} 
+void com.\+price.\+entity.\+All\+Price\+Id.\+set\+Carwash\+Address (\begin{DoxyParamCaption}\item[{String}]{carwash\+Address}{}\end{DoxyParamCaption})}
+
+Устанавливает адрес автомойки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em carwash\+Address} & новый адрес автомойки. Не должно быть {\ttfamily null} или пустым \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_a1ab3237dc76d0cdb356bb0527824e23a}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!setCarwashName@{setCarwashName}}
+\index{setCarwashName@{setCarwashName}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{setCarwashName()}{setCarwashName()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_a1ab3237dc76d0cdb356bb0527824e23a} 
+void com.\+price.\+entity.\+All\+Price\+Id.\+set\+Carwash\+Name (\begin{DoxyParamCaption}\item[{String}]{carwash\+Name}{}\end{DoxyParamCaption})}
+
+Устанавливает название автомойки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em carwash\+Name} & новое название автомойки. Не должно быть {\ttfamily null} или пустым \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_a0d001552afb2d1b502f9f56934cfc9db}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!setPriceDate@{setPriceDate}}
+\index{setPriceDate@{setPriceDate}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{setPriceDate()}{setPriceDate()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_a0d001552afb2d1b502f9f56934cfc9db} 
+void com.\+price.\+entity.\+All\+Price\+Id.\+set\+Price\+Date (\begin{DoxyParamCaption}\item[{Local\+Date}]{price\+Date}{}\end{DoxyParamCaption})}
+
+Устанавливает дату установки цены.
+
+
+\begin{DoxyParams}{Parameters}
+{\em price\+Date} & новая дата установки цены. Не должно быть {\ttfamily null} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_a61793ee032f3d33a8b32d7db199403a3}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!setService@{setService}}
+\index{setService@{setService}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{setService()}{setService()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_a61793ee032f3d33a8b32d7db199403a3} 
+void com.\+price.\+entity.\+All\+Price\+Id.\+set\+Service (\begin{DoxyParamCaption}\item[{String}]{service}{}\end{DoxyParamCaption})}
+
+Устанавливает название услуги.
+
+
+\begin{DoxyParams}{Parameters}
+{\em service} & новое название услуги. Не должно быть {\ttfamily null} или пустым \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcom_1_1price_1_1entity_1_1_all_price_id_ad0f2dc778cc543727e2940f433d189ca}\index{com.price.entity.AllPriceId@{com.price.entity.AllPriceId}!toString@{toString}}
+\index{toString@{toString}!com.price.entity.AllPriceId@{com.price.entity.AllPriceId}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1entity_1_1_all_price_id_ad0f2dc778cc543727e2940f433d189ca} 
+String com.\+price.\+entity.\+All\+Price\+Id.\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Возвращает строковое представление объекта. 
+
+Формат строки\+: {\ttfamily "{}carwash\+Name,carwash\+Address,service,bodytype,price\+Date"{}} где поля разделены запятыми. Это представление используется методом {\ttfamily \doxylink{classcom_1_1price_1_1entity_1_1_all_price_id_a853b99801be67962d41b6aae4a1852a7}{from\+String(\+String)}} для обратного преобразования.
+
+\begin{DoxyReturn}{Returns}
+строковое представление объекта в формате CSV
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\doxylink{classcom_1_1price_1_1entity_1_1_all_price_id_a853b99801be67962d41b6aae4a1852a7}{from\+String(\+String)} 
+
+Object\#to\+String() 
+\end{DoxySeeAlso}

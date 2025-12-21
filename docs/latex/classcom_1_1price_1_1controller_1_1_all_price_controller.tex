@@ -1,0 +1,297 @@
+\doxysection{com.\+price.\+controller.\+All\+Price\+Controller Class Reference}
+\hypertarget{classcom_1_1price_1_1controller_1_1_all_price_controller}{}\label{classcom_1_1price_1_1controller_1_1_all_price_controller}\index{com.price.controller.AllPriceController@{com.price.controller.AllPriceController}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_all_price_controller_ad5b003c2066d75be2b7ea51bb3baaa0b}{All\+Price\+Controller}} (\mbox{\hyperlink{classcom_1_1price_1_1service_1_1_all_price_service}{All\+Price\+Service}} all\+Price\+Service)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_all_price_controller_a4323f971a83a4ddeaaa97d7552beff25}{list\+All\+Price}} (Model model)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_all_price_controller_af505489e7d0e6de723406b921cb71f5b}{show\+Create\+Form}} (Model model)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_all_price_controller_aa99077776a3741eb233ed6cac1cceceb}{create\+All\+Price}} (@Valid @Model\+Attribute("{}all\+Price"{}) \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price}{All\+Price}} all\+Price, Binding\+Result result, Redirect\+Attributes redirect\+Attributes, Model model)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_all_price_controller_a1e9e857e71bd22d4e8fd0989c6c13dc9}{show\+Edit\+Form}} (@Path\+Variable("{}id"{}) String id\+Str, Model model, Redirect\+Attributes redirect\+Attributes)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_all_price_controller_a14abb0631ed6eaa67bad92e068c96104}{update\+All\+Price}} (@Path\+Variable("{}id"{}) String id\+Str, @Request\+Param String carwash\+Name, @Request\+Param String carwash\+Address, @Request\+Param String service, @Request\+Param String bodytype, @Request\+Param @Date\+Time\+Format(iso=Date\+Time\+Format.\+ISO.\+DATE) Local\+Date price\+Date, @Request\+Param String service\+Info, @Request\+Param Integer lead\+Time, @Request\+Param Integer price, Redirect\+Attributes redirect\+Attributes)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_all_price_controller_ab28ae3b0cca51ffb8a98d7e45a1fc837}{delete\+All\+Price}} (@Path\+Variable("{}id"{}) String id\+Str, Redirect\+Attributes redirect\+Attributes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Контроллер для управления всеми ценами на услуги автомоек. 
+
+Обрабатывает HTTP-\/запросы, связанные с операциями CRUD для агрегированных данных о ценах. Работает с составными идентификаторами в строковом формате и предоставляет веб-\/интерфейс для создания, просмотра, обновления и удаления записей о ценах.
+
+{\bfseries{Особенности\+:}} 
+\begin{DoxyItemize}
+\item Использует составные идентификаторы ({\ttfamily \doxylink{classcom_1_1price_1_1entity_1_1_all_price_id}{All\+Price\+Id}}) в формате строки 
+\item Отображает только актуальные цены (последние для каждой комбинации) 
+\item Поддерживает сложное обновление с изменением составного ключа 
+\item Обрабатывает строковые представления идентификаторов через {\ttfamily \doxylink{classcom_1_1price_1_1entity_1_1_all_price_id_a853b99801be67962d41b6aae4a1852a7}{All\+Price\+Id\#from\+String(\+String)}} 
+\end{DoxyItemize}
+
+{\bfseries{Маршруты\+:}} 
+\begin{DoxyTable}{3}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Метод&\SetCell{bg=\tableheadbgcolor,font=\bfseries}URL&\SetCell{bg=\tableheadbgcolor,font=\bfseries}Описание\\
+GET&/all\+Prices&Список актуальных цен\\
+GET&/all\+Prices/new\+All\+Price&Форма создания новой записи о цене\\
+POST&/all\+Prices&Создание новой записи о цене\\
+GET&/all\+Prices/edit\+All\+Price/\{id\}&Форма редактирования записи о цене\\
+POST&/all\+Prices/update\+All\+Price/\{id\}&Обновление записи о цене\\
+GET&/all\+Prices/delete\+All\+Price/\{id\}&Удаление записи о цене\\
+\end{DoxyTable}
+
+
+{\bfseries{Формат идентификатора\+:}} Строка в формате\+: {\ttfamily "{}carwash\+Name,carwash\+Address,service,bodytype,price\+Date"{}} где {\ttfamily price\+Date} в формате ISO-\/8601 (YYYY-\/\+MM-\/\+DD).
+
+\begin{DoxySeeAlso}{See also}
+Controller 
+
+Request\+Mapping 
+
+\doxylink{classcom_1_1price_1_1entity_1_1_all_price}{All\+Price} 
+
+\doxylink{classcom_1_1price_1_1entity_1_1_all_price_id}{All\+Price\+Id} 
+
+\doxylink{classcom_1_1price_1_1service_1_1_all_price_service}{All\+Price\+Service} 
+\end{DoxySeeAlso}
+
+
+\label{doc-constructors}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_all_price_controller_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_all_price_controller_ad5b003c2066d75be2b7ea51bb3baaa0b}\index{com.price.controller.AllPriceController@{com.price.controller.AllPriceController}!AllPriceController@{AllPriceController}}
+\index{AllPriceController@{AllPriceController}!com.price.controller.AllPriceController@{com.price.controller.AllPriceController}}
+\doxysubsubsection{\texorpdfstring{AllPriceController()}{AllPriceController()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_all_price_controller_ad5b003c2066d75be2b7ea51bb3baaa0b} 
+com.\+price.\+controller.\+All\+Price\+Controller.\+All\+Price\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1price_1_1service_1_1_all_price_service}{All\+Price\+Service}}}]{all\+Price\+Service}{}\end{DoxyParamCaption})}
+
+Конструктор с инъекцией зависимости сервиса.
+
+
+\begin{DoxyParams}{Parameters}
+{\em all\+Price\+Service} & сервис для работы с агрегированными данными о ценах; не должен быть {\ttfamily null}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily all\+Price\+Service} равен {\ttfamily null} \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_all_price_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_all_price_controller_aa99077776a3741eb233ed6cac1cceceb}\index{com.price.controller.AllPriceController@{com.price.controller.AllPriceController}!createAllPrice@{createAllPrice}}
+\index{createAllPrice@{createAllPrice}!com.price.controller.AllPriceController@{com.price.controller.AllPriceController}}
+\doxysubsubsection{\texorpdfstring{createAllPrice()}{createAllPrice()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_all_price_controller_aa99077776a3741eb233ed6cac1cceceb} 
+String com.\+price.\+controller.\+All\+Price\+Controller.\+create\+All\+Price (\begin{DoxyParamCaption}\item[{@Valid @Model\+Attribute("{}all\+Price"{}) \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_all_price}{All\+Price}}}]{all\+Price}{, }\item[{Binding\+Result}]{result}{, }\item[{Redirect\+Attributes}]{redirect\+Attributes}{, }\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+Обрабатывает создание новой записи о цене. 
+
+Валидирует введенные данные и сохраняет новую запись о цене в базе данных. При успешном сохранении перенаправляет на список цен с сообщением об успехе.
+
+
+\begin{DoxyParams}{Parameters}
+{\em all\+Price} & объект записи о цене с данными из формы; проходит валидацию \\
+\hline
+{\em result} & результат валидации данных формы \\
+\hline
+{\em redirect\+Attributes} & атрибуты для передачи данных при перенаправлении \\
+\hline
+{\em model} & объект модели для передачи данных в представление при ошибках валидации \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления или команда перенаправления
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily all\+Price} равен {\ttfamily null}\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+Valid 
+
+Model\+Attribute 
+
+Post\+Mapping 
+
+Redirect\+Attributes 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_all_price_controller_ab28ae3b0cca51ffb8a98d7e45a1fc837}\index{com.price.controller.AllPriceController@{com.price.controller.AllPriceController}!deleteAllPrice@{deleteAllPrice}}
+\index{deleteAllPrice@{deleteAllPrice}!com.price.controller.AllPriceController@{com.price.controller.AllPriceController}}
+\doxysubsubsection{\texorpdfstring{deleteAllPrice()}{deleteAllPrice()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_all_price_controller_ab28ae3b0cca51ffb8a98d7e45a1fc837} 
+String com.\+price.\+controller.\+All\+Price\+Controller.\+delete\+All\+Price (\begin{DoxyParamCaption}\item[{@Path\+Variable("{}id"{}) String}]{id\+Str}{, }\item[{Redirect\+Attributes}]{redirect\+Attributes}{}\end{DoxyParamCaption})}
+
+Обрабатывает удаление записи о цене. 
+
+Декодирует строковый идентификатор и удаляет соответствующую запись из базы данных.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Str} & строковое представление составного идентификатора; не должно быть {\ttfamily null} \\
+\hline
+{\em redirect\+Attributes} & атрибуты для передачи данных при перенаправлении \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+команда перенаправления на список цен
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily id\+Str} равен {\ttfamily null}\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+Get\+Mapping 
+
+Path\+Variable 
+
+\doxylink{classcom_1_1price_1_1entity_1_1_all_price_id_a853b99801be67962d41b6aae4a1852a7}{All\+Price\+Id.\+from\+String(\+String)} 
+
+\doxylink{classcom_1_1price_1_1service_1_1_all_price_service_af0325cf58006cba5dab6f322baa8f90d}{All\+Price\+Service.\+delete\+All\+Price(\+All\+Price\+Id)} 
+
+Redirect\+Attributes 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_all_price_controller_a4323f971a83a4ddeaaa97d7552beff25}\index{com.price.controller.AllPriceController@{com.price.controller.AllPriceController}!listAllPrice@{listAllPrice}}
+\index{listAllPrice@{listAllPrice}!com.price.controller.AllPriceController@{com.price.controller.AllPriceController}}
+\doxysubsubsection{\texorpdfstring{listAllPrice()}{listAllPrice()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_all_price_controller_a4323f971a83a4ddeaaa97d7552beff25} 
+String com.\+price.\+controller.\+All\+Price\+Controller.\+list\+All\+Price (\begin{DoxyParamCaption}\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+Отображает список актуальных цен на услуги автомоек. 
+
+Получает только самые последние (актуальные) цены для каждой комбинации услуги, автомойки и типа кузова.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & объект модели для передачи данных в представление \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления для отображения списка актуальных цен
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Model 
+
+Get\+Mapping 
+
+\doxylink{classcom_1_1price_1_1service_1_1_all_price_service_a2957e2848e9f84f8bc78a4fa67562b30}{All\+Price\+Service.\+get\+Actual\+Prices()} 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_all_price_controller_af505489e7d0e6de723406b921cb71f5b}\index{com.price.controller.AllPriceController@{com.price.controller.AllPriceController}!showCreateForm@{showCreateForm}}
+\index{showCreateForm@{showCreateForm}!com.price.controller.AllPriceController@{com.price.controller.AllPriceController}}
+\doxysubsubsection{\texorpdfstring{showCreateForm()}{showCreateForm()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_all_price_controller_af505489e7d0e6de723406b921cb71f5b} 
+String com.\+price.\+controller.\+All\+Price\+Controller.\+show\+Create\+Form (\begin{DoxyParamCaption}\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+Отображает форму для создания новой записи о цене.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & объект модели для передачи данных в представление \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления формы создания записи о цене
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Model 
+
+Get\+Mapping 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_all_price_controller_a1e9e857e71bd22d4e8fd0989c6c13dc9}\index{com.price.controller.AllPriceController@{com.price.controller.AllPriceController}!showEditForm@{showEditForm}}
+\index{showEditForm@{showEditForm}!com.price.controller.AllPriceController@{com.price.controller.AllPriceController}}
+\doxysubsubsection{\texorpdfstring{showEditForm()}{showEditForm()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_all_price_controller_a1e9e857e71bd22d4e8fd0989c6c13dc9} 
+String com.\+price.\+controller.\+All\+Price\+Controller.\+show\+Edit\+Form (\begin{DoxyParamCaption}\item[{@Path\+Variable("{}id"{}) String}]{id\+Str}{, }\item[{Model}]{model}{, }\item[{Redirect\+Attributes}]{redirect\+Attributes}{}\end{DoxyParamCaption})}
+
+Отображает форму для редактирования существующей записи о цене. 
+
+Декодирует строковый идентификатор, находит соответствующую запись и отображает форму для её редактирования.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Str} & строковое представление составного идентификатора; не должно быть {\ttfamily null} \\
+\hline
+{\em model} & объект модели для передачи данных в представление \\
+\hline
+{\em redirect\+Attributes} & атрибуты для передачи данных при перенаправлении \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления формы редактирования или команда перенаправления
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily id\+Str} равен {\ttfamily null}\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+Get\+Mapping 
+
+Path\+Variable 
+
+\doxylink{classcom_1_1price_1_1entity_1_1_all_price_id_a853b99801be67962d41b6aae4a1852a7}{All\+Price\+Id.\+from\+String(\+String)} 
+
+Redirect\+Attributes 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_all_price_controller_a14abb0631ed6eaa67bad92e068c96104}\index{com.price.controller.AllPriceController@{com.price.controller.AllPriceController}!updateAllPrice@{updateAllPrice}}
+\index{updateAllPrice@{updateAllPrice}!com.price.controller.AllPriceController@{com.price.controller.AllPriceController}}
+\doxysubsubsection{\texorpdfstring{updateAllPrice()}{updateAllPrice()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_all_price_controller_a14abb0631ed6eaa67bad92e068c96104} 
+String com.\+price.\+controller.\+All\+Price\+Controller.\+update\+All\+Price (\begin{DoxyParamCaption}\item[{@Path\+Variable("{}id"{}) String}]{id\+Str}{, }\item[{@Request\+Param String}]{carwash\+Name}{, }\item[{@Request\+Param String}]{carwash\+Address}{, }\item[{@Request\+Param String}]{service}{, }\item[{@Request\+Param String}]{bodytype}{, }\item[{@Request\+Param @Date\+Time\+Format(iso=Date\+Time\+Format.\+ISO.\+DATE) Local\+Date}]{price\+Date}{, }\item[{@Request\+Param String}]{service\+Info}{, }\item[{@Request\+Param Integer}]{lead\+Time}{, }\item[{@Request\+Param Integer}]{price}{, }\item[{Redirect\+Attributes}]{redirect\+Attributes}{}\end{DoxyParamCaption})}
+
+Обрабатывает обновление существующей записи о цене. 
+
+Декодирует старый идентификатор, создает новые данные и обновляет запись. Поддерживает изменение всех полей, включая поля составного ключа.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Str} & строковое представление старого составного идентификатора; не должно быть {\ttfamily null} \\
+\hline
+{\em carwash\+Name} & новое название автомойки; не должно быть {\ttfamily null} или пустым \\
+\hline
+{\em carwash\+Address} & новый адрес автомойки; не должно быть {\ttfamily null} или пустым \\
+\hline
+{\em service} & новое название услуги; не должно быть {\ttfamily null} или пустым \\
+\hline
+{\em bodytype} & новый тип кузова; может быть {\ttfamily null} \\
+\hline
+{\em price\+Date} & новая дата цены; не должно быть {\ttfamily null} \\
+\hline
+{\em service\+Info} & новая дополнительная информация об услуге; может быть {\ttfamily null} \\
+\hline
+{\em lead\+Time} & новое время выполнения в минутах; должно быть положительным \\
+\hline
+{\em price} & новая стоимость в рублях; должно быть положительным \\
+\hline
+{\em redirect\+Attributes} & атрибуты для передачи данных при перенаправлении \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+команда перенаправления на список цен
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если любой из обязательных параметров равен {\ttfamily null} \\
+\hline
+{\em Runtime\+Exception} & если произошла ошибка при обновлении\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+Post\+Mapping 
+
+Path\+Variable 
+
+Request\+Param 
+
+Date\+Time\+Format 
+
+\doxylink{classcom_1_1price_1_1service_1_1_all_price_service_ac473b45c63ad622831b9a0fefdd27b24}{All\+Price\+Service.\+update\+All\+Price(\+All\+Price\+Id, All\+Price\+Id, All\+Price)} 
+\end{DoxySeeAlso}

@@ -1,0 +1,258 @@
+\doxysection{com.\+price.\+controller.\+Carwash\+Controller Class Reference}
+\hypertarget{classcom_1_1price_1_1controller_1_1_carwash_controller}{}\label{classcom_1_1price_1_1controller_1_1_carwash_controller}\index{com.price.controller.CarwashController@{com.price.controller.CarwashController}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_carwash_controller_a98a33cdefa528d4974525a7b2f9831da}{Carwash\+Controller}} (\mbox{\hyperlink{classcom_1_1price_1_1service_1_1_carwash_service}{Carwash\+Service}} carwash\+Service)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_carwash_controller_a3b65d7c94488c7be0ce2aa9bb9ae6e38}{list\+Carwash}} (Model model)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_carwash_controller_a810abb199840d8f035ed59be2477d7ed}{show\+Create\+Form}} (Model model)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_carwash_controller_ac5e727d9eb33afce162955d3762a14f7}{create\+Carwash}} (@Valid @Model\+Attribute("{}carwash"{}) \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_carwash}{Carwash}} carwash, Binding\+Result result, Redirect\+Attributes redirect\+Attributes, Model model)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_carwash_controller_a5c8caa624b50343985c8b638314bdee3}{show\+Edit\+Form}} (@Path\+Variable("{}id"{}) Long id, Model model, Redirect\+Attributes redirect\+Attributes)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_carwash_controller_a115681a180672688f4d1030f179460a2}{update\+Carwash}} (@Path\+Variable("{}id"{}) Long id, @Valid @Model\+Attribute("{}carwash"{}) \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_carwash}{Carwash}} carwash, Binding\+Result result, Redirect\+Attributes redirect\+Attributes, Model model)
+\item 
+String \mbox{\hyperlink{classcom_1_1price_1_1controller_1_1_carwash_controller_a175f247842ab4c9106f2a8888050a005}{delete\+Carwash}} (@Path\+Variable("{}id"{}) Long id, Redirect\+Attributes redirect\+Attributes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Контроллер для управления автомойками. 
+
+Обрабатывает HTTP-\/запросы, связанные с операциями CRUD для автомоек. Предоставляет веб-\/интерфейс для создания, просмотра, обновления и удаления записей об автомойках.
+
+{\bfseries{Маршруты\+:}} 
+\begin{DoxyTable}{3}{}{}{1}
+\SetCell{bg=\tableheadbgcolor,font=\bfseries}Метод&\SetCell{bg=\tableheadbgcolor,font=\bfseries}URL&\SetCell{bg=\tableheadbgcolor,font=\bfseries}Описание\\
+GET&/carwashs&Список всех автомоек\\
+GET&/carwashs/new\+Carwash&Форма создания новой автомойки\\
+POST&/carwashs&Создание новой автомойки\\
+GET&/carwashs/edit\+Carwash/\{id\}&Форма редактирования автомойки\\
+POST&/carwashs/update\+Carwash/\{id\}&Обновление автомойки\\
+GET&/carwashs/delete\+Carwash/\{id\}&Удаление автомойки\\
+\end{DoxyTable}
+
+
+\begin{DoxySeeAlso}{See also}
+Controller 
+
+Request\+Mapping 
+
+\doxylink{classcom_1_1price_1_1entity_1_1_carwash}{Carwash} 
+
+\doxylink{classcom_1_1price_1_1service_1_1_carwash_service}{Carwash\+Service} 
+\end{DoxySeeAlso}
+
+
+\label{doc-constructors}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_carwash_controller_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_carwash_controller_a98a33cdefa528d4974525a7b2f9831da}\index{com.price.controller.CarwashController@{com.price.controller.CarwashController}!CarwashController@{CarwashController}}
+\index{CarwashController@{CarwashController}!com.price.controller.CarwashController@{com.price.controller.CarwashController}}
+\doxysubsubsection{\texorpdfstring{CarwashController()}{CarwashController()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_carwash_controller_a98a33cdefa528d4974525a7b2f9831da} 
+com.\+price.\+controller.\+Carwash\+Controller.\+Carwash\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1price_1_1service_1_1_carwash_service}{Carwash\+Service}}}]{carwash\+Service}{}\end{DoxyParamCaption})}
+
+Конструктор с инъекцией зависимости сервиса.
+
+
+\begin{DoxyParams}{Parameters}
+{\em carwash\+Service} & сервис для работы с автомойками; не должен быть {\ttfamily null}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily carwash\+Service} равен {\ttfamily null} \\
+\hline
+\end{DoxyExceptions}
+
+
+\label{doc-func-members}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_carwash_controller_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_carwash_controller_ac5e727d9eb33afce162955d3762a14f7}\index{com.price.controller.CarwashController@{com.price.controller.CarwashController}!createCarwash@{createCarwash}}
+\index{createCarwash@{createCarwash}!com.price.controller.CarwashController@{com.price.controller.CarwashController}}
+\doxysubsubsection{\texorpdfstring{createCarwash()}{createCarwash()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_carwash_controller_ac5e727d9eb33afce162955d3762a14f7} 
+String com.\+price.\+controller.\+Carwash\+Controller.\+create\+Carwash (\begin{DoxyParamCaption}\item[{@Valid @Model\+Attribute("{}carwash"{}) \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_carwash}{Carwash}}}]{carwash}{, }\item[{Binding\+Result}]{result}{, }\item[{Redirect\+Attributes}]{redirect\+Attributes}{, }\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+Обрабатывает создание новой автомойки. 
+
+Валидирует введенные данные и сохраняет новую автомойку в базе данных. При успешном сохранении перенаправляет на список автомоек с сообщением об успехе.
+
+
+\begin{DoxyParams}{Parameters}
+{\em carwash} & объект автомойки с данными из формы; проходит валидацию \\
+\hline
+{\em result} & результат валидации данных формы \\
+\hline
+{\em redirect\+Attributes} & атрибуты для передачи данных при перенаправлении \\
+\hline
+{\em model} & объект модели для передачи данных в представление при ошибках валидации \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления или команда перенаправления
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily carwash} равен {\ttfamily null}\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+Valid 
+
+Model\+Attribute 
+
+Post\+Mapping 
+
+Redirect\+Attributes 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_carwash_controller_a175f247842ab4c9106f2a8888050a005}\index{com.price.controller.CarwashController@{com.price.controller.CarwashController}!deleteCarwash@{deleteCarwash}}
+\index{deleteCarwash@{deleteCarwash}!com.price.controller.CarwashController@{com.price.controller.CarwashController}}
+\doxysubsubsection{\texorpdfstring{deleteCarwash()}{deleteCarwash()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_carwash_controller_a175f247842ab4c9106f2a8888050a005} 
+String com.\+price.\+controller.\+Carwash\+Controller.\+delete\+Carwash (\begin{DoxyParamCaption}\item[{@Path\+Variable("{}id"{}) Long}]{id}{, }\item[{Redirect\+Attributes}]{redirect\+Attributes}{}\end{DoxyParamCaption})}
+
+Обрабатывает удаление автомойки. 
+
+Удаляет автомойку по указанному идентификатору. При успешном удалении перенаправляет на список автомоек с сообщением об успехе.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & идентификатор удаляемой автомойки; не должен быть {\ttfamily null} \\
+\hline
+{\em redirect\+Attributes} & атрибуты для передачи данных при перенаправлении \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+команда перенаправления на список автомоек
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily id} равен {\ttfamily null}\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+Get\+Mapping 
+
+Path\+Variable 
+
+Redirect\+Attributes 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_carwash_controller_a3b65d7c94488c7be0ce2aa9bb9ae6e38}\index{com.price.controller.CarwashController@{com.price.controller.CarwashController}!listCarwash@{listCarwash}}
+\index{listCarwash@{listCarwash}!com.price.controller.CarwashController@{com.price.controller.CarwashController}}
+\doxysubsubsection{\texorpdfstring{listCarwash()}{listCarwash()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_carwash_controller_a3b65d7c94488c7be0ce2aa9bb9ae6e38} 
+String com.\+price.\+controller.\+Carwash\+Controller.\+list\+Carwash (\begin{DoxyParamCaption}\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+Отображает список всех автомоек.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & объект модели для передачи данных в представление \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления для отображения списка автомоек
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Model 
+
+Get\+Mapping 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_carwash_controller_a810abb199840d8f035ed59be2477d7ed}\index{com.price.controller.CarwashController@{com.price.controller.CarwashController}!showCreateForm@{showCreateForm}}
+\index{showCreateForm@{showCreateForm}!com.price.controller.CarwashController@{com.price.controller.CarwashController}}
+\doxysubsubsection{\texorpdfstring{showCreateForm()}{showCreateForm()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_carwash_controller_a810abb199840d8f035ed59be2477d7ed} 
+String com.\+price.\+controller.\+Carwash\+Controller.\+show\+Create\+Form (\begin{DoxyParamCaption}\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+Отображает форму для создания новой автомойки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & объект модели для передачи данных в представление \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления формы создания автомойки
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Model 
+
+Get\+Mapping 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_carwash_controller_a5c8caa624b50343985c8b638314bdee3}\index{com.price.controller.CarwashController@{com.price.controller.CarwashController}!showEditForm@{showEditForm}}
+\index{showEditForm@{showEditForm}!com.price.controller.CarwashController@{com.price.controller.CarwashController}}
+\doxysubsubsection{\texorpdfstring{showEditForm()}{showEditForm()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_carwash_controller_a5c8caa624b50343985c8b638314bdee3} 
+String com.\+price.\+controller.\+Carwash\+Controller.\+show\+Edit\+Form (\begin{DoxyParamCaption}\item[{@Path\+Variable("{}id"{}) Long}]{id}{, }\item[{Model}]{model}{, }\item[{Redirect\+Attributes}]{redirect\+Attributes}{}\end{DoxyParamCaption})}
+
+Отображает форму для редактирования существующей автомойки.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & идентификатор редактируемой автомойки; не должен быть {\ttfamily null} \\
+\hline
+{\em model} & объект модели для передачи данных в представление \\
+\hline
+{\em redirect\+Attributes} & атрибуты для передачи данных при перенаправлении \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления формы редактирования или команда перенаправления
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Get\+Mapping 
+
+Path\+Variable 
+
+Redirect\+Attributes 
+\end{DoxySeeAlso}
+\Hypertarget{classcom_1_1price_1_1controller_1_1_carwash_controller_a115681a180672688f4d1030f179460a2}\index{com.price.controller.CarwashController@{com.price.controller.CarwashController}!updateCarwash@{updateCarwash}}
+\index{updateCarwash@{updateCarwash}!com.price.controller.CarwashController@{com.price.controller.CarwashController}}
+\doxysubsubsection{\texorpdfstring{updateCarwash()}{updateCarwash()}}
+{\footnotesize\ttfamily \label{classcom_1_1price_1_1controller_1_1_carwash_controller_a115681a180672688f4d1030f179460a2} 
+String com.\+price.\+controller.\+Carwash\+Controller.\+update\+Carwash (\begin{DoxyParamCaption}\item[{@Path\+Variable("{}id"{}) Long}]{id}{, }\item[{@Valid @Model\+Attribute("{}carwash"{}) \mbox{\hyperlink{classcom_1_1price_1_1entity_1_1_carwash}{Carwash}}}]{carwash}{, }\item[{Binding\+Result}]{result}{, }\item[{Redirect\+Attributes}]{redirect\+Attributes}{, }\item[{Model}]{model}{}\end{DoxyParamCaption})}
+
+Обрабатывает обновление существующей автомойки. 
+
+{\bfseries{Внимание\+:}} В аннотации {\ttfamily @\+Model\+Attribute} используется некорректное имя "{}bodytype"{} вместо "{}carwash"{}, что может вызвать проблемы с биндингом данных.
+
+Валидирует введенные данные и обновляет автомойку в базе данных. При успешном обновлении перенаправляет на список автомоек с сообщением об успехе.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & идентификатор обновляемой автомойки; не должен быть {\ttfamily null} \\
+\hline
+{\em carwash} & объект автомойки с обновленными данными из формы; проходит валидацию \\
+\hline
+{\em result} & результат валидации данных формы \\
+\hline
+{\em redirect\+Attributes} & атрибуты для передачи данных при перенаправлении \\
+\hline
+{\em model} & объект модели для передачи данных в представление при ошибках валидации \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+имя шаблона представления или команда перенаправления
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & если {\ttfamily id} или {\ttfamily carwash} равны {\ttfamily null} \\
+\hline
+{\em Runtime\+Exception} & если автомойка с указанным ID не найдена\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+Post\+Mapping 
+
+Path\+Variable 
+
+Valid 
+
+Model\+Attribute 
+\end{DoxySeeAlso}

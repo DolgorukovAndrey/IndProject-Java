@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Автомойки</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Услуги</h1>
+        <p class="subtitle">Просмотр базы данных услуг</p>
+    </header>
+
+    <div th:if="${successMessage}" class="alert alert-success">
+        <span th:text="${successMessage}"></span>
+    </div>
+    <div th:if="${errorMessage}" class="alert alert-error">
+        <span th:text="${errorMessage}"></span>
+    </div>
+
+    <div class="action-panel">
+        <a th:href="@{/}" class="btn btn-primary">Home</a>
+    </div>
+
+    <div class="table-container">
+        <table th:if="${servicePriceCount > 0}">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>ID услуги</th>
+                <th>ID автомойки</th>
+                <th>ID типа кузова</th>
+                <th>Время выполнения</th>
+                <th>Цена</th>
+                <th>Дата установки цены</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="servicePrice : ${servicePrices}">
+                <td th:text="${servicePrice.idServicePrice}">ID</td>
+                <td th:text="${servicePrice.service.idService}"></td>
+                <td th:text="${servicePrice.carwash.idCarwash}"></td>
+                <td th:text="${servicePrice.bodytype.idBodytype}"></td>
+                <td th:text="${servicePrice.leadTime}"></td>
+                <td th:text="${servicePrice.price}"></td>
+                <td th:text="${servicePrice.priceDate}"></td>
+                <td class="actions">
+                    <a th:href="@{/servicePrices/view/{id}(id=${servicePrice.idServicePrice})}"
+                       class="btn btn-small btn-edit" title="Подробная информация">Подробнее</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
