@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="'Просмотр делалей цены'"></title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Цена за услугу</h1>
+        <p class="subtitle">Детальная информация</p>
+    </header>
+
+    <div class="view-container">
+        <div class="servicePrice-card">
+            <div class="servicePrice-details">
+                <div class="detail-row">
+                    <span class="detail-label">ID:</span>
+                    <span class="detail-value" th:text="${servicePrice.idServicePrice}"></span>
+                </div>
+
+                <div class="detail-row">
+                    <span class="detail-label">Название услуги:</span>
+                    <span class="detail-value" th:text="${servicePrice.service.serviceName}"></span>
+                </div>
+
+                <div class="detail-row">
+                    <span class="detail-label">Информация об услуге:</span>
+                    <span class="detail-value" th:text="${servicePrice.service.serviceInfo}"></span>
+                </div>
+
+                <div class="detail-row">
+                    <span class="detail-label">Название автомойки:</span>
+                    <span class="detail-value" th:text="${servicePrice.carwash.carwashName}">Rock</span>
+                </div>
+
+                <div class="detail-row">
+                    <span class="detail-label">Адрес автомойки:</span>
+                    <span class="detail-value" th:text="${servicePrice.carwash.carwashAddress}">Rock</span>
+                </div>
+
+                <div class="detail-row">
+                    <span class="detail-label">Тип кузова:</span>
+                    <span class="detail-value" th:text="${servicePrice.bodytype.bodytypeName}">Rock</span>
+                </div>
+
+                <div class="detail-row">
+                    <span class="detail-label">Время выполнения:</span>
+                    <span class="detail-value" th:text="${servicePrice.leadTime}">Rock</span>
+                </div>
+
+                <div class="detail-row">
+                    <span class="detail-label">Стоимость:</span>
+                    <span class="detail-value" th:text="${servicePrice.price}">Rock</span>
+                </div>
+
+                <div class="detail-row">
+                    <span class="detail-label">Дата установки цены:</span>
+                    <span class="detail-value" th:text="${servicePrice.priceDate}">Rock</span>
+                </div>
+            </div>
+
+            <div class="servicePrice-actions">
+                <a th:href="@{/servicePrices}" class="btn btn-secondary">
+                    Назад
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
