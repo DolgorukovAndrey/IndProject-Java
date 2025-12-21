@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacecom_1_1price_1_1repository" kind="namespace" language="Java">
+    <compoundname>com::price::repository</compoundname>
+    <innerclass refid="interfacecom_1_1price_1_1repository_1_1_all_price_repository" prot="public">com::price::repository::AllPriceRepository</innerclass>
+    <innerclass refid="interfacecom_1_1price_1_1repository_1_1_bodytype_repository" prot="public">com::price::repository::BodytypeRepository</innerclass>
+    <innerclass refid="interfacecom_1_1price_1_1repository_1_1_carwash_repository" prot="public">com::price::repository::CarwashRepository</innerclass>
+    <innerclass refid="interfacecom_1_1price_1_1repository_1_1_service_price_repository" prot="public">com::price::repository::ServicePriceRepository</innerclass>
+    <innerclass refid="interfacecom_1_1price_1_1repository_1_1_service_repository" prot="public">com::price::repository::ServiceRepository</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/price/repository/AllPriceRepository.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

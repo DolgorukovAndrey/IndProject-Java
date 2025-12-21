@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_all_price_8java" kind="file" language="Java">
+    <compoundname>AllPrice.java</compoundname>
+    <includes local="no">jakarta.persistence.*</includes>
+    <includes local="no">java.time.LocalDate</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/main/java/com/price/entity/AllPrice.java</label>
+        <link refid="_all_price_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>jakarta.persistence.*</label>
+      </node>
+      <node id="3">
+        <label>java.time.LocalDate</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classcom_1_1price_1_1entity_1_1_all_price" prot="public">com::price::entity::AllPrice</innerclass>
+    <innernamespace refid="namespacecom_1_1price_1_1entity">com::price::entity</innernamespace>
+    <innernamespace refid="namespacejakarta_1_1persistence">jakarta::persistence</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/price/entity/AllPrice.java"/>
+  </compounddef>
+</doxygen>

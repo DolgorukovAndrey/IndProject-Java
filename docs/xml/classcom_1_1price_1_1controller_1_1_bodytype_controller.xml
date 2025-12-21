@@ -1,0 +1,506 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1controller_1_1_bodytype_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::price::controller::BodytypeController</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1price_1_1controller_1_1_bodytype_controller_1a8d9d60b03de432130aa6ba9e85c51f56" prot="private" static="no" mutable="no">
+        <type>final <ref refid="classcom_1_1price_1_1service_1_1_bodytype_service" kindref="compound">BodytypeService</ref></type>
+        <definition>final BodytypeService com.price.controller.BodytypeController.bodytypeService</definition>
+        <argsstring></argsstring>
+        <name>bodytypeService</name>
+        <qualifiedname>com.price.controller.BodytypeController.bodytypeService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сервис для работы с типами кузовов. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/BodytypeController.java" line="44" column="35" bodyfile="src/main/java/com/price/controller/BodytypeController.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_bodytype_controller_1af05b7bd72c82a79e0f2227db182a331f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.controller.BodytypeController.BodytypeController</definition>
+        <argsstring>(BodytypeService bodytypeService)</argsstring>
+        <name>BodytypeController</name>
+        <qualifiedname>com.price.controller.BodytypeController.BodytypeController</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1service_1_1_bodytype_service" kindref="compound">BodytypeService</ref></type>
+          <declname>bodytypeService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор с инъекцией зависимости сервиса.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bodytypeService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>сервис для работы с типами кузовов; не должен быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>bodytypeService</javadoccode> равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/BodytypeController.java" line="54" column="12" bodyfile="src/main/java/com/price/controller/BodytypeController.java" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_bodytype_controller_1a248c861339c1321f4840e5507b870872" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.BodytypeController.listBodytype</definition>
+        <argsstring>(Model model)</argsstring>
+        <name>listBodytype</name>
+        <qualifiedname>com.price.controller.BodytypeController.listBodytype</qualifiedname>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отображает список всех типов кузовов.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления для отображения списка типов кузовов</para>
+</simplesect>
+<simplesect kind="see"><para>Model </para>
+</simplesect>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/BodytypeController.java" line="68" column="19" bodyfile="src/main/java/com/price/controller/BodytypeController.java" bodystart="68" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_bodytype_controller_1a7e9710e551147274a83e2f81de1aa45a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.BodytypeController.showCreateForm</definition>
+        <argsstring>(Model model)</argsstring>
+        <name>showCreateForm</name>
+        <qualifiedname>com.price.controller.BodytypeController.showCreateForm</qualifiedname>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отображает форму для создания нового типа кузова.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления формы создания типа кузова</para>
+</simplesect>
+<simplesect kind="see"><para>Model </para>
+</simplesect>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/BodytypeController.java" line="85" column="19" bodyfile="src/main/java/com/price/controller/BodytypeController.java" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_bodytype_controller_1a36481a6cde4d8182ab3c08cd418a5896" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.BodytypeController.createBodytype</definition>
+        <argsstring>(@Valid @ModelAttribute(&quot;bodytype&quot;) Bodytype bodytype, BindingResult result, RedirectAttributes redirectAttributes, Model model)</argsstring>
+        <name>createBodytype</name>
+        <qualifiedname>com.price.controller.BodytypeController.createBodytype</qualifiedname>
+        <param>
+          <type>@Valid @ModelAttribute(&quot;bodytype&quot;) <ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref></type>
+          <declname>bodytype</declname>
+        </param>
+        <param>
+          <type>BindingResult</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обрабатывает создание нового типа кузова. </para>
+<para>Валидирует введенные данные и сохраняет новый тип кузова в базе данных. При успешном сохранении перенаправляет на список типов кузовов с сообщением об успехе.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bodytype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект типа кузова с данными из формы; проходит валидацию </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>результат валидации данных формы </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление при ошибках валидации </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления или команда перенаправления</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>bodytype</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>Valid </para>
+</simplesect>
+<simplesect kind="see"><para>ModelAttribute </para>
+</simplesect>
+<simplesect kind="see"><para>PostMapping </para>
+</simplesect>
+<simplesect kind="see"><para>RedirectAttributes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/BodytypeController.java" line="111" column="19" bodyfile="src/main/java/com/price/controller/BodytypeController.java" bodystart="111" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_bodytype_controller_1aa8ed3b74d6f64d03a18fbf87b26fd7e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.BodytypeController.showEditForm</definition>
+        <argsstring>(@PathVariable(&quot;id&quot;) Long id, Model model, RedirectAttributes redirectAttributes)</argsstring>
+        <name>showEditForm</name>
+        <qualifiedname>com.price.controller.BodytypeController.showEditForm</qualifiedname>
+        <param>
+          <type>@PathVariable(&quot;id&quot;) Long</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отображает форму для редактирования существующего типа кузова.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор редактируемого типа кузова; не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления формы редактирования или команда перенаправления</para>
+</simplesect>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+<simplesect kind="see"><para>PathVariable </para>
+</simplesect>
+<simplesect kind="see"><para>RedirectAttributes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/BodytypeController.java" line="138" column="19" bodyfile="src/main/java/com/price/controller/BodytypeController.java" bodystart="138" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_bodytype_controller_1ad831266ba33cb83b3bb81c2cb05112dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.BodytypeController.updateBodytype</definition>
+        <argsstring>(@PathVariable(&quot;id&quot;) Long id, @Valid @ModelAttribute(&quot;bodytype&quot;) Bodytype bodytype, BindingResult result, RedirectAttributes redirectAttributes, Model model)</argsstring>
+        <name>updateBodytype</name>
+        <qualifiedname>com.price.controller.BodytypeController.updateBodytype</qualifiedname>
+        <param>
+          <type>@PathVariable(&quot;id&quot;) Long</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>@Valid @ModelAttribute(&quot;bodytype&quot;) <ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref></type>
+          <declname>bodytype</declname>
+        </param>
+        <param>
+          <type>BindingResult</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обрабатывает обновление существующего типа кузова. </para>
+<para>Валидирует введенные данные и обновляет тип кузова в базе данных. При успешном обновлении перенаправляет на список типов кузовов с сообщением об успехе.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор обновляемого типа кузова; не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bodytype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект типа кузова с обновленными данными из формы; проходит валидацию </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>результат валидации данных формы </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление при ошибках валидации </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления или команда перенаправления</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>id</javadoccode> или <javadoccode>bodytype</javadoccode> равны <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RuntimeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если тип кузова с указанным ID не найден</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>PostMapping </para>
+</simplesect>
+<simplesect kind="see"><para>PathVariable </para>
+</simplesect>
+<simplesect kind="see"><para>Valid </para>
+</simplesect>
+<simplesect kind="see"><para>ModelAttribute </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/BodytypeController.java" line="172" column="19" bodyfile="src/main/java/com/price/controller/BodytypeController.java" bodystart="172" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_bodytype_controller_1abbb1cd7ef8328231e469a23bb1ea0f02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.BodytypeController.deleteBodytype</definition>
+        <argsstring>(@PathVariable(&quot;id&quot;) Long id, RedirectAttributes redirectAttributes)</argsstring>
+        <name>deleteBodytype</name>
+        <qualifiedname>com.price.controller.BodytypeController.deleteBodytype</qualifiedname>
+        <param>
+          <type>@PathVariable(&quot;id&quot;) Long</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обрабатывает удаление типа кузова. </para>
+<para>Удаляет тип кузова по указанному идентификатору. При успешном удалении перенаправляет на список типов кузовов с сообщением об успехе.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор удаляемого типа кузова; не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>команда перенаправления на список типов кузовов</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>id</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+<simplesect kind="see"><para>PathVariable </para>
+</simplesect>
+<simplesect kind="see"><para>RedirectAttributes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/BodytypeController.java" line="209" column="19" bodyfile="src/main/java/com/price/controller/BodytypeController.java" bodystart="209" bodyend="225"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Контроллер для управления типами кузовов автомобилей. </para>
+<para>Обрабатывает HTTP-запросы, связанные с операциями CRUD для типов кузовов. Предоставляет веб-интерфейс для создания, просмотра, обновления и удаления записей о типах кузовов.</para>
+<para><bold>Маршруты:</bold> <table rows="7" cols="3"><row>
+<entry thead="yes"><para>Метод</para>
+</entry><entry thead="yes"><para>URL</para>
+</entry><entry thead="yes"><para>Описание</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/bodytypes</para>
+</entry><entry thead="no"><para>Список всех типов кузовов</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/bodytypes/newBodytype</para>
+</entry><entry thead="no"><para>Форма создания нового типа кузова</para>
+</entry></row>
+<row>
+<entry thead="no"><para>POST</para>
+</entry><entry thead="no"><para>/bodytypes</para>
+</entry><entry thead="no"><para>Создание нового типа кузова</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/bodytypes/editBodytype/{id}</para>
+</entry><entry thead="no"><para>Форма редактирования типа кузова</para>
+</entry></row>
+<row>
+<entry thead="no"><para>POST</para>
+</entry><entry thead="no"><para>/bodytypes/updateBodytype/{id}</para>
+</entry><entry thead="no"><para>Обновление типа кузова</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/bodytypes/deleteBodytype/{id}</para>
+</entry><entry thead="no"><para>Удаление типа кузова</para>
+</entry></row>
+</table>
+</para>
+<para><simplesect kind="see"><para>Controller </para>
+</simplesect>
+<simplesect kind="see"><para>RequestMapping </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1service_1_1_bodytype_service" kindref="compound">BodytypeService</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/controller/BodytypeController.java" line="40" column="7" bodyfile="src/main/java/com/price/controller/BodytypeController.java" bodystart="40" bodyend="226"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1controller_1_1_bodytype_controller_1af05b7bd72c82a79e0f2227db182a331f" prot="public" virt="non-virtual"><scope>com::price::controller::BodytypeController</scope><name>BodytypeController</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_bodytype_controller_1a8d9d60b03de432130aa6ba9e85c51f56" prot="private" virt="non-virtual"><scope>com::price::controller::BodytypeController</scope><name>bodytypeService</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_bodytype_controller_1a36481a6cde4d8182ab3c08cd418a5896" prot="public" virt="non-virtual"><scope>com::price::controller::BodytypeController</scope><name>createBodytype</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_bodytype_controller_1abbb1cd7ef8328231e469a23bb1ea0f02" prot="public" virt="non-virtual"><scope>com::price::controller::BodytypeController</scope><name>deleteBodytype</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_bodytype_controller_1a248c861339c1321f4840e5507b870872" prot="public" virt="non-virtual"><scope>com::price::controller::BodytypeController</scope><name>listBodytype</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_bodytype_controller_1a7e9710e551147274a83e2f81de1aa45a" prot="public" virt="non-virtual"><scope>com::price::controller::BodytypeController</scope><name>showCreateForm</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_bodytype_controller_1aa8ed3b74d6f64d03a18fbf87b26fd7e9" prot="public" virt="non-virtual"><scope>com::price::controller::BodytypeController</scope><name>showEditForm</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_bodytype_controller_1ad831266ba33cb83b3bb81c2cb05112dc" prot="public" virt="non-virtual"><scope>com::price::controller::BodytypeController</scope><name>updateBodytype</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

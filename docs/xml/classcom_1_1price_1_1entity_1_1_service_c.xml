@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1entity_1_1_service_c" kind="class" language="Java" prot="public">
+    <compoundname>com::price::entity::ServiceC</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_service_c_1a3b032352ff6499f3d2e55663030f37f3" prot="private" static="no" mutable="no">
+        <type>Long</type>
+        <definition>Long com.price.entity.ServiceC.idService</definition>
+        <argsstring></argsstring>
+        <name>idService</name>
+        <qualifiedname>com.price.entity.ServiceC.idService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Уникальный идентификатор услуги. </para>
+<para>Генерируется автоматически базой данных при вставке новой записи. Используется стратегия идентификации <computeroutput><ref refid="" kindref="compound">GenerationType#IDENTITY</ref></computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServiceC.java" line="32" column="18" bodyfile="src/main/java/com/price/entity/ServiceC.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_service_c_1a17dc27b2cd822fc009a31aa5ff10e5e5" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.price.entity.ServiceC.serviceName</definition>
+        <argsstring></argsstring>
+        <name>serviceName</name>
+        <qualifiedname>com.price.entity.ServiceC.serviceName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Название услуги. </para>
+<para>Должно быть уникальным и непустым. Ограничено 300 символами. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServiceC.java" line="42" column="20" bodyfile="src/main/java/com/price/entity/ServiceC.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_service_c_1a2318cbe333c79c0845f666955d4879e1" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.price.entity.ServiceC.serviceInfo</definition>
+        <argsstring></argsstring>
+        <name>serviceInfo</name>
+        <qualifiedname>com.price.entity.ServiceC.serviceInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Дополнительная информация об услуге. </para>
+<para>Содержит подробное описание услуги, включая состав работ, используемые материалы, особенности и ограничения. Не имеет ограничения по длине в базе данных. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServiceC.java" line="53" column="20" bodyfile="src/main/java/com/price/entity/ServiceC.java" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_c_1acdb90b84f1c17a3bf511dc1924f6aedc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.entity.ServiceC.ServiceC</definition>
+        <argsstring>()</argsstring>
+        <name>ServiceC</name>
+        <qualifiedname>com.price.entity.ServiceC.ServiceC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор по умолчанию. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServiceC.java" line="58" column="12" bodyfile="src/main/java/com/price/entity/ServiceC.java" bodystart="58" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_c_1aeddbfbdc7b2278d05fb50052341f2f21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.entity.ServiceC.ServiceC</definition>
+        <argsstring>(String serviceName, String serviceInfo)</argsstring>
+        <name>ServiceC</name>
+        <qualifiedname>com.price.entity.ServiceC.ServiceC</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>serviceInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Создает новую услугу с указанными параметрами.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serviceName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>название услуги. Не должно быть <javadoccode>null</javadoccode> или пустым </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>serviceInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>дополнительная информация об услуге. Не должно быть <javadoccode>null</javadoccode> или пустым</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если любой из параметров равен <javadoccode>null</javadoccode> или пустой </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServiceC.java" line="69" column="12" bodyfile="src/main/java/com/price/entity/ServiceC.java" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_c_1a93442e3c1aa4f477cdb21fbf5775a64a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Long</type>
+        <definition>Long com.price.entity.ServiceC.getIdService</definition>
+        <argsstring>()</argsstring>
+        <name>getIdService</name>
+        <qualifiedname>com.price.entity.ServiceC.getIdService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает уникальный идентификатор услуги.</para>
+<para><simplesect kind="return"><para>идентификатор услуги </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServiceC.java" line="79" column="17" bodyfile="src/main/java/com/price/entity/ServiceC.java" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_c_1ac7f74330dbb93018849be7eea61a8f3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.ServiceC.setIdService</definition>
+        <argsstring>(Long idService)</argsstring>
+        <name>setIdService</name>
+        <qualifiedname>com.price.entity.ServiceC.setIdService</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>idService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает уникальный идентификатор услуги. </para>
+<para>Обычно вызывается фреймворком JPA, не рекомендуется для ручного использования.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новый идентификатор </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServiceC.java" line="90" column="17" bodyfile="src/main/java/com/price/entity/ServiceC.java" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_c_1a96406fafc32bce7ed68a705469114e92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.entity.ServiceC.getServiceName</definition>
+        <argsstring>()</argsstring>
+        <name>getServiceName</name>
+        <qualifiedname>com.price.entity.ServiceC.getServiceName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает название услуги.</para>
+<para><simplesect kind="return"><para>название услуги </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServiceC.java" line="99" column="19" bodyfile="src/main/java/com/price/entity/ServiceC.java" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_c_1a757fb75ffc18ebd38db473bc2f3f93a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.ServiceC.setServiceName</definition>
+        <argsstring>(String service)</argsstring>
+        <name>setServiceName</name>
+        <qualifiedname>com.price.entity.ServiceC.setServiceName</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>service</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает название услуги.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новое название услуги. Не должно быть <javadoccode>null</javadoccode> или пустым</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>service</javadoccode> равен <javadoccode>null</javadoccode> или пустой </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServiceC.java" line="110" column="17" bodyfile="src/main/java/com/price/entity/ServiceC.java" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_c_1a52ac8f942465e073c25a712a9f75f86b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.entity.ServiceC.getServiceInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getServiceInfo</name>
+        <qualifiedname>com.price.entity.ServiceC.getServiceInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает дополнительную информацию об услуге.</para>
+<para><simplesect kind="return"><para>информация об услуге </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServiceC.java" line="119" column="19" bodyfile="src/main/java/com/price/entity/ServiceC.java" bodystart="119" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_c_1a050dad5966d9cd696c22f4b91bedf7d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.ServiceC.setServiceInfo</definition>
+        <argsstring>(String serviceInfo)</argsstring>
+        <name>setServiceInfo</name>
+        <qualifiedname>com.price.entity.ServiceC.setServiceInfo</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>serviceInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает дополнительную информацию об услуге.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serviceInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новая информация об услуге. Не должно быть <javadoccode>null</javadoccode> или пустым</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>serviceInfo</javadoccode> равен <javadoccode>null</javadoccode> или пустой </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServiceC.java" line="130" column="17" bodyfile="src/main/java/com/price/entity/ServiceC.java" bodystart="130" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_c_1ae7bb228de6bf54cb8d1fc40509654150" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.entity.ServiceC.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>com.price.entity.ServiceC.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает строковое представление объекта. </para>
+<para>Формат: <javadoccode>ServiceC{idService = ..., serviceName = ..., serviceInfo = ...}</javadoccode></para>
+<para><simplesect kind="return"><para>строковое представление объекта </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServiceC.java" line="142" column="19" bodyfile="src/main/java/com/price/entity/ServiceC.java" bodystart="142" bodyend="147"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Сущность, представляющая услугу автомойки. </para>
+<para>Этот класс отображается на таблицу <javadoccode>services</javadoccode> в базе данных и содержит информацию об услугах, предоставляемых автомойками. Каждая услуга имеет название и дополнительное описание.</para>
+<para><bold>Примечание:</bold> Класс назван <javadoccode>ServiceC</javadoccode> во избежание конфликта с зарезервированным словом &quot;service&quot; в некоторых контекстах.</para>
+<para><simplesect kind="see"><para>Entity </para>
+</simplesect>
+<simplesect kind="see"><para>Table </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/entity/ServiceC.java" line="22" column="7" bodyfile="src/main/java/com/price/entity/ServiceC.java" bodystart="22" bodyend="148"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_c_1a93442e3c1aa4f477cdb21fbf5775a64a" prot="public" virt="non-virtual"><scope>com::price::entity::ServiceC</scope><name>getIdService</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_c_1a52ac8f942465e073c25a712a9f75f86b" prot="public" virt="non-virtual"><scope>com::price::entity::ServiceC</scope><name>getServiceInfo</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_c_1a96406fafc32bce7ed68a705469114e92" prot="public" virt="non-virtual"><scope>com::price::entity::ServiceC</scope><name>getServiceName</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_c_1a3b032352ff6499f3d2e55663030f37f3" prot="private" virt="non-virtual"><scope>com::price::entity::ServiceC</scope><name>idService</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_c_1acdb90b84f1c17a3bf511dc1924f6aedc" prot="public" virt="non-virtual"><scope>com::price::entity::ServiceC</scope><name>ServiceC</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_c_1aeddbfbdc7b2278d05fb50052341f2f21" prot="public" virt="non-virtual"><scope>com::price::entity::ServiceC</scope><name>ServiceC</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_c_1a2318cbe333c79c0845f666955d4879e1" prot="private" virt="non-virtual"><scope>com::price::entity::ServiceC</scope><name>serviceInfo</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_c_1a17dc27b2cd822fc009a31aa5ff10e5e5" prot="private" virt="non-virtual"><scope>com::price::entity::ServiceC</scope><name>serviceName</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_c_1ac7f74330dbb93018849be7eea61a8f3b" prot="public" virt="non-virtual"><scope>com::price::entity::ServiceC</scope><name>setIdService</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_c_1a050dad5966d9cd696c22f4b91bedf7d5" prot="public" virt="non-virtual"><scope>com::price::entity::ServiceC</scope><name>setServiceInfo</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_c_1a757fb75ffc18ebd38db473bc2f3f93a5" prot="public" virt="non-virtual"><scope>com::price::entity::ServiceC</scope><name>setServiceName</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_c_1ae7bb228de6bf54cb8d1fc40509654150" prot="public" virt="non-virtual"><scope>com::price::entity::ServiceC</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

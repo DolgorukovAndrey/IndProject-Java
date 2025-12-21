@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_service_repository_8java" kind="file" language="Java">
+    <compoundname>ServiceRepository.java</compoundname>
+    <includes local="no">com.price.entity.ServiceC</includes>
+    <includes local="no">org.springframework.data.jpa.repository.JpaRepository</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/main/java/com/price/repository/ServiceRepository.java</label>
+        <link refid="_service_repository_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.price.entity.ServiceC</label>
+      </node>
+      <node id="3">
+        <label>org.springframework.data.jpa.repository.JpaRepository</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interfacecom_1_1price_1_1repository_1_1_service_repository" prot="public">com::price::repository::ServiceRepository</innerclass>
+    <innernamespace refid="namespacecom_1_1price_1_1repository">com::price::repository</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/price/repository/ServiceRepository.java"/>
+  </compounddef>
+</doxygen>

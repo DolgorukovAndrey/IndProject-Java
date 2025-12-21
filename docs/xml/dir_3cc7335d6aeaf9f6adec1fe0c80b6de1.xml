@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_3cc7335d6aeaf9f6adec1fe0c80b6de1" kind="dir">
+    <compoundname>src/main/java/com/price/entity</compoundname>
+    <innerfile refid="_all_price_8java">AllPrice.java</innerfile>
+    <innerfile refid="_all_price_id_8java">AllPriceId.java</innerfile>
+    <innerfile refid="_bodytype_8java">Bodytype.java</innerfile>
+    <innerfile refid="_carwash_8java">Carwash.java</innerfile>
+    <innerfile refid="_service_c_8java">ServiceC.java</innerfile>
+    <innerfile refid="_service_price_8java">ServicePrice.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/price/entity/"/>
+  </compounddef>
+</doxygen>

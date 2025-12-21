@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1controller_1_1_service_price_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::price::controller::ServicePriceController</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1price_1_1controller_1_1_service_price_controller_1a555b39853d5850c7d9d4c299039a728d" prot="private" static="no" mutable="no">
+        <type>final <ref refid="classcom_1_1price_1_1service_1_1_service_price_service" kindref="compound">ServicePriceService</ref></type>
+        <definition>final ServicePriceService com.price.controller.ServicePriceController.servicePriceService</definition>
+        <argsstring></argsstring>
+        <name>servicePriceService</name>
+        <qualifiedname>com.price.controller.ServicePriceController.servicePriceService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сервис для работы с ценами на услуги. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/ServicePriceController.java" line="41" column="39" bodyfile="src/main/java/com/price/controller/ServicePriceController.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_service_price_controller_1ae7faf364ba72af6f2feb94343855e240" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.controller.ServicePriceController.ServicePriceController</definition>
+        <argsstring>(ServicePriceService servicePriceService)</argsstring>
+        <name>ServicePriceController</name>
+        <qualifiedname>com.price.controller.ServicePriceController.ServicePriceController</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1service_1_1_service_price_service" kindref="compound">ServicePriceService</ref></type>
+          <declname>servicePriceService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор с инъекцией зависимости сервиса.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>servicePriceService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>сервис для работы с ценами на услуги; не должен быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>servicePriceService</javadoccode> равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/ServicePriceController.java" line="51" column="12" bodyfile="src/main/java/com/price/controller/ServicePriceController.java" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_service_price_controller_1ad6a2c2a6eb6696a0c4e4b3d57c45b112" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.ServicePriceController.listServicePrice</definition>
+        <argsstring>(Model model)</argsstring>
+        <name>listServicePrice</name>
+        <qualifiedname>com.price.controller.ServicePriceController.listServicePrice</qualifiedname>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отображает список всех цен на услуги. </para>
+<para>Получает все записи о ценах на услуги из базы данных и передает их в представление вместе с общим количеством записей.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления для отображения списка цен на услуги</para>
+</simplesect>
+<simplesect kind="see"><para>Model </para>
+</simplesect>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1service_1_1_service_price_service_1a3c566e219e2c68f94c63aceecd447086" kindref="member">ServicePriceService.getAllServicePrice()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/ServicePriceController.java" line="69" column="19" bodyfile="src/main/java/com/price/controller/ServicePriceController.java" bodystart="69" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_service_price_controller_1afa0feff1afa601fd4bb0f65c4818f9ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.ServicePriceController.viewServicePrice</definition>
+        <argsstring>(@PathVariable(&quot;id&quot;) Long id, Model model, RedirectAttributes redirectAttributes)</argsstring>
+        <name>viewServicePrice</name>
+        <qualifiedname>com.price.controller.ServicePriceController.viewServicePrice</qualifiedname>
+        <param>
+          <type>@PathVariable(&quot;id&quot;) Long</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отображает детальную информацию о конкретной цене услуги. </para>
+<para>Находит цену услуги по идентификатору и отображает ее детальную информацию. Если цена с указанным ID не найдена, перенаправляет на список с сообщением об ошибке.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор цены услуги; не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления для детального просмотра или команда перенаправления</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>id</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+<simplesect kind="see"><para>PathVariable </para>
+</simplesect>
+<simplesect kind="see"><para>RedirectAttributes </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1service_1_1_service_price_service_1a36b0d578782c5a2e9e136d276ef9b27f" kindref="member">ServicePriceService.getServicePriceById(Long)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/ServicePriceController.java" line="95" column="19" bodyfile="src/main/java/com/price/controller/ServicePriceController.java" bodystart="95" bodyend="103"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Контроллер для отображения информации о ценах на услуги. </para>
+<para>Обрабатывает HTTP-запросы для просмотра списка цен на услуги и детальной информации о конкретной цене. Предоставляет только операции чтения (read-only), без возможности создания, обновления или удаления записей через этот контроллер.</para>
+<para><bold>Примечание:</bold> В сообщениях об ошибках используется некорректное слово &quot;альбом&quot; вместо &quot;цена услуги&quot; - это опечатка, которую стоит исправить.</para>
+<para><bold>Маршруты:</bold> <table rows="3" cols="3"><row>
+<entry thead="yes"><para>Метод</para>
+</entry><entry thead="yes"><para>URL</para>
+</entry><entry thead="yes"><para>Описание</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/servicePrices</para>
+</entry><entry thead="no"><para>Список всех цен на услуги</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/servicePrices/view/{id}</para>
+</entry><entry thead="no"><para>Детальная информация о конкретной цене услуги</para>
+</entry></row>
+</table>
+</para>
+<para><simplesect kind="see"><para>Controller </para>
+</simplesect>
+<simplesect kind="see"><para>RequestMapping </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_service_price" kindref="compound">ServicePrice</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1service_1_1_service_price_service" kindref="compound">ServicePriceService</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/controller/ServicePriceController.java" line="37" column="7" bodyfile="src/main/java/com/price/controller/ServicePriceController.java" bodystart="37" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1controller_1_1_service_price_controller_1ad6a2c2a6eb6696a0c4e4b3d57c45b112" prot="public" virt="non-virtual"><scope>com::price::controller::ServicePriceController</scope><name>listServicePrice</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_service_price_controller_1ae7faf364ba72af6f2feb94343855e240" prot="public" virt="non-virtual"><scope>com::price::controller::ServicePriceController</scope><name>ServicePriceController</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_service_price_controller_1a555b39853d5850c7d9d4c299039a728d" prot="private" virt="non-virtual"><scope>com::price::controller::ServicePriceController</scope><name>servicePriceService</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_service_price_controller_1afa0feff1afa601fd4bb0f65c4818f9ff" prot="public" virt="non-virtual"><scope>com::price::controller::ServicePriceController</scope><name>viewServicePrice</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

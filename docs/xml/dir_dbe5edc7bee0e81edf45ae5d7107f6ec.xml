@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_dbe5edc7bee0e81edf45ae5d7107f6ec" kind="dir">
+    <compoundname>src/main/java/com/price</compoundname>
+    <innerdir refid="dir_6f2af51a4855a9b34cbbd8942d628e3b">src/main/java/com/price/controller</innerdir>
+    <innerdir refid="dir_3cc7335d6aeaf9f6adec1fe0c80b6de1">src/main/java/com/price/entity</innerdir>
+    <innerdir refid="dir_5c387b1317d298e3dfadfa88c77c7f5a">src/main/java/com/price/repository</innerdir>
+    <innerdir refid="dir_a5871311d6ed4cd3037b9040ffc3a10f">src/main/java/com/price/service</innerdir>
+    <innerfile refid="_price_manager_application_8java">PriceManagerApplication.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/price/"/>
+  </compounddef>
+</doxygen>

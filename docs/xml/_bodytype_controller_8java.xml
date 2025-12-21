@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_bodytype_controller_8java" kind="file" language="Java">
+    <compoundname>BodytypeController.java</compoundname>
+    <includes local="no">com.price.entity.Bodytype</includes>
+    <includes local="no">com.price.service.BodytypeService</includes>
+    <includes local="no">jakarta.validation.Valid</includes>
+    <includes local="no">org.springframework.beans.factory.annotation.Autowired</includes>
+    <includes local="no">org.springframework.stereotype.Controller</includes>
+    <includes local="no">org.springframework.ui.Model</includes>
+    <includes local="no">org.springframework.validation.BindingResult</includes>
+    <includes local="no">org.springframework.web.bind.annotation.*</includes>
+    <includes local="no">org.springframework.web.servlet.mvc.support.RedirectAttributes</includes>
+    <includes local="no">java.util.List</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/main/java/com/price/controller/BodytypeController.java</label>
+        <link refid="_bodytype_controller_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.price.entity.Bodytype</label>
+      </node>
+      <node id="3">
+        <label>com.price.service.BodytypeService</label>
+      </node>
+      <node id="4">
+        <label>jakarta.validation.Valid</label>
+      </node>
+      <node id="11">
+        <label>java.util.List</label>
+      </node>
+      <node id="5">
+        <label>org.springframework.beans.factory.annotation.Autowired</label>
+      </node>
+      <node id="6">
+        <label>org.springframework.stereotype.Controller</label>
+      </node>
+      <node id="7">
+        <label>org.springframework.ui.Model</label>
+      </node>
+      <node id="8">
+        <label>org.springframework.validation.BindingResult</label>
+      </node>
+      <node id="9">
+        <label>org.springframework.web.bind.annotation.*</label>
+      </node>
+      <node id="10">
+        <label>org.springframework.web.servlet.mvc.support.RedirectAttributes</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classcom_1_1price_1_1controller_1_1_bodytype_controller" prot="public">com::price::controller::BodytypeController</innerclass>
+    <innernamespace refid="namespacecom_1_1price_1_1controller">com::price::controller</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/price/controller/BodytypeController.java"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1controller_1_1_home_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::price::controller::HomeController</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_home_controller_1aa93d6c28830b5f1319ede9842341278a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.HomeController.home</definition>
+        <argsstring>()</argsstring>
+        <name>home</name>
+        <qualifiedname>com.price.controller.HomeController.home</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обрабатывает запрос к корневому URL приложения. </para>
+<para>Выполняет перенаправление (redirect) на страницу со всеми ценами услуг.</para>
+<para><simplesect kind="return"><para>строка с командой перенаправления на <javadoccode>/allPrices</javadoccode></para>
+</simplesect>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/HomeController.java" line="32" column="19" bodyfile="src/main/java/com/price/controller/HomeController.java" bodystart="32" bodyend="34"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Контроллер для обработки запросов к корневому URL приложения. </para>
+<para>Этот контроллер предоставляет простую логику перенаправления с домашней страницы на основную страницу с ценами. Является точкой входа в веб-интерфейс приложения.</para>
+<para><bold>Маршруты:</bold> <itemizedlist>
+<listitem>
+<para><javadoccode>GET /</javadoccode> - перенаправляет на страницу со всеми ценами </para>
+</listitem>
+</itemizedlist>
+</para>
+<para><simplesect kind="see"><para>Controller </para>
+</simplesect>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/controller/HomeController.java" line="21" column="7" bodyfile="src/main/java/com/price/controller/HomeController.java" bodystart="21" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1controller_1_1_home_controller_1aa93d6c28830b5f1319ede9842341278a" prot="public" virt="non-virtual"><scope>com::price::controller::HomeController</scope><name>home</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

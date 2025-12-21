@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacecom_1_1price_1_1entity" kind="namespace" language="Java">
+    <compoundname>com::price::entity</compoundname>
+    <innerclass refid="classcom_1_1price_1_1entity_1_1_all_price" prot="public">com::price::entity::AllPrice</innerclass>
+    <innerclass refid="classcom_1_1price_1_1entity_1_1_all_price_id" prot="public">com::price::entity::AllPriceId</innerclass>
+    <innerclass refid="classcom_1_1price_1_1entity_1_1_bodytype" prot="public">com::price::entity::Bodytype</innerclass>
+    <innerclass refid="classcom_1_1price_1_1entity_1_1_carwash" prot="public">com::price::entity::Carwash</innerclass>
+    <innerclass refid="classcom_1_1price_1_1entity_1_1_service_c" prot="public">com::price::entity::ServiceC</innerclass>
+    <innerclass refid="classcom_1_1price_1_1entity_1_1_service_price" prot="public">com::price::entity::ServicePrice</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/price/entity/AllPrice.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1service_1_1_carwash_service" kind="class" language="Java" prot="public">
+    <compoundname>com::price::service::CarwashService</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1price_1_1service_1_1_carwash_service_1af17106d0b21651a1d12f58dfbd4b49d2" prot="private" static="no" mutable="no">
+        <type>final <ref refid="interfacecom_1_1price_1_1repository_1_1_carwash_repository" kindref="compound">CarwashRepository</ref></type>
+        <definition>final CarwashRepository com.price.service.CarwashService.carwashRepository</definition>
+        <argsstring></argsstring>
+        <name>carwashRepository</name>
+        <qualifiedname>com.price.service.CarwashService.carwashRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Репозиторий для работы с автомойками. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/CarwashService.java" line="40" column="37" bodyfile="src/main/java/com/price/service/CarwashService.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_carwash_service_1a18231e0e8f36c3d1efecf27f67b90f23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.service.CarwashService.CarwashService</definition>
+        <argsstring>(CarwashRepository carwashRepository)</argsstring>
+        <name>CarwashService</name>
+        <qualifiedname>com.price.service.CarwashService.CarwashService</qualifiedname>
+        <param>
+          <type><ref refid="interfacecom_1_1price_1_1repository_1_1_carwash_repository" kindref="compound">CarwashRepository</ref></type>
+          <declname>carwashRepository</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор с инъекцией зависимости репозитория.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>carwashRepository</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>репозиторий для работы с автомойками. Не должен быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>carwashRepository</javadoccode> равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/CarwashService.java" line="50" column="12" bodyfile="src/main/java/com/price/service/CarwashService.java" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_carwash_service_1a10e1b3a02b97558f13bbfb1d75fd788d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref> &gt;</type>
+        <definition>List&lt; Carwash &gt; com.price.service.CarwashService.getAllCarwash</definition>
+        <argsstring>()</argsstring>
+        <name>getAllCarwash</name>
+        <qualifiedname>com.price.service.CarwashService.getAllCarwash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Получает все автомойки.</para>
+<para><simplesect kind="return"><para>список всех автомоек. Возвращает пустой список, если автомойки отсутствуют</para>
+</simplesect>
+<simplesect kind="see"><para>CarwashRepository#findAll() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/CarwashService.java" line="61" column="17" bodyfile="src/main/java/com/price/service/CarwashService.java" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_carwash_service_1a2b8e8eecc11811e9a0ea14b0239f1fea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Optional&lt; <ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref> &gt;</type>
+        <definition>Optional&lt; Carwash &gt; com.price.service.CarwashService.getCarwashById</definition>
+        <argsstring>(Long idCarwash)</argsstring>
+        <name>getCarwashById</name>
+        <qualifiedname>com.price.service.CarwashService.getCarwashById</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>idCarwash</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Находит автомойку по её идентификатору.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idCarwash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор автомойки. Не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput><ref refid="" kindref="compound">Optional</ref></computeroutput> с найденной автомойкой или пустой <computeroutput><ref refid="" kindref="compound">Optional</ref></computeroutput>, если автомойка с указанным ID не найдена</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>idCarwash</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>CarwashRepository#findById(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/CarwashService.java" line="76" column="21" bodyfile="src/main/java/com/price/service/CarwashService.java" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_carwash_service_1ad3570fd2befdaa5900881965ab7ebbf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref></type>
+        <definition>Carwash com.price.service.CarwashService.saveCarwash</definition>
+        <argsstring>(Carwash carwash)</argsstring>
+        <name>saveCarwash</name>
+        <qualifiedname>com.price.service.CarwashService.saveCarwash</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref></type>
+          <declname>carwash</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сохраняет новую автомойку. </para>
+<para>Если передаваемый объект уже имеет идентификатор, метод выполнит обновление существующей записи. В противном случае будет создана новая запись.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>carwash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект автомойки для сохранения. Не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>сохраненный объект автомойки</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>carwash</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>CarwashRepository#save(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/CarwashService.java" line="93" column="20" bodyfile="src/main/java/com/price/service/CarwashService.java" bodystart="93" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_carwash_service_1a30f87c2247f470863beadb5e78794d6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref></type>
+        <definition>Carwash com.price.service.CarwashService.updateCarwash</definition>
+        <argsstring>(Long idCarwash, Carwash carwashDetails)</argsstring>
+        <name>updateCarwash</name>
+        <qualifiedname>com.price.service.CarwashService.updateCarwash</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>idCarwash</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref></type>
+          <declname>carwashDetails</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обновляет существующую автомойку. </para>
+<para>Находит автомойку по идентификатору и обновляет её название и адрес.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idCarwash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор обновляемой автомойки. Не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>carwashDetails</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект с новыми данными для обновления. Не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>обновленный объект автомойки</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>idCarwash</javadoccode> или <javadoccode>carwashDetails</javadoccode> равны <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RuntimeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если автомойка с указанным ID не найдена</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>CarwashRepository#findById(Object) </para>
+</simplesect>
+<simplesect kind="see"><para>CarwashRepository#save(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/CarwashService.java" line="112" column="20" bodyfile="src/main/java/com/price/service/CarwashService.java" bodystart="112" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_carwash_service_1afa793bfcc95ca80d32c3acf46841c9cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.service.CarwashService.deleteCarwash</definition>
+        <argsstring>(Long idCarwash)</argsstring>
+        <name>deleteCarwash</name>
+        <qualifiedname>com.price.service.CarwashService.deleteCarwash</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>idCarwash</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Удаляет автомойку по идентификатору. </para>
+<para>Если автомойка с указанным ID не существует, метод не выбрасывает исключение.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idCarwash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор автомойки для удаления. Не должен быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>idCarwash</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>CarwashRepository#deleteById(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/CarwashService.java" line="131" column="17" bodyfile="src/main/java/com/price/service/CarwashService.java" bodystart="131" bodyend="133"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Сервис для работы с автомойками. </para>
+<para>Предоставляет бизнес-логику для операций с сущностью <computeroutput><ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref></computeroutput>, включая создание, чтение, обновление и удаление записей об автомойках. Все операции выполняются в транзакционном контексте.</para>
+<para><bold>Основные возможности:</bold> <itemizedlist>
+<listitem>
+<para>Получение всех автомоек </para>
+</listitem>
+<listitem>
+<para>Поиск автомойки по идентификатору </para>
+</listitem>
+<listitem>
+<para>Сохранение новой автомойки </para>
+</listitem>
+<listitem>
+<para>Обновление существующей автомойки </para>
+</listitem>
+<listitem>
+<para>Удаление автомойки </para>
+</listitem>
+</itemizedlist>
+</para>
+<para><simplesect kind="see"><para>Service </para>
+</simplesect>
+<simplesect kind="see"><para>Transactional </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="interfacecom_1_1price_1_1repository_1_1_carwash_repository" kindref="compound">CarwashRepository</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/service/CarwashService.java" line="36" column="7" bodyfile="src/main/java/com/price/service/CarwashService.java" bodystart="36" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1service_1_1_carwash_service_1af17106d0b21651a1d12f58dfbd4b49d2" prot="private" virt="non-virtual"><scope>com::price::service::CarwashService</scope><name>carwashRepository</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_carwash_service_1a18231e0e8f36c3d1efecf27f67b90f23" prot="public" virt="non-virtual"><scope>com::price::service::CarwashService</scope><name>CarwashService</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_carwash_service_1afa793bfcc95ca80d32c3acf46841c9cd" prot="public" virt="non-virtual"><scope>com::price::service::CarwashService</scope><name>deleteCarwash</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_carwash_service_1a10e1b3a02b97558f13bbfb1d75fd788d" prot="public" virt="non-virtual"><scope>com::price::service::CarwashService</scope><name>getAllCarwash</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_carwash_service_1a2b8e8eecc11811e9a0ea14b0239f1fea" prot="public" virt="non-virtual"><scope>com::price::service::CarwashService</scope><name>getCarwashById</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_carwash_service_1ad3570fd2befdaa5900881965ab7ebbf0" prot="public" virt="non-virtual"><scope>com::price::service::CarwashService</scope><name>saveCarwash</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_carwash_service_1a30f87c2247f470863beadb5e78794d6d" prot="public" virt="non-virtual"><scope>com::price::service::CarwashService</scope><name>updateCarwash</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

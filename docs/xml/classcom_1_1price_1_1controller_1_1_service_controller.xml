@@ -1,0 +1,507 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1controller_1_1_service_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::price::controller::ServiceController</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1price_1_1controller_1_1_service_controller_1a52e9d147c4f32228f53631f28178cfca" prot="private" static="no" mutable="no">
+        <type>final <ref refid="classcom_1_1price_1_1service_1_1_service_service" kindref="compound">ServiceService</ref></type>
+        <definition>final ServiceService com.price.controller.ServiceController.serviceService</definition>
+        <argsstring></argsstring>
+        <name>serviceService</name>
+        <qualifiedname>com.price.controller.ServiceController.serviceService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сервис для работы с услугами. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/ServiceController.java" line="47" column="34" bodyfile="src/main/java/com/price/controller/ServiceController.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_service_controller_1a222661103e73bd45cf0a80197ab68be6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.controller.ServiceController.ServiceController</definition>
+        <argsstring>(ServiceService serviceService)</argsstring>
+        <name>ServiceController</name>
+        <qualifiedname>com.price.controller.ServiceController.ServiceController</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1service_1_1_service_service" kindref="compound">ServiceService</ref></type>
+          <declname>serviceService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор с инъекцией зависимости сервиса.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serviceService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>сервис для работы с услугами; не должен быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>serviceService</javadoccode> равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/ServiceController.java" line="57" column="12" bodyfile="src/main/java/com/price/controller/ServiceController.java" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_service_controller_1a08f7b35b805af9d3e436d700c25eaf22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.ServiceController.listService</definition>
+        <argsstring>(Model model)</argsstring>
+        <name>listService</name>
+        <qualifiedname>com.price.controller.ServiceController.listService</qualifiedname>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отображает список всех услуг автомоек.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления для отображения списка услуг</para>
+</simplesect>
+<simplesect kind="see"><para>Model </para>
+</simplesect>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/ServiceController.java" line="71" column="19" bodyfile="src/main/java/com/price/controller/ServiceController.java" bodystart="71" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_service_controller_1ae7e2f06370ba4c6f94959cf28fd46168" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.ServiceController.showCreateForm</definition>
+        <argsstring>(Model model)</argsstring>
+        <name>showCreateForm</name>
+        <qualifiedname>com.price.controller.ServiceController.showCreateForm</qualifiedname>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отображает форму для создания новой услуги.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления формы создания услуги</para>
+</simplesect>
+<simplesect kind="see"><para>Model </para>
+</simplesect>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/ServiceController.java" line="88" column="19" bodyfile="src/main/java/com/price/controller/ServiceController.java" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_service_controller_1a8ae09db5ed9ab646cbaf57c32948e1ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.ServiceController.createService</definition>
+        <argsstring>(@Valid @ModelAttribute(&quot;service&quot;) ServiceC service, BindingResult result, RedirectAttributes redirectAttributes, Model model)</argsstring>
+        <name>createService</name>
+        <qualifiedname>com.price.controller.ServiceController.createService</qualifiedname>
+        <param>
+          <type>@Valid @ModelAttribute(&quot;service&quot;) <ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref></type>
+          <declname>service</declname>
+        </param>
+        <param>
+          <type>BindingResult</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обрабатывает создание новой услуги. </para>
+<para>Валидирует введенные данные и сохраняет новую услугу в базе данных. При успешном сохранении перенаправляет на список услуг с сообщением об успехе.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект услуги с данными из формы; проходит валидацию </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>результат валидации данных формы </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление при ошибках валидации </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления или команда перенаправления</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>service</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>Valid </para>
+</simplesect>
+<simplesect kind="see"><para>ModelAttribute </para>
+</simplesect>
+<simplesect kind="see"><para>PostMapping </para>
+</simplesect>
+<simplesect kind="see"><para>RedirectAttributes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/ServiceController.java" line="114" column="19" bodyfile="src/main/java/com/price/controller/ServiceController.java" bodystart="114" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_service_controller_1ac39a7cc8892678026397efef3344c6e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.ServiceController.showEditForm</definition>
+        <argsstring>(@PathVariable(&quot;id&quot;) Long id, Model model, RedirectAttributes redirectAttributes)</argsstring>
+        <name>showEditForm</name>
+        <qualifiedname>com.price.controller.ServiceController.showEditForm</qualifiedname>
+        <param>
+          <type>@PathVariable(&quot;id&quot;) Long</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отображает форму для редактирования существующей услуги.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор редактируемой услуги; не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления формы редактирования или команда перенаправления</para>
+</simplesect>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+<simplesect kind="see"><para>PathVariable </para>
+</simplesect>
+<simplesect kind="see"><para>RedirectAttributes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/ServiceController.java" line="141" column="19" bodyfile="src/main/java/com/price/controller/ServiceController.java" bodystart="141" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_service_controller_1ae53a93634a65ab0fdfe50013a13150a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.ServiceController.updateService</definition>
+        <argsstring>(@PathVariable(&quot;id&quot;) Long id, @Valid @ModelAttribute(&quot;service&quot;) ServiceC service, BindingResult result, RedirectAttributes redirectAttributes, Model model)</argsstring>
+        <name>updateService</name>
+        <qualifiedname>com.price.controller.ServiceController.updateService</qualifiedname>
+        <param>
+          <type>@PathVariable(&quot;id&quot;) Long</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>@Valid @ModelAttribute(&quot;service&quot;) <ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref></type>
+          <declname>service</declname>
+        </param>
+        <param>
+          <type>BindingResult</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обрабатывает обновление существующей услуги. </para>
+<para>Валидирует введенные данные и обновляет услугу в базе данных. При успешном обновлении перенаправляет на список услуг с сообщением об успехе.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор обновляемой услуги; не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект услуги с обновленными данными из формы; проходит валидацию </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>результат валидации данных формы </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление при ошибках валидации </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления или команда перенаправления</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>id</javadoccode> или <javadoccode>service</javadoccode> равны <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RuntimeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если услуга с указанным ID не найдена</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>PostMapping </para>
+</simplesect>
+<simplesect kind="see"><para>PathVariable </para>
+</simplesect>
+<simplesect kind="see"><para>Valid </para>
+</simplesect>
+<simplesect kind="see"><para>ModelAttribute </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/ServiceController.java" line="175" column="19" bodyfile="src/main/java/com/price/controller/ServiceController.java" bodystart="175" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_service_controller_1a144d48a55c367ce8d1d6d813c23f4949" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.ServiceController.deleteService</definition>
+        <argsstring>(@PathVariable(&quot;id&quot;) Long id, RedirectAttributes redirectAttributes)</argsstring>
+        <name>deleteService</name>
+        <qualifiedname>com.price.controller.ServiceController.deleteService</qualifiedname>
+        <param>
+          <type>@PathVariable(&quot;id&quot;) Long</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обрабатывает удаление услуги. </para>
+<para>Удаляет услугу по указанному идентификатору. При успешном удалении перенаправляет на список услуг с сообщением об успехе.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор удаляемой услуги; не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>команда перенаправления на список услуг</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>id</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+<simplesect kind="see"><para>PathVariable </para>
+</simplesect>
+<simplesect kind="see"><para>RedirectAttributes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/ServiceController.java" line="212" column="19" bodyfile="src/main/java/com/price/controller/ServiceController.java" bodystart="212" bodyend="227"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Контроллер для управления услугами автомоек. </para>
+<para>Обрабатывает HTTP-запросы, связанные с операциями CRUD для услуг. Предоставляет веб-интерфейс для создания, просмотра, обновления и удаления записей об услугах автомоек.</para>
+<para><bold>Примечание:</bold> Класс сущности назван <javadoccode>ServiceC</javadoccode> во избежание конфликта имен с зарезервированным словом &quot;service&quot; в некоторых контекстах.</para>
+<para><bold>Маршруты:</bold> <table rows="7" cols="3"><row>
+<entry thead="yes"><para>Метод</para>
+</entry><entry thead="yes"><para>URL</para>
+</entry><entry thead="yes"><para>Описание</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/services</para>
+</entry><entry thead="no"><para>Список всех услуг</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/services/newService</para>
+</entry><entry thead="no"><para>Форма создания новой услуги</para>
+</entry></row>
+<row>
+<entry thead="no"><para>POST</para>
+</entry><entry thead="no"><para>/services</para>
+</entry><entry thead="no"><para>Создание новой услуги</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/services/editService/{id}</para>
+</entry><entry thead="no"><para>Форма редактирования услуги</para>
+</entry></row>
+<row>
+<entry thead="no"><para>POST</para>
+</entry><entry thead="no"><para>/services/updateService/{id}</para>
+</entry><entry thead="no"><para>Обновление услуги</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/services/deleteService/{id}</para>
+</entry><entry thead="no"><para>Удаление услуги</para>
+</entry></row>
+</table>
+</para>
+<para><simplesect kind="see"><para>Controller </para>
+</simplesect>
+<simplesect kind="see"><para>RequestMapping </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1service_1_1_service_service" kindref="compound">ServiceService</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/controller/ServiceController.java" line="43" column="7" bodyfile="src/main/java/com/price/controller/ServiceController.java" bodystart="43" bodyend="228"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1controller_1_1_service_controller_1a8ae09db5ed9ab646cbaf57c32948e1ac" prot="public" virt="non-virtual"><scope>com::price::controller::ServiceController</scope><name>createService</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_service_controller_1a144d48a55c367ce8d1d6d813c23f4949" prot="public" virt="non-virtual"><scope>com::price::controller::ServiceController</scope><name>deleteService</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_service_controller_1a08f7b35b805af9d3e436d700c25eaf22" prot="public" virt="non-virtual"><scope>com::price::controller::ServiceController</scope><name>listService</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_service_controller_1a222661103e73bd45cf0a80197ab68be6" prot="public" virt="non-virtual"><scope>com::price::controller::ServiceController</scope><name>ServiceController</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_service_controller_1a52e9d147c4f32228f53631f28178cfca" prot="private" virt="non-virtual"><scope>com::price::controller::ServiceController</scope><name>serviceService</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_service_controller_1ae7e2f06370ba4c6f94959cf28fd46168" prot="public" virt="non-virtual"><scope>com::price::controller::ServiceController</scope><name>showCreateForm</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_service_controller_1ac39a7cc8892678026397efef3344c6e9" prot="public" virt="non-virtual"><scope>com::price::controller::ServiceController</scope><name>showEditForm</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_service_controller_1ae53a93634a65ab0fdfe50013a13150a7" prot="public" virt="non-virtual"><scope>com::price::controller::ServiceController</scope><name>updateService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

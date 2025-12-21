@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1entity_1_1_bodytype" kind="class" language="Java" prot="public">
+    <compoundname>com::price::entity::Bodytype</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_bodytype_1a27c1d115e0ea3e477f04e341cb2297fa" prot="private" static="no" mutable="no">
+        <type>Long</type>
+        <definition>Long com.price.entity.Bodytype.idBodytype</definition>
+        <argsstring></argsstring>
+        <name>idBodytype</name>
+        <qualifiedname>com.price.entity.Bodytype.idBodytype</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Уникальный идентификатор типа кузова. </para>
+<para>Генерируется автоматически базой данных при вставке новой записи. Используется стратегия идентификации <computeroutput><ref refid="" kindref="compound">GenerationType#IDENTITY</ref></computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Bodytype.java" line="30" column="18" bodyfile="src/main/java/com/price/entity/Bodytype.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_bodytype_1afe1784d3c09693ff3bb73f3ca06ba360" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.price.entity.Bodytype.bodytypeName</definition>
+        <argsstring></argsstring>
+        <name>bodytypeName</name>
+        <qualifiedname>com.price.entity.Bodytype.bodytypeName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Название типа кузова. </para>
+<para>Должно быть уникальным и непустым. Ограничено 300 символами. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Bodytype.java" line="40" column="20" bodyfile="src/main/java/com/price/entity/Bodytype.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_bodytype_1a675242e6b52ba3a2b853fcffc1dd787c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.entity.Bodytype.Bodytype</definition>
+        <argsstring>()</argsstring>
+        <name>Bodytype</name>
+        <qualifiedname>com.price.entity.Bodytype.Bodytype</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор по умолчанию. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Bodytype.java" line="45" column="12" bodyfile="src/main/java/com/price/entity/Bodytype.java" bodystart="45" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_bodytype_1abf85b4a59f54964bbb102b89bfa99051" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.entity.Bodytype.Bodytype</definition>
+        <argsstring>(String bodytype)</argsstring>
+        <name>Bodytype</name>
+        <qualifiedname>com.price.entity.Bodytype.Bodytype</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>bodytype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Создает новый тип кузова с указанным названием.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bodytype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>название типа кузова. Не должно быть <javadoccode>null</javadoccode> или пустым</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>bodytype</javadoccode> равен <javadoccode>null</javadoccode> или пустой </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Bodytype.java" line="55" column="12" bodyfile="src/main/java/com/price/entity/Bodytype.java" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_bodytype_1a74ff39db206c9907c78f78255f731c19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Long</type>
+        <definition>Long com.price.entity.Bodytype.getIdBodytype</definition>
+        <argsstring>()</argsstring>
+        <name>getIdBodytype</name>
+        <qualifiedname>com.price.entity.Bodytype.getIdBodytype</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает уникальный идентификатор типа кузова.</para>
+<para><simplesect kind="return"><para>идентификатор типа кузова </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Bodytype.java" line="64" column="17" bodyfile="src/main/java/com/price/entity/Bodytype.java" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_bodytype_1af67cd92fbc35326053739c157b9e3f45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.Bodytype.setIdBodytype</definition>
+        <argsstring>(Long idBodytype)</argsstring>
+        <name>setIdBodytype</name>
+        <qualifiedname>com.price.entity.Bodytype.setIdBodytype</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>idBodytype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает уникальный идентификатор типа кузова. </para>
+<para>Обычно вызывается фреймворком JPA, не рекомендуется для ручного использования.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idBodytype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новый идентификатор </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Bodytype.java" line="75" column="17" bodyfile="src/main/java/com/price/entity/Bodytype.java" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_bodytype_1a2ca38e393c4bc718c91cb9e27f9f183e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.entity.Bodytype.getBodytypeName</definition>
+        <argsstring>()</argsstring>
+        <name>getBodytypeName</name>
+        <qualifiedname>com.price.entity.Bodytype.getBodytypeName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает название типа кузова.</para>
+<para><simplesect kind="return"><para>название типа кузова </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Bodytype.java" line="84" column="19" bodyfile="src/main/java/com/price/entity/Bodytype.java" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_bodytype_1a8b1d97eca46ecd6371d434da6888e20d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.Bodytype.setBodytypeName</definition>
+        <argsstring>(String bodytype)</argsstring>
+        <name>setBodytypeName</name>
+        <qualifiedname>com.price.entity.Bodytype.setBodytypeName</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>bodytype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает название типа кузова.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bodytype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новое название типа кузова. Не должно быть <javadoccode>null</javadoccode> или пустым</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>bodytype</javadoccode> равен <javadoccode>null</javadoccode> или пустой </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Bodytype.java" line="95" column="17" bodyfile="src/main/java/com/price/entity/Bodytype.java" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_bodytype_1ac84336b9e2278359abe7c730acd79985" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.entity.Bodytype.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>com.price.entity.Bodytype.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает строковое представление объекта. </para>
+<para>Формат: <javadoccode>Bodytype{idBodytype = ..., bodytype = ...}</javadoccode></para>
+<para><simplesect kind="return"><para>строковое представление объекта </para>
+</simplesect>
+<simplesect kind="see"><para>Object#toString() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Bodytype.java" line="108" column="19" bodyfile="src/main/java/com/price/entity/Bodytype.java" bodystart="108" bodyend="112"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Сущность, представляющая тип кузова автомобиля. </para>
+<para>Этот класс отображается на таблицу <javadoccode>bodytypes</javadoccode> в базе данных и хранит информацию о различных типах кузовов автомобилей (например, седан, внедорожник, универсал). Используется для классификации услуг автомойки в зависимости от типа кузова.</para>
+<para><simplesect kind="see"><para>Entity </para>
+</simplesect>
+<simplesect kind="see"><para>Table </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/entity/Bodytype.java" line="20" column="7" bodyfile="src/main/java/com/price/entity/Bodytype.java" bodystart="20" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1entity_1_1_bodytype_1a675242e6b52ba3a2b853fcffc1dd787c" prot="public" virt="non-virtual"><scope>com::price::entity::Bodytype</scope><name>Bodytype</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_bodytype_1abf85b4a59f54964bbb102b89bfa99051" prot="public" virt="non-virtual"><scope>com::price::entity::Bodytype</scope><name>Bodytype</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_bodytype_1afe1784d3c09693ff3bb73f3ca06ba360" prot="private" virt="non-virtual"><scope>com::price::entity::Bodytype</scope><name>bodytypeName</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_bodytype_1a2ca38e393c4bc718c91cb9e27f9f183e" prot="public" virt="non-virtual"><scope>com::price::entity::Bodytype</scope><name>getBodytypeName</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_bodytype_1a74ff39db206c9907c78f78255f731c19" prot="public" virt="non-virtual"><scope>com::price::entity::Bodytype</scope><name>getIdBodytype</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_bodytype_1a27c1d115e0ea3e477f04e341cb2297fa" prot="private" virt="non-virtual"><scope>com::price::entity::Bodytype</scope><name>idBodytype</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_bodytype_1a8b1d97eca46ecd6371d434da6888e20d" prot="public" virt="non-virtual"><scope>com::price::entity::Bodytype</scope><name>setBodytypeName</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_bodytype_1af67cd92fbc35326053739c157b9e3f45" prot="public" virt="non-virtual"><scope>com::price::entity::Bodytype</scope><name>setIdBodytype</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_bodytype_1ac84336b9e2278359abe7c730acd79985" prot="public" virt="non-virtual"><scope>com::price::entity::Bodytype</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

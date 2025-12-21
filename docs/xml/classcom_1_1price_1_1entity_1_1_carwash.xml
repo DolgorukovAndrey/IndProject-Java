@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1entity_1_1_carwash" kind="class" language="Java" prot="public">
+    <compoundname>com::price::entity::Carwash</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_carwash_1a0f724be955c56787bb995f68c378d89d" prot="private" static="no" mutable="no">
+        <type>Long</type>
+        <definition>Long com.price.entity.Carwash.idCarwash</definition>
+        <argsstring></argsstring>
+        <name>idCarwash</name>
+        <qualifiedname>com.price.entity.Carwash.idCarwash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Уникальный идентификатор автомойки. </para>
+<para>Генерируется автоматически базой данных при вставке новой записи. Используется стратегия идентификации <computeroutput><ref refid="" kindref="compound">GenerationType#IDENTITY</ref></computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Carwash.java" line="27" column="18" bodyfile="src/main/java/com/price/entity/Carwash.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_carwash_1a73e84f19401ccaef0210f016e310fca9" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.price.entity.Carwash.carwashName</definition>
+        <argsstring></argsstring>
+        <name>carwashName</name>
+        <qualifiedname>com.price.entity.Carwash.carwashName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Название автомойки. </para>
+<para>Должно быть уникальным в сочетании с адресом. Ограничено 300 символами. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Carwash.java" line="37" column="20" bodyfile="src/main/java/com/price/entity/Carwash.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_carwash_1a68a128f1a2523d8a17ce281b5c8c666f" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.price.entity.Carwash.carwashAddress</definition>
+        <argsstring></argsstring>
+        <name>carwashAddress</name>
+        <qualifiedname>com.price.entity.Carwash.carwashAddress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Адрес автомойки. </para>
+<para>Должен быть уникальным в сочетании с названием. Ограничен 300 символами. Содержит адрес местоположения автомойки. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Carwash.java" line="48" column="20" bodyfile="src/main/java/com/price/entity/Carwash.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_carwash_1aa1457de9bc940febe54386398581a34b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.entity.Carwash.Carwash</definition>
+        <argsstring>()</argsstring>
+        <name>Carwash</name>
+        <qualifiedname>com.price.entity.Carwash.Carwash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор по умолчанию. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Carwash.java" line="53" column="12" bodyfile="src/main/java/com/price/entity/Carwash.java" bodystart="53" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_carwash_1a0c813901be119426d93b91ad5ce163c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.entity.Carwash.Carwash</definition>
+        <argsstring>(String carwashName, String carwashAddress)</argsstring>
+        <name>Carwash</name>
+        <qualifiedname>com.price.entity.Carwash.Carwash</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>carwashName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>carwashAddress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Создает новую автомойку с указанными параметрами.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>carwashName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>название автомойки. Не должно быть <javadoccode>null</javadoccode> или пустым </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>carwashAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>адрес автомойки. Не должно быть <javadoccode>null</javadoccode> или пустым</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если любой из параметров равен <javadoccode>null</javadoccode> или пустой </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Carwash.java" line="64" column="12" bodyfile="src/main/java/com/price/entity/Carwash.java" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_carwash_1a3adc879a498f29fb5fa70fda1a317cfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Long</type>
+        <definition>Long com.price.entity.Carwash.getIdCarwash</definition>
+        <argsstring>()</argsstring>
+        <name>getIdCarwash</name>
+        <qualifiedname>com.price.entity.Carwash.getIdCarwash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает уникальный идентификатор автомойки.</para>
+<para><simplesect kind="return"><para>идентификатор автомойки </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Carwash.java" line="74" column="17" bodyfile="src/main/java/com/price/entity/Carwash.java" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_carwash_1adf21b1ce7bb766f4686af05c60200ea2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.Carwash.setIdCarwash</definition>
+        <argsstring>(Long idCarwash)</argsstring>
+        <name>setIdCarwash</name>
+        <qualifiedname>com.price.entity.Carwash.setIdCarwash</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>idCarwash</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает уникальный идентификатор автомойки. </para>
+<para>Обычно вызывается фреймворком JPA, не рекомендуется для ручного использования.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idCarwash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новый идентификатор </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Carwash.java" line="85" column="17" bodyfile="src/main/java/com/price/entity/Carwash.java" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_carwash_1a8abbe9db6d03146996d6861b1a913006" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.entity.Carwash.getCarwashName</definition>
+        <argsstring>()</argsstring>
+        <name>getCarwashName</name>
+        <qualifiedname>com.price.entity.Carwash.getCarwashName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает название автомойки.</para>
+<para><simplesect kind="return"><para>название автомойки </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Carwash.java" line="94" column="19" bodyfile="src/main/java/com/price/entity/Carwash.java" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_carwash_1aa1d7038cfa3d9416872cad200ddfce2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.Carwash.setCarwashName</definition>
+        <argsstring>(String carwashName)</argsstring>
+        <name>setCarwashName</name>
+        <qualifiedname>com.price.entity.Carwash.setCarwashName</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>carwashName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает название автомойки.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>carwashName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новое название автомойки. Не должно быть <javadoccode>null</javadoccode> или пустым</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>carwashName</javadoccode> равен <javadoccode>null</javadoccode> или пустой </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Carwash.java" line="105" column="17" bodyfile="src/main/java/com/price/entity/Carwash.java" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_carwash_1a7913aff923bdf459aad99fb687f7b429" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.entity.Carwash.getCarwashAddress</definition>
+        <argsstring>()</argsstring>
+        <name>getCarwashAddress</name>
+        <qualifiedname>com.price.entity.Carwash.getCarwashAddress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает адрес автомойки.</para>
+<para><simplesect kind="return"><para>адрес автомойки </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Carwash.java" line="114" column="19" bodyfile="src/main/java/com/price/entity/Carwash.java" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_carwash_1a168285d3c46ce138ab9601bbf423da79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.Carwash.setCarwashAddress</definition>
+        <argsstring>(String carwashAddress)</argsstring>
+        <name>setCarwashAddress</name>
+        <qualifiedname>com.price.entity.Carwash.setCarwashAddress</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>carwashAddress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает адрес автомойки.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>carwashAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новый адрес автомойки. Не должно быть <javadoccode>null</javadoccode> или пустым</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>carwashAddress</javadoccode> равен <javadoccode>null</javadoccode> или пустой </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Carwash.java" line="125" column="17" bodyfile="src/main/java/com/price/entity/Carwash.java" bodystart="125" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_carwash_1a594dedd46ae627da20f24c6d3ae3df3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.entity.Carwash.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>com.price.entity.Carwash.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает строковое представление объекта. </para>
+<para>Формат: <javadoccode>Carwash{idCarwash = ..., carwashName = ..., carwashAddress = ...}</javadoccode></para>
+<para><simplesect kind="return"><para>строковое представление объекта </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/Carwash.java" line="137" column="19" bodyfile="src/main/java/com/price/entity/Carwash.java" bodystart="137" bodyend="142"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Сущность, представляющая автомойку. </para>
+<para>Этот класс отображается на таблицу <javadoccode>carwashes</javadoccode> в базе данных и содержит информацию об автомойках: уникальный идентификатор, название и адрес. <simplesect kind="see"><para>Entity </para>
+</simplesect>
+<simplesect kind="see"><para>Table </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/entity/Carwash.java" line="17" column="7" bodyfile="src/main/java/com/price/entity/Carwash.java" bodystart="17" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1entity_1_1_carwash_1aa1457de9bc940febe54386398581a34b" prot="public" virt="non-virtual"><scope>com::price::entity::Carwash</scope><name>Carwash</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_carwash_1a0c813901be119426d93b91ad5ce163c4" prot="public" virt="non-virtual"><scope>com::price::entity::Carwash</scope><name>Carwash</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_carwash_1a68a128f1a2523d8a17ce281b5c8c666f" prot="private" virt="non-virtual"><scope>com::price::entity::Carwash</scope><name>carwashAddress</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_carwash_1a73e84f19401ccaef0210f016e310fca9" prot="private" virt="non-virtual"><scope>com::price::entity::Carwash</scope><name>carwashName</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_carwash_1a7913aff923bdf459aad99fb687f7b429" prot="public" virt="non-virtual"><scope>com::price::entity::Carwash</scope><name>getCarwashAddress</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_carwash_1a8abbe9db6d03146996d6861b1a913006" prot="public" virt="non-virtual"><scope>com::price::entity::Carwash</scope><name>getCarwashName</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_carwash_1a3adc879a498f29fb5fa70fda1a317cfc" prot="public" virt="non-virtual"><scope>com::price::entity::Carwash</scope><name>getIdCarwash</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_carwash_1a0f724be955c56787bb995f68c378d89d" prot="private" virt="non-virtual"><scope>com::price::entity::Carwash</scope><name>idCarwash</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_carwash_1a168285d3c46ce138ab9601bbf423da79" prot="public" virt="non-virtual"><scope>com::price::entity::Carwash</scope><name>setCarwashAddress</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_carwash_1aa1d7038cfa3d9416872cad200ddfce2c" prot="public" virt="non-virtual"><scope>com::price::entity::Carwash</scope><name>setCarwashName</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_carwash_1adf21b1ce7bb766f4686af05c60200ea2" prot="public" virt="non-virtual"><scope>com::price::entity::Carwash</scope><name>setIdCarwash</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_carwash_1a594dedd46ae627da20f24c6d3ae3df3b" prot="public" virt="non-virtual"><scope>com::price::entity::Carwash</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

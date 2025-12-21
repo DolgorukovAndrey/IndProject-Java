@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_all_price_controller_8java" kind="file" language="Java">
+    <compoundname>AllPriceController.java</compoundname>
+    <includes local="no">com.price.entity.AllPrice</includes>
+    <includes local="no">com.price.entity.AllPriceId</includes>
+    <includes local="no">com.price.service.AllPriceService</includes>
+    <includes local="no">jakarta.validation.Valid</includes>
+    <includes local="no">org.springframework.beans.factory.annotation.Autowired</includes>
+    <includes local="no">org.springframework.format.annotation.DateTimeFormat</includes>
+    <includes local="no">org.springframework.stereotype.Controller</includes>
+    <includes local="no">org.springframework.ui.Model</includes>
+    <includes local="no">org.springframework.validation.BindingResult</includes>
+    <includes local="no">org.springframework.web.bind.annotation.*</includes>
+    <includes local="no">org.springframework.web.servlet.mvc.support.RedirectAttributes</includes>
+    <includes local="no">java.time.LocalDate</includes>
+    <includes local="no">java.util.List</includes>
+    <includes local="no">java.util.Optional</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/main/java/com/price/controller/AllPriceController.java</label>
+        <link refid="_all_price_controller_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.price.entity.AllPrice</label>
+      </node>
+      <node id="3">
+        <label>com.price.entity.AllPriceId</label>
+      </node>
+      <node id="4">
+        <label>com.price.service.AllPriceService</label>
+      </node>
+      <node id="5">
+        <label>jakarta.validation.Valid</label>
+      </node>
+      <node id="13">
+        <label>java.time.LocalDate</label>
+      </node>
+      <node id="14">
+        <label>java.util.List</label>
+      </node>
+      <node id="15">
+        <label>java.util.Optional</label>
+      </node>
+      <node id="6">
+        <label>org.springframework.beans.factory.annotation.Autowired</label>
+      </node>
+      <node id="7">
+        <label>org.springframework.format.annotation.DateTimeFormat</label>
+      </node>
+      <node id="8">
+        <label>org.springframework.stereotype.Controller</label>
+      </node>
+      <node id="9">
+        <label>org.springframework.ui.Model</label>
+      </node>
+      <node id="10">
+        <label>org.springframework.validation.BindingResult</label>
+      </node>
+      <node id="11">
+        <label>org.springframework.web.bind.annotation.*</label>
+      </node>
+      <node id="12">
+        <label>org.springframework.web.servlet.mvc.support.RedirectAttributes</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classcom_1_1price_1_1controller_1_1_all_price_controller" prot="public">com::price::controller::AllPriceController</innerclass>
+    <innernamespace refid="namespacecom_1_1price_1_1controller">com::price::controller</innernamespace>
+    <innernamespace refid="namespacejava_1_1lang">java::lang</innernamespace>
+    <innernamespace refid="namespaceorg_1_1springframework_1_1web_1_1bind_1_1annotation">org::springframework::web::bind::annotation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/price/controller/AllPriceController.java"/>
+  </compounddef>
+</doxygen>

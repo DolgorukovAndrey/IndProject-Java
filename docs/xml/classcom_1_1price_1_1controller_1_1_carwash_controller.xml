@@ -1,0 +1,507 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1controller_1_1_carwash_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::price::controller::CarwashController</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1price_1_1controller_1_1_carwash_controller_1a0d346cf07f8d71fff47b4cb003db8f1b" prot="private" static="no" mutable="no">
+        <type>final <ref refid="classcom_1_1price_1_1service_1_1_carwash_service" kindref="compound">CarwashService</ref></type>
+        <definition>final CarwashService com.price.controller.CarwashController.carwashService</definition>
+        <argsstring></argsstring>
+        <name>carwashService</name>
+        <qualifiedname>com.price.controller.CarwashController.carwashService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сервис для работы с автомойками. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/CarwashController.java" line="44" column="34" bodyfile="src/main/java/com/price/controller/CarwashController.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_carwash_controller_1a98a33cdefa528d4974525a7b2f9831da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.controller.CarwashController.CarwashController</definition>
+        <argsstring>(CarwashService carwashService)</argsstring>
+        <name>CarwashController</name>
+        <qualifiedname>com.price.controller.CarwashController.CarwashController</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1service_1_1_carwash_service" kindref="compound">CarwashService</ref></type>
+          <declname>carwashService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор с инъекцией зависимости сервиса.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>carwashService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>сервис для работы с автомойками; не должен быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>carwashService</javadoccode> равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/CarwashController.java" line="54" column="12" bodyfile="src/main/java/com/price/controller/CarwashController.java" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_carwash_controller_1a3b65d7c94488c7be0ce2aa9bb9ae6e38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.CarwashController.listCarwash</definition>
+        <argsstring>(Model model)</argsstring>
+        <name>listCarwash</name>
+        <qualifiedname>com.price.controller.CarwashController.listCarwash</qualifiedname>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отображает список всех автомоек.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления для отображения списка автомоек</para>
+</simplesect>
+<simplesect kind="see"><para>Model </para>
+</simplesect>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/CarwashController.java" line="68" column="19" bodyfile="src/main/java/com/price/controller/CarwashController.java" bodystart="68" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_carwash_controller_1a810abb199840d8f035ed59be2477d7ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.CarwashController.showCreateForm</definition>
+        <argsstring>(Model model)</argsstring>
+        <name>showCreateForm</name>
+        <qualifiedname>com.price.controller.CarwashController.showCreateForm</qualifiedname>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отображает форму для создания новой автомойки.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления формы создания автомойки</para>
+</simplesect>
+<simplesect kind="see"><para>Model </para>
+</simplesect>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/CarwashController.java" line="85" column="19" bodyfile="src/main/java/com/price/controller/CarwashController.java" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_carwash_controller_1ac5e727d9eb33afce162955d3762a14f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.CarwashController.createCarwash</definition>
+        <argsstring>(@Valid @ModelAttribute(&quot;carwash&quot;) Carwash carwash, BindingResult result, RedirectAttributes redirectAttributes, Model model)</argsstring>
+        <name>createCarwash</name>
+        <qualifiedname>com.price.controller.CarwashController.createCarwash</qualifiedname>
+        <param>
+          <type>@Valid @ModelAttribute(&quot;carwash&quot;) <ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref></type>
+          <declname>carwash</declname>
+        </param>
+        <param>
+          <type>BindingResult</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обрабатывает создание новой автомойки. </para>
+<para>Валидирует введенные данные и сохраняет новую автомойку в базе данных. При успешном сохранении перенаправляет на список автомоек с сообщением об успехе.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>carwash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект автомойки с данными из формы; проходит валидацию </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>результат валидации данных формы </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление при ошибках валидации </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления или команда перенаправления</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>carwash</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>Valid </para>
+</simplesect>
+<simplesect kind="see"><para>ModelAttribute </para>
+</simplesect>
+<simplesect kind="see"><para>PostMapping </para>
+</simplesect>
+<simplesect kind="see"><para>RedirectAttributes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/CarwashController.java" line="111" column="19" bodyfile="src/main/java/com/price/controller/CarwashController.java" bodystart="111" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_carwash_controller_1a5c8caa624b50343985c8b638314bdee3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.CarwashController.showEditForm</definition>
+        <argsstring>(@PathVariable(&quot;id&quot;) Long id, Model model, RedirectAttributes redirectAttributes)</argsstring>
+        <name>showEditForm</name>
+        <qualifiedname>com.price.controller.CarwashController.showEditForm</qualifiedname>
+        <param>
+          <type>@PathVariable(&quot;id&quot;) Long</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отображает форму для редактирования существующей автомойки.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор редактируемой автомойки; не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления формы редактирования или команда перенаправления</para>
+</simplesect>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+<simplesect kind="see"><para>PathVariable </para>
+</simplesect>
+<simplesect kind="see"><para>RedirectAttributes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/CarwashController.java" line="138" column="19" bodyfile="src/main/java/com/price/controller/CarwashController.java" bodystart="138" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_carwash_controller_1a115681a180672688f4d1030f179460a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.CarwashController.updateCarwash</definition>
+        <argsstring>(@PathVariable(&quot;id&quot;) Long id, @Valid @ModelAttribute(&quot;carwash&quot;) Carwash carwash, BindingResult result, RedirectAttributes redirectAttributes, Model model)</argsstring>
+        <name>updateCarwash</name>
+        <qualifiedname>com.price.controller.CarwashController.updateCarwash</qualifiedname>
+        <param>
+          <type>@PathVariable(&quot;id&quot;) Long</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>@Valid @ModelAttribute(&quot;carwash&quot;) <ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref></type>
+          <declname>carwash</declname>
+        </param>
+        <param>
+          <type>BindingResult</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обрабатывает обновление существующей автомойки. </para>
+<para><bold>Внимание:</bold> В аннотации <javadoccode>@ModelAttribute</javadoccode> используется некорректное имя &quot;bodytype&quot; вместо &quot;carwash&quot;, что может вызвать проблемы с биндингом данных.</para>
+<para>Валидирует введенные данные и обновляет автомойку в базе данных. При успешном обновлении перенаправляет на список автомоек с сообщением об успехе.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор обновляемой автомойки; не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>carwash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект автомойки с обновленными данными из формы; проходит валидацию </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>результат валидации данных формы </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление при ошибках валидации </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления или команда перенаправления</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>id</javadoccode> или <javadoccode>carwash</javadoccode> равны <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RuntimeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если автомойка с указанным ID не найдена</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>PostMapping </para>
+</simplesect>
+<simplesect kind="see"><para>PathVariable </para>
+</simplesect>
+<simplesect kind="see"><para>Valid </para>
+</simplesect>
+<simplesect kind="see"><para>ModelAttribute </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/CarwashController.java" line="175" column="19" bodyfile="src/main/java/com/price/controller/CarwashController.java" bodystart="175" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_carwash_controller_1a175f247842ab4c9106f2a8888050a005" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.CarwashController.deleteCarwash</definition>
+        <argsstring>(@PathVariable(&quot;id&quot;) Long id, RedirectAttributes redirectAttributes)</argsstring>
+        <name>deleteCarwash</name>
+        <qualifiedname>com.price.controller.CarwashController.deleteCarwash</qualifiedname>
+        <param>
+          <type>@PathVariable(&quot;id&quot;) Long</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обрабатывает удаление автомойки. </para>
+<para>Удаляет автомойку по указанному идентификатору. При успешном удалении перенаправляет на список автомоек с сообщением об успехе.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор удаляемой автомойки; не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>команда перенаправления на список автомоек</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>id</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+<simplesect kind="see"><para>PathVariable </para>
+</simplesect>
+<simplesect kind="see"><para>RedirectAttributes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/CarwashController.java" line="212" column="19" bodyfile="src/main/java/com/price/controller/CarwashController.java" bodystart="212" bodyend="227"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Контроллер для управления автомойками. </para>
+<para>Обрабатывает HTTP-запросы, связанные с операциями CRUD для автомоек. Предоставляет веб-интерфейс для создания, просмотра, обновления и удаления записей об автомойках.</para>
+<para><bold>Маршруты:</bold> <table rows="7" cols="3"><row>
+<entry thead="yes"><para>Метод</para>
+</entry><entry thead="yes"><para>URL</para>
+</entry><entry thead="yes"><para>Описание</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/carwashs</para>
+</entry><entry thead="no"><para>Список всех автомоек</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/carwashs/newCarwash</para>
+</entry><entry thead="no"><para>Форма создания новой автомойки</para>
+</entry></row>
+<row>
+<entry thead="no"><para>POST</para>
+</entry><entry thead="no"><para>/carwashs</para>
+</entry><entry thead="no"><para>Создание новой автомойки</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/carwashs/editCarwash/{id}</para>
+</entry><entry thead="no"><para>Форма редактирования автомойки</para>
+</entry></row>
+<row>
+<entry thead="no"><para>POST</para>
+</entry><entry thead="no"><para>/carwashs/updateCarwash/{id}</para>
+</entry><entry thead="no"><para>Обновление автомойки</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/carwashs/deleteCarwash/{id}</para>
+</entry><entry thead="no"><para>Удаление автомойки</para>
+</entry></row>
+</table>
+</para>
+<para><simplesect kind="see"><para>Controller </para>
+</simplesect>
+<simplesect kind="see"><para>RequestMapping </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1service_1_1_carwash_service" kindref="compound">CarwashService</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/controller/CarwashController.java" line="40" column="7" bodyfile="src/main/java/com/price/controller/CarwashController.java" bodystart="40" bodyend="228"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1controller_1_1_carwash_controller_1a98a33cdefa528d4974525a7b2f9831da" prot="public" virt="non-virtual"><scope>com::price::controller::CarwashController</scope><name>CarwashController</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_carwash_controller_1a0d346cf07f8d71fff47b4cb003db8f1b" prot="private" virt="non-virtual"><scope>com::price::controller::CarwashController</scope><name>carwashService</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_carwash_controller_1ac5e727d9eb33afce162955d3762a14f7" prot="public" virt="non-virtual"><scope>com::price::controller::CarwashController</scope><name>createCarwash</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_carwash_controller_1a175f247842ab4c9106f2a8888050a005" prot="public" virt="non-virtual"><scope>com::price::controller::CarwashController</scope><name>deleteCarwash</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_carwash_controller_1a3b65d7c94488c7be0ce2aa9bb9ae6e38" prot="public" virt="non-virtual"><scope>com::price::controller::CarwashController</scope><name>listCarwash</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_carwash_controller_1a810abb199840d8f035ed59be2477d7ed" prot="public" virt="non-virtual"><scope>com::price::controller::CarwashController</scope><name>showCreateForm</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_carwash_controller_1a5c8caa624b50343985c8b638314bdee3" prot="public" virt="non-virtual"><scope>com::price::controller::CarwashController</scope><name>showEditForm</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_carwash_controller_1a115681a180672688f4d1030f179460a2" prot="public" virt="non-virtual"><scope>com::price::controller::CarwashController</scope><name>updateCarwash</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

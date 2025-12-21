@@ -1,0 +1,605 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1controller_1_1_all_price_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::price::controller::AllPriceController</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1price_1_1controller_1_1_all_price_controller_1aa0e2fde717d964094145ccac6cc68388" prot="private" static="no" mutable="no">
+        <type>final <ref refid="classcom_1_1price_1_1service_1_1_all_price_service" kindref="compound">AllPriceService</ref></type>
+        <definition>final AllPriceService com.price.controller.AllPriceController.allPriceService</definition>
+        <argsstring></argsstring>
+        <name>allPriceService</name>
+        <qualifiedname>com.price.controller.AllPriceController.allPriceService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сервис для работы с агрегированными данными о ценах. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/AllPriceController.java" line="61" column="35" bodyfile="src/main/java/com/price/controller/AllPriceController.java" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_all_price_controller_1ad5b003c2066d75be2b7ea51bb3baaa0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.controller.AllPriceController.AllPriceController</definition>
+        <argsstring>(AllPriceService allPriceService)</argsstring>
+        <name>AllPriceController</name>
+        <qualifiedname>com.price.controller.AllPriceController.AllPriceController</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1service_1_1_all_price_service" kindref="compound">AllPriceService</ref></type>
+          <declname>allPriceService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор с инъекцией зависимости сервиса.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allPriceService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>сервис для работы с агрегированными данными о ценах; не должен быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>allPriceService</javadoccode> равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/AllPriceController.java" line="71" column="12" bodyfile="src/main/java/com/price/controller/AllPriceController.java" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_all_price_controller_1a4323f971a83a4ddeaaa97d7552beff25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.AllPriceController.listAllPrice</definition>
+        <argsstring>(Model model)</argsstring>
+        <name>listAllPrice</name>
+        <qualifiedname>com.price.controller.AllPriceController.listAllPrice</qualifiedname>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отображает список актуальных цен на услуги автомоек. </para>
+<para>Получает только самые последние (актуальные) цены для каждой комбинации услуги, автомойки и типа кузова.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления для отображения списка актуальных цен</para>
+</simplesect>
+<simplesect kind="see"><para>Model </para>
+</simplesect>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1service_1_1_all_price_service_1a2957e2848e9f84f8bc78a4fa67562b30" kindref="member">AllPriceService.getActualPrices()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/AllPriceController.java" line="89" column="19" bodyfile="src/main/java/com/price/controller/AllPriceController.java" bodystart="89" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_all_price_controller_1af505489e7d0e6de723406b921cb71f5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.AllPriceController.showCreateForm</definition>
+        <argsstring>(Model model)</argsstring>
+        <name>showCreateForm</name>
+        <qualifiedname>com.price.controller.AllPriceController.showCreateForm</qualifiedname>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отображает форму для создания новой записи о цене.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления формы создания записи о цене</para>
+</simplesect>
+<simplesect kind="see"><para>Model </para>
+</simplesect>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/AllPriceController.java" line="106" column="19" bodyfile="src/main/java/com/price/controller/AllPriceController.java" bodystart="106" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_all_price_controller_1aa99077776a3741eb233ed6cac1cceceb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.AllPriceController.createAllPrice</definition>
+        <argsstring>(@Valid @ModelAttribute(&quot;allPrice&quot;) AllPrice allPrice, BindingResult result, RedirectAttributes redirectAttributes, Model model)</argsstring>
+        <name>createAllPrice</name>
+        <qualifiedname>com.price.controller.AllPriceController.createAllPrice</qualifiedname>
+        <param>
+          <type>@Valid @ModelAttribute(&quot;allPrice&quot;) <ref refid="classcom_1_1price_1_1entity_1_1_all_price" kindref="compound">AllPrice</ref></type>
+          <declname>allPrice</declname>
+        </param>
+        <param>
+          <type>BindingResult</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обрабатывает создание новой записи о цене. </para>
+<para>Валидирует введенные данные и сохраняет новую запись о цене в базе данных. При успешном сохранении перенаправляет на список цен с сообщением об успехе.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allPrice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект записи о цене с данными из формы; проходит валидацию </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>результат валидации данных формы </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление при ошибках валидации </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления или команда перенаправления</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>allPrice</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>Valid </para>
+</simplesect>
+<simplesect kind="see"><para>ModelAttribute </para>
+</simplesect>
+<simplesect kind="see"><para>PostMapping </para>
+</simplesect>
+<simplesect kind="see"><para>RedirectAttributes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/AllPriceController.java" line="132" column="19" bodyfile="src/main/java/com/price/controller/AllPriceController.java" bodystart="132" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_all_price_controller_1a1e9e857e71bd22d4e8fd0989c6c13dc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.AllPriceController.showEditForm</definition>
+        <argsstring>(@PathVariable(&quot;id&quot;) String idStr, Model model, RedirectAttributes redirectAttributes)</argsstring>
+        <name>showEditForm</name>
+        <qualifiedname>com.price.controller.AllPriceController.showEditForm</qualifiedname>
+        <param>
+          <type>@PathVariable(&quot;id&quot;) String</type>
+          <declname>idStr</declname>
+        </param>
+        <param>
+          <type>Model</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отображает форму для редактирования существующей записи о цене. </para>
+<para>Декодирует строковый идентификатор, находит соответствующую запись и отображает форму для её редактирования.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idStr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>строковое представление составного идентификатора; не должно быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект модели для передачи данных в представление </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>имя шаблона представления формы редактирования или команда перенаправления</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>idStr</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+<simplesect kind="see"><para>PathVariable </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a853b99801be67962d41b6aae4a1852a7" kindref="member">AllPriceId.fromString(String)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>RedirectAttributes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/AllPriceController.java" line="165" column="19" bodyfile="src/main/java/com/price/controller/AllPriceController.java" bodystart="165" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_all_price_controller_1a14abb0631ed6eaa67bad92e068c96104" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.AllPriceController.updateAllPrice</definition>
+        <argsstring>(@PathVariable(&quot;id&quot;) String idStr, @RequestParam String carwashName, @RequestParam String carwashAddress, @RequestParam String service, @RequestParam String bodytype, @RequestParam @DateTimeFormat(iso=DateTimeFormat.ISO.DATE) LocalDate priceDate, @RequestParam String serviceInfo, @RequestParam Integer leadTime, @RequestParam Integer price, RedirectAttributes redirectAttributes)</argsstring>
+        <name>updateAllPrice</name>
+        <qualifiedname>com.price.controller.AllPriceController.updateAllPrice</qualifiedname>
+        <param>
+          <type>@PathVariable(&quot;id&quot;) String</type>
+          <declname>idStr</declname>
+        </param>
+        <param>
+          <type>@RequestParam String</type>
+          <declname>carwashName</declname>
+        </param>
+        <param>
+          <type>@RequestParam String</type>
+          <declname>carwashAddress</declname>
+        </param>
+        <param>
+          <type>@RequestParam String</type>
+          <declname>service</declname>
+        </param>
+        <param>
+          <type>@RequestParam String</type>
+          <declname>bodytype</declname>
+        </param>
+        <param>
+          <type>@RequestParam @DateTimeFormat(iso=DateTimeFormat.ISO.DATE) LocalDate</type>
+          <declname>priceDate</declname>
+        </param>
+        <param>
+          <type>@RequestParam String</type>
+          <declname>serviceInfo</declname>
+        </param>
+        <param>
+          <type>@RequestParam Integer</type>
+          <declname>leadTime</declname>
+        </param>
+        <param>
+          <type>@RequestParam Integer</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обрабатывает обновление существующей записи о цене. </para>
+<para>Декодирует старый идентификатор, создает новые данные и обновляет запись. Поддерживает изменение всех полей, включая поля составного ключа.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idStr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>строковое представление старого составного идентификатора; не должно быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>carwashName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новое название автомойки; не должно быть <javadoccode>null</javadoccode> или пустым </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>carwashAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новый адрес автомойки; не должно быть <javadoccode>null</javadoccode> или пустым </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новое название услуги; не должно быть <javadoccode>null</javadoccode> или пустым </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bodytype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новый тип кузова; может быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priceDate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новая дата цены; не должно быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>serviceInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новая дополнительная информация об услуге; может быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>leadTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новое время выполнения в минутах; должно быть положительным </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новая стоимость в рублях; должно быть положительным </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>команда перенаправления на список цен</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если любой из обязательных параметров равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RuntimeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если произошла ошибка при обновлении</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>PostMapping </para>
+</simplesect>
+<simplesect kind="see"><para>PathVariable </para>
+</simplesect>
+<simplesect kind="see"><para>RequestParam </para>
+</simplesect>
+<simplesect kind="see"><para>DateTimeFormat </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1service_1_1_all_price_service_1ac473b45c63ad622831b9a0fefdd27b24" kindref="member">AllPriceService.updateAllPrice(AllPriceId, AllPriceId, AllPrice)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/AllPriceController.java" line="213" column="19" bodyfile="src/main/java/com/price/controller/AllPriceController.java" bodystart="213" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1controller_1_1_all_price_controller_1ab28ae3b0cca51ffb8a98d7e45a1fc837" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.controller.AllPriceController.deleteAllPrice</definition>
+        <argsstring>(@PathVariable(&quot;id&quot;) String idStr, RedirectAttributes redirectAttributes)</argsstring>
+        <name>deleteAllPrice</name>
+        <qualifiedname>com.price.controller.AllPriceController.deleteAllPrice</qualifiedname>
+        <param>
+          <type>@PathVariable(&quot;id&quot;) String</type>
+          <declname>idStr</declname>
+        </param>
+        <param>
+          <type>RedirectAttributes</type>
+          <declname>redirectAttributes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обрабатывает удаление записи о цене. </para>
+<para>Декодирует строковый идентификатор и удаляет соответствующую запись из базы данных.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idStr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>строковое представление составного идентификатора; не должно быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirectAttributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>атрибуты для передачи данных при перенаправлении </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>команда перенаправления на список цен</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>idStr</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>GetMapping </para>
+</simplesect>
+<simplesect kind="see"><para>PathVariable </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a853b99801be67962d41b6aae4a1852a7" kindref="member">AllPriceId.fromString(String)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1service_1_1_all_price_service_1af0325cf58006cba5dab6f322baa8f90d" kindref="member">AllPriceService.deleteAllPrice(AllPriceId)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>RedirectAttributes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/controller/AllPriceController.java" line="264" column="19" bodyfile="src/main/java/com/price/controller/AllPriceController.java" bodystart="264" bodyend="280"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Контроллер для управления всеми ценами на услуги автомоек. </para>
+<para>Обрабатывает HTTP-запросы, связанные с операциями CRUD для агрегированных данных о ценах. Работает с составными идентификаторами в строковом формате и предоставляет веб-интерфейс для создания, просмотра, обновления и удаления записей о ценах.</para>
+<para><bold>Особенности:</bold> <itemizedlist>
+<listitem>
+<para>Использует составные идентификаторы (<computeroutput><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id" kindref="compound">AllPriceId</ref></computeroutput>) в формате строки </para>
+</listitem>
+<listitem>
+<para>Отображает только актуальные цены (последние для каждой комбинации) </para>
+</listitem>
+<listitem>
+<para>Поддерживает сложное обновление с изменением составного ключа </para>
+</listitem>
+<listitem>
+<para>Обрабатывает строковые представления идентификаторов через <computeroutput><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a853b99801be67962d41b6aae4a1852a7" kindref="member">AllPriceId#fromString(String)</ref></computeroutput> </para>
+</listitem>
+</itemizedlist>
+</para>
+<para><bold>Маршруты:</bold> <table rows="7" cols="3"><row>
+<entry thead="yes"><para>Метод</para>
+</entry><entry thead="yes"><para>URL</para>
+</entry><entry thead="yes"><para>Описание</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/allPrices</para>
+</entry><entry thead="no"><para>Список актуальных цен</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/allPrices/newAllPrice</para>
+</entry><entry thead="no"><para>Форма создания новой записи о цене</para>
+</entry></row>
+<row>
+<entry thead="no"><para>POST</para>
+</entry><entry thead="no"><para>/allPrices</para>
+</entry><entry thead="no"><para>Создание новой записи о цене</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/allPrices/editAllPrice/{id}</para>
+</entry><entry thead="no"><para>Форма редактирования записи о цене</para>
+</entry></row>
+<row>
+<entry thead="no"><para>POST</para>
+</entry><entry thead="no"><para>/allPrices/updateAllPrice/{id}</para>
+</entry><entry thead="no"><para>Обновление записи о цене</para>
+</entry></row>
+<row>
+<entry thead="no"><para>GET</para>
+</entry><entry thead="no"><para>/allPrices/deleteAllPrice/{id}</para>
+</entry><entry thead="no"><para>Удаление записи о цене</para>
+</entry></row>
+</table>
+</para>
+<para><bold>Формат идентификатора:</bold> Строка в формате: <javadoccode>&quot;carwashName,carwashAddress,service,bodytype,priceDate&quot;</javadoccode> где <javadoccode>priceDate</javadoccode> в формате ISO-8601 (YYYY-MM-DD).</para>
+<para><simplesect kind="see"><para>Controller </para>
+</simplesect>
+<simplesect kind="see"><para>RequestMapping </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_all_price" kindref="compound">AllPrice</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id" kindref="compound">AllPriceId</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1service_1_1_all_price_service" kindref="compound">AllPriceService</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/controller/AllPriceController.java" line="57" column="7" bodyfile="src/main/java/com/price/controller/AllPriceController.java" bodystart="57" bodyend="281"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1controller_1_1_all_price_controller_1ad5b003c2066d75be2b7ea51bb3baaa0b" prot="public" virt="non-virtual"><scope>com::price::controller::AllPriceController</scope><name>AllPriceController</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_all_price_controller_1aa0e2fde717d964094145ccac6cc68388" prot="private" virt="non-virtual"><scope>com::price::controller::AllPriceController</scope><name>allPriceService</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_all_price_controller_1aa99077776a3741eb233ed6cac1cceceb" prot="public" virt="non-virtual"><scope>com::price::controller::AllPriceController</scope><name>createAllPrice</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_all_price_controller_1ab28ae3b0cca51ffb8a98d7e45a1fc837" prot="public" virt="non-virtual"><scope>com::price::controller::AllPriceController</scope><name>deleteAllPrice</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_all_price_controller_1a4323f971a83a4ddeaaa97d7552beff25" prot="public" virt="non-virtual"><scope>com::price::controller::AllPriceController</scope><name>listAllPrice</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_all_price_controller_1af505489e7d0e6de723406b921cb71f5b" prot="public" virt="non-virtual"><scope>com::price::controller::AllPriceController</scope><name>showCreateForm</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_all_price_controller_1a1e9e857e71bd22d4e8fd0989c6c13dc9" prot="public" virt="non-virtual"><scope>com::price::controller::AllPriceController</scope><name>showEditForm</name></member>
+      <member refid="classcom_1_1price_1_1controller_1_1_all_price_controller_1a14abb0631ed6eaa67bad92e068c96104" prot="public" virt="non-virtual"><scope>com::price::controller::AllPriceController</scope><name>updateAllPrice</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

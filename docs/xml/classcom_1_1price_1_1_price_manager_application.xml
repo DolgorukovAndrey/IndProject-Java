@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1_price_manager_application" kind="class" language="Java" prot="public">
+    <compoundname>com::price::PriceManagerApplication</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1_price_manager_application_1a47eb9e85bb060690120ad758ccf0050c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.price.PriceManagerApplication.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <qualifiedname>com.price.PriceManagerApplication.main</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Главный метод, запускающий Spring Boot приложение.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>аргументы командной строки для конфигурации приложения </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/PriceManagerApplication.java" line="17" column="24" bodyfile="src/main/java/com/price/PriceManagerApplication.java" bodystart="17" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Точка входа для Spring Boot приложения Price Manager. Запускает контекст Spring и инициализирует все компоненты приложения. </para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/PriceManagerApplication.java" line="11" column="7" bodyfile="src/main/java/com/price/PriceManagerApplication.java" bodystart="11" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1_price_manager_application_1a47eb9e85bb060690120ad758ccf0050c" prot="public" virt="non-virtual"><scope>com::price::PriceManagerApplication</scope><name>main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

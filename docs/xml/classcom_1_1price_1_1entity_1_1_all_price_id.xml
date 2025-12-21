@@ -1,0 +1,621 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1entity_1_1_all_price_id" kind="class" language="Java" prot="public">
+    <compoundname>com::price::entity::AllPriceId</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Serializable</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_all_price_id_1a49bdd9496d1799ef68927a76aef998e8" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.price.entity.AllPriceId.carwashName</definition>
+        <argsstring></argsstring>
+        <name>carwashName</name>
+        <qualifiedname>com.price.entity.AllPriceId.carwashName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Название автомойки. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="37" column="20" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_all_price_id_1a41e042840350265eed9ce84f55c99f37" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.price.entity.AllPriceId.carwashAddress</definition>
+        <argsstring></argsstring>
+        <name>carwashAddress</name>
+        <qualifiedname>com.price.entity.AllPriceId.carwashAddress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Адрес автомойки. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="43" column="20" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_all_price_id_1a2905b12ae737321feb24668db1d03aa7" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.price.entity.AllPriceId.service</definition>
+        <argsstring></argsstring>
+        <name>service</name>
+        <qualifiedname>com.price.entity.AllPriceId.service</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Название услуги, предоставляемой мойкой. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="49" column="20" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_all_price_id_1a04dc0f220fdd976c8a9b35a667bb52f3" prot="private" static="no" mutable="no">
+        <type>LocalDate</type>
+        <definition>LocalDate com.price.entity.AllPriceId.priceDate</definition>
+        <argsstring></argsstring>
+        <name>priceDate</name>
+        <qualifiedname>com.price.entity.AllPriceId.priceDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Дата установки цены. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="55" column="23" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_all_price_id_1acf3692f7d26e4ddae468408744547c6b" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.price.entity.AllPriceId.bodytype</definition>
+        <argsstring></argsstring>
+        <name>bodytype</name>
+        <qualifiedname>com.price.entity.AllPriceId.bodytype</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Тип кузова автомобиля, для которого предназначена услуга. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="61" column="20" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1a9d7d2ea47f36705a39679556c9cf0c78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.entity.AllPriceId.AllPriceId</definition>
+        <argsstring>()</argsstring>
+        <name>AllPriceId</name>
+        <qualifiedname>com.price.entity.AllPriceId.AllPriceId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор по умолчанию. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="66" column="12" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1ab0e19b0a27ff1142973337bfdac284f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.entity.AllPriceId.AllPriceId</definition>
+        <argsstring>(String carwashName, String carwashAddress, String service, LocalDate priceDate, String bodytype)</argsstring>
+        <name>AllPriceId</name>
+        <qualifiedname>com.price.entity.AllPriceId.AllPriceId</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>carwashName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>carwashAddress</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>service</declname>
+        </param>
+        <param>
+          <type>LocalDate</type>
+          <declname>priceDate</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>bodytype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Создает новый составной идентификатор с указанными значениями, все параметры идентификатора не должны быть <javadoccode>null</javadoccode> или пустыми.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>carwashName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>название автомойки </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>carwashAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>адрес автомойки </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>название услуги </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priceDate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>дата установки цены </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bodytype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>тип кузова</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если любой из обязательных параметров равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="79" column="12" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="79" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1ac5b071f41337388ba0e9fd8ef32caeec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.entity.AllPriceId.getCarwashName</definition>
+        <argsstring>()</argsstring>
+        <name>getCarwashName</name>
+        <qualifiedname>com.price.entity.AllPriceId.getCarwashName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает название автомойки.</para>
+<para><simplesect kind="return"><para>название автомойки </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="93" column="19" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="93" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1ad6e2716b7ab6923cbf0a3df8f935a4a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.entity.AllPriceId.getCarwashAddress</definition>
+        <argsstring>()</argsstring>
+        <name>getCarwashAddress</name>
+        <qualifiedname>com.price.entity.AllPriceId.getCarwashAddress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает адрес автомойки.</para>
+<para><simplesect kind="return"><para>адрес автомойки </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="102" column="19" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1a2e488dc5c23fa1437db92b675aca4b25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.entity.AllPriceId.getService</definition>
+        <argsstring>()</argsstring>
+        <name>getService</name>
+        <qualifiedname>com.price.entity.AllPriceId.getService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает название услуги.</para>
+<para><simplesect kind="return"><para>название услуги </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="111" column="19" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1a5d08e3b8af1533c315c8f5cf30088aca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LocalDate</type>
+        <definition>LocalDate com.price.entity.AllPriceId.getPriceDate</definition>
+        <argsstring>()</argsstring>
+        <name>getPriceDate</name>
+        <qualifiedname>com.price.entity.AllPriceId.getPriceDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает дату установки цены.</para>
+<para><simplesect kind="return"><para>дата установки цены </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="120" column="22" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1a1ab3237dc76d0cdb356bb0527824e23a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.AllPriceId.setCarwashName</definition>
+        <argsstring>(String carwashName)</argsstring>
+        <name>setCarwashName</name>
+        <qualifiedname>com.price.entity.AllPriceId.setCarwashName</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>carwashName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает название автомойки.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>carwashName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новое название автомойки. Не должно быть <javadoccode>null</javadoccode> или пустым </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="129" column="17" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="129" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1a9d6c3d04ae2c4a9576721e8e6d932750" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.AllPriceId.setCarwashAddress</definition>
+        <argsstring>(String carwashAddress)</argsstring>
+        <name>setCarwashAddress</name>
+        <qualifiedname>com.price.entity.AllPriceId.setCarwashAddress</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>carwashAddress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает адрес автомойки.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>carwashAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новый адрес автомойки. Не должно быть <javadoccode>null</javadoccode> или пустым </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="138" column="17" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="138" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1a61793ee032f3d33a8b32d7db199403a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.AllPriceId.setService</definition>
+        <argsstring>(String service)</argsstring>
+        <name>setService</name>
+        <qualifiedname>com.price.entity.AllPriceId.setService</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>service</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает название услуги.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новое название услуги. Не должно быть <javadoccode>null</javadoccode> или пустым </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="147" column="17" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="147" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1a0d001552afb2d1b502f9f56934cfc9db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.AllPriceId.setPriceDate</definition>
+        <argsstring>(LocalDate priceDate)</argsstring>
+        <name>setPriceDate</name>
+        <qualifiedname>com.price.entity.AllPriceId.setPriceDate</qualifiedname>
+        <param>
+          <type>LocalDate</type>
+          <declname>priceDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает дату установки цены.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>priceDate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новая дата установки цены. Не должно быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="156" column="17" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1a8ab7c5db5ed0e83fff1d4be022ac405c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.AllPriceId.setBodytype</definition>
+        <argsstring>(String bodytype)</argsstring>
+        <name>setBodytype</name>
+        <qualifiedname>com.price.entity.AllPriceId.setBodytype</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>bodytype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает тип кузова автомобиля.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bodytype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новый тип кузова. Не может быть <javadoccode>null</javadoccode> или пустым </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="165" column="17" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="165" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1abe56871c2f27dd30549384c4b6c28246" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.entity.AllPriceId.getBodytype</definition>
+        <argsstring>()</argsstring>
+        <name>getBodytype</name>
+        <qualifiedname>com.price.entity.AllPriceId.getBodytype</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает тип кузова автомобиля.</para>
+<para><simplesect kind="return"><para>тип кузова </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="174" column="19" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="174" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1a32158188ade8413761b3aca4a7180779" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.price.entity.AllPriceId.equals</definition>
+        <argsstring>(Object object)</argsstring>
+        <name>equals</name>
+        <qualifiedname>com.price.entity.AllPriceId.equals</qualifiedname>
+        <param>
+          <type>Object</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сравнивает этот объект с другим объектом на равенство. </para>
+<para>Два объекта <javadoccode>AllPriceId</javadoccode> считаются равными, если равны все их поля.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект для сравнения </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><javadoccode>true</javadoccode> если объекты равны, <javadoccode>false</javadoccode> в противном случае</para>
+</simplesect>
+<simplesect kind="see"><para>Objects#equals(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="189" column="20" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="189" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1a62f47a3de3dfcd5736f050947074c48f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int com.price.entity.AllPriceId.hashCode</definition>
+        <argsstring>()</argsstring>
+        <name>hashCode</name>
+        <qualifiedname>com.price.entity.AllPriceId.hashCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает хэш-код объекта. </para>
+<para>Хэш-код вычисляется на основе всех полей объекта для обеспечения консистентности с методом <computeroutput><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a32158188ade8413761b3aca4a7180779" kindref="member">equals(Object)</ref></computeroutput>.</para>
+<para><simplesect kind="return"><para>хэш-код объекта</para>
+</simplesect>
+<simplesect kind="see"><para>Objects#hash(Object...) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="215" column="16" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="215" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1ad0f2dc778cc543727e2940f433d189ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.entity.AllPriceId.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>com.price.entity.AllPriceId.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает строковое представление объекта. </para>
+<para>Формат строки: <javadoccode>&quot;carwashName,carwashAddress,service,bodytype,priceDate&quot;</javadoccode> где поля разделены запятыми. Это представление используется методом <computeroutput><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a853b99801be67962d41b6aae4a1852a7" kindref="member">fromString(String)</ref></computeroutput> для обратного преобразования.</para>
+<para><simplesect kind="return"><para>строковое представление объекта в формате CSV</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a853b99801be67962d41b6aae4a1852a7" kindref="member">fromString(String)</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>Object#toString() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="232" column="19" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="232" bodyend="235"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_all_price_id_1a853b99801be67962d41b6aae4a1852a7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a9d7d2ea47f36705a39679556c9cf0c78" kindref="member">AllPriceId</ref></type>
+        <definition>static AllPriceId com.price.entity.AllPriceId.fromString</definition>
+        <argsstring>(String str)</argsstring>
+        <name>fromString</name>
+        <qualifiedname>com.price.entity.AllPriceId.fromString</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Создает объект <javadoccode>AllPriceId</javadoccode> из строкового представления. </para>
+<para>Метод парсит строку в формате, возвращаемом методом <computeroutput><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id_1ad0f2dc778cc543727e2940f433d189ca" kindref="member">toString()</ref></computeroutput>. Поддерживает URL-encoded строки (автоматически декодирует).</para>
+<para><bold>Формат строки:</bold> <javadoccode>&quot;название_мойки,адрес_мойки,услуга,тип_кузова,дата&quot;</javadoccode></para>
+<para><bold>Пример:</bold> <preformatted><javadoccode>
+// Простая строка
+String str = &quot;Мойка Центральная,ул. Ленина, 10,Полная мойка,Седан,2024-01-15&quot;;
+AllPriceId id = AllPriceId.fromString(str);
+
+// URL-encoded строка
+String encoded = &quot;Мойка%20Центральная,ул.%20Ленина%2C%2010,Полная%20мойка,Седан,2024-01-15&quot;;
+AllPriceId id2 = AllPriceId.fromString(encoded);
+</javadoccode></preformatted></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>строковое представление объекта в CSV формате </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>новый объект <javadoccode>AllPriceId</javadoccode></para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если строка имеет неверный формат </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RuntimeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если возникает ошибка парсинга или декодирования</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id_1ad0f2dc778cc543727e2940f433d189ca" kindref="member">toString()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>java.net.URLDecoder </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/AllPriceId.java" line="266" column="30" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="266" bodyend="283"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Составной первичный ключ для сущности <computeroutput><ref refid="classcom_1_1price_1_1entity_1_1_all_price" kindref="compound">AllPrice</ref></computeroutput>. </para>
+<para>Этот класс представляет собой уникальный идентификатор записи о цене услуги автомойки. Ключ состоит из пяти полей, которые в совокупности обеспечивают уникальность записи.</para>
+<para><bold>Структура ключа:</bold> <orderedlist>
+<listitem>
+<para>Название автомойки </para>
+</listitem>
+<listitem>
+<para>Адрес автомойки </para>
+</listitem>
+<listitem>
+<para>Название услуги </para>
+</listitem>
+<listitem>
+<para>Дата установки цены </para>
+</listitem>
+<listitem>
+<para>Тип кузова автомобиля </para>
+</listitem>
+</orderedlist>
+</para>
+<para><bold>Важно:</bold> Класс реализует интерфейс <computeroutput><ref refid="" kindref="compound">Serializable</ref></computeroutput> для корректной работы в распределенных системах и кэшировании.</para>
+<para><simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_all_price" kindref="compound">AllPrice</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>Embeddable </para>
+</simplesect>
+<simplesect kind="see"><para>Serializable </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/entity/AllPriceId.java" line="32" column="7" bodyfile="src/main/java/com/price/entity/AllPriceId.java" bodystart="32" bodyend="284"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a9d7d2ea47f36705a39679556c9cf0c78" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>AllPriceId</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1ab0e19b0a27ff1142973337bfdac284f5" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>AllPriceId</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1acf3692f7d26e4ddae468408744547c6b" prot="private" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>bodytype</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a41e042840350265eed9ce84f55c99f37" prot="private" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>carwashAddress</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a49bdd9496d1799ef68927a76aef998e8" prot="private" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>carwashName</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a32158188ade8413761b3aca4a7180779" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>equals</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a853b99801be67962d41b6aae4a1852a7" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>fromString</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1abe56871c2f27dd30549384c4b6c28246" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>getBodytype</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1ad6e2716b7ab6923cbf0a3df8f935a4a7" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>getCarwashAddress</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1ac5b071f41337388ba0e9fd8ef32caeec" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>getCarwashName</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a5d08e3b8af1533c315c8f5cf30088aca" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>getPriceDate</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a2e488dc5c23fa1437db92b675aca4b25" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>getService</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a62f47a3de3dfcd5736f050947074c48f" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>hashCode</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a04dc0f220fdd976c8a9b35a667bb52f3" prot="private" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>priceDate</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a2905b12ae737321feb24668db1d03aa7" prot="private" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>service</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a8ab7c5db5ed0e83fff1d4be022ac405c" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>setBodytype</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a9d6c3d04ae2c4a9576721e8e6d932750" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>setCarwashAddress</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a1ab3237dc76d0cdb356bb0527824e23a" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>setCarwashName</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a0d001552afb2d1b502f9f56934cfc9db" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>setPriceDate</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1a61793ee032f3d33a8b32d7db199403a3" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>setService</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_all_price_id_1ad0f2dc778cc543727e2940f433d189ca" prot="public" virt="non-virtual"><scope>com::price::entity::AllPriceId</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

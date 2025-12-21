@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="interfacecom_1_1price_1_1repository_1_1_all_price_repository" kind="interface" language="Java" prot="public">
+    <compoundname>com::price::repository::AllPriceRepository</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JpaRepository&lt; AllPrice, AllPriceId &gt;</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacecom_1_1price_1_1repository_1_1_all_price_repository_1a2ec7d37056d2d06482ffdfdce4d507ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1price_1_1entity_1_1_all_price" kindref="compound">AllPrice</ref> &gt;</type>
+        <definition>List&lt; AllPrice &gt; com.price.repository.AllPriceRepository.findActualPrices</definition>
+        <argsstring>()</argsstring>
+        <name>findActualPrices</name>
+        <qualifiedname>com.price.repository.AllPriceRepository.findActualPrices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Находит актуальные цены на услуги автомоек. </para>
+<para>Выполняет нативный SQL-запрос, вызывающий хранимую функцию базы данных <javadoccode>get_actual_from_allprice()</javadoccode>. Функция возвращает самые последние (актуальные) цены для каждой комбинации услуги, автомойки и типа кузова.</para>
+<para><bold>Логика актуальности:</bold> Для каждой уникальной комбинации (автомойка × услуга × тип кузова) выбирается запись с самой поздней датой (<javadoccode>price_date</javadoccode>).</para>
+<para><bold>Примечание:</bold> Используется нативный запрос, так как логика выборки актуальных цен реализована на уровне базы данных в хранимой функции.</para>
+<para><simplesect kind="return"><para>список актуальных цен услуг; возвращает пустой список, если нет данных</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>org.springframework.dao.DataAccessException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>при ошибках доступа к базе данных</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>Query </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_all_price" kindref="compound">AllPrice</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/repository/AllPriceRepository.java" line="53" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Репозиторий для работы с сущностью <computeroutput><ref refid="classcom_1_1price_1_1entity_1_1_all_price" kindref="compound">AllPrice</ref></computeroutput>. </para>
+<para>Предоставляет методы доступа к данным о ценах услуг автомоек, включая базовые CRUD-операции, наследуемые от <computeroutput><ref refid="" kindref="compound">JpaRepository</ref></computeroutput>, и кастомные запросы для получения актуальных цен.</para>
+<para><bold>Наследуемые методы:</bold> <itemizedlist>
+<listitem>
+<para><computeroutput><ref refid="" kindref="compound">JpaRepository#save(Object)</ref></computeroutput> - сохранение или обновление записи </para>
+</listitem>
+<listitem>
+<para><computeroutput><ref refid="" kindref="compound">JpaRepository#findById(Object)</ref></computeroutput> - поиск по составному ключу </para>
+</listitem>
+<listitem>
+<para><computeroutput><ref refid="" kindref="compound">JpaRepository#findAll()</ref></computeroutput> - получение всех записей </para>
+</listitem>
+<listitem>
+<para><computeroutput><ref refid="" kindref="compound">JpaRepository#delete(Object)</ref></computeroutput> - удаление записи </para>
+</listitem>
+<listitem>
+<para><computeroutput><ref refid="" kindref="compound">JpaRepository#count()</ref></computeroutput> - подсчет количества записей </para>
+</listitem>
+</itemizedlist>
+</para>
+<para><simplesect kind="see"><para>JpaRepository </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_all_price" kindref="compound">AllPrice</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id" kindref="compound">AllPriceId</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/repository/AllPriceRepository.java" line="30" column="18" bodyfile="src/main/java/com/price/repository/AllPriceRepository.java" bodystart="30" bodyend="54"/>
+    <listofallmembers>
+      <member refid="interfacecom_1_1price_1_1repository_1_1_all_price_repository_1a2ec7d37056d2d06482ffdfdce4d507ce" prot="public" virt="non-virtual"><scope>com::price::repository::AllPriceRepository</scope><name>findActualPrices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

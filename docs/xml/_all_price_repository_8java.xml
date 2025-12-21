@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_all_price_repository_8java" kind="file" language="Java">
+    <compoundname>AllPriceRepository.java</compoundname>
+    <includes local="no">com.price.entity.AllPrice</includes>
+    <includes local="no">com.price.entity.AllPriceId</includes>
+    <includes local="no">org.springframework.data.jpa.repository.JpaRepository</includes>
+    <includes local="no">org.springframework.data.jpa.repository.Query</includes>
+    <includes local="no">java.util.List</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/main/java/com/price/repository/AllPriceRepository.java</label>
+        <link refid="_all_price_repository_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.price.entity.AllPrice</label>
+      </node>
+      <node id="3">
+        <label>com.price.entity.AllPriceId</label>
+      </node>
+      <node id="6">
+        <label>java.util.List</label>
+      </node>
+      <node id="4">
+        <label>org.springframework.data.jpa.repository.JpaRepository</label>
+      </node>
+      <node id="5">
+        <label>org.springframework.data.jpa.repository.Query</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interfacecom_1_1price_1_1repository_1_1_all_price_repository" prot="public">com::price::repository::AllPriceRepository</innerclass>
+    <innernamespace refid="namespacecom_1_1price_1_1repository">com::price::repository</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/price/repository/AllPriceRepository.java"/>
+  </compounddef>
+</doxygen>

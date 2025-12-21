@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_service_service_8java" kind="file" language="Java">
+    <compoundname>ServiceService.java</compoundname>
+    <includes local="no">com.price.entity.ServiceC</includes>
+    <includes local="no">com.price.repository.ServiceRepository</includes>
+    <includes local="no">org.springframework.beans.factory.annotation.Autowired</includes>
+    <includes local="no">org.springframework.stereotype.Service</includes>
+    <includes local="no">org.springframework.transaction.annotation.Transactional</includes>
+    <includes local="no">java.util.List</includes>
+    <includes local="no">java.util.Optional</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/main/java/com/price/service/ServiceService.java</label>
+        <link refid="_service_service_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>com.price.entity.ServiceC</label>
+      </node>
+      <node id="3">
+        <label>com.price.repository.ServiceRepository</label>
+      </node>
+      <node id="7">
+        <label>java.util.List</label>
+      </node>
+      <node id="8">
+        <label>java.util.Optional</label>
+      </node>
+      <node id="4">
+        <label>org.springframework.beans.factory.annotation.Autowired</label>
+      </node>
+      <node id="5">
+        <label>org.springframework.stereotype.Service</label>
+      </node>
+      <node id="6">
+        <label>org.springframework.transaction.annotation.Transactional</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classcom_1_1price_1_1service_1_1_service_service" prot="public">com::price::service::ServiceService</innerclass>
+    <innernamespace refid="namespacecom_1_1price_1_1service">com::price::service</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/price/service/ServiceService.java"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespacecom_1_1price_1_1controller" kind="namespace" language="Java">
+    <compoundname>com::price::controller</compoundname>
+    <innerclass refid="classcom_1_1price_1_1controller_1_1_all_price_controller" prot="public">com::price::controller::AllPriceController</innerclass>
+    <innerclass refid="classcom_1_1price_1_1controller_1_1_bodytype_controller" prot="public">com::price::controller::BodytypeController</innerclass>
+    <innerclass refid="classcom_1_1price_1_1controller_1_1_carwash_controller" prot="public">com::price::controller::CarwashController</innerclass>
+    <innerclass refid="classcom_1_1price_1_1controller_1_1_home_controller" prot="public">com::price::controller::HomeController</innerclass>
+    <innerclass refid="classcom_1_1price_1_1controller_1_1_service_controller" prot="public">com::price::controller::ServiceController</innerclass>
+    <innerclass refid="classcom_1_1price_1_1controller_1_1_service_price_controller" prot="public">com::price::controller::ServicePriceController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/price/controller/AllPriceController.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

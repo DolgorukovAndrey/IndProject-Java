@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1service_1_1_service_service" kind="class" language="Java" prot="public">
+    <compoundname>com::price::service::ServiceService</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1price_1_1service_1_1_service_service_1a98f5771f1ba83ed05bc69cf8cf59c4e3" prot="private" static="no" mutable="no">
+        <type>final <ref refid="interfacecom_1_1price_1_1repository_1_1_service_repository" kindref="compound">ServiceRepository</ref></type>
+        <definition>final ServiceRepository com.price.service.ServiceService.serviceRepository</definition>
+        <argsstring></argsstring>
+        <name>serviceRepository</name>
+        <qualifiedname>com.price.service.ServiceService.serviceRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Репозиторий для работы с услугами. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/ServiceService.java" line="42" column="37" bodyfile="src/main/java/com/price/service/ServiceService.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_service_service_1aa700a46e6f14c3c11c2ad7cf5bd65f3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.service.ServiceService.ServiceService</definition>
+        <argsstring>(ServiceRepository serviceRepository)</argsstring>
+        <name>ServiceService</name>
+        <qualifiedname>com.price.service.ServiceService.ServiceService</qualifiedname>
+        <param>
+          <type><ref refid="interfacecom_1_1price_1_1repository_1_1_service_repository" kindref="compound">ServiceRepository</ref></type>
+          <declname>serviceRepository</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор с инъекцией зависимости репозитория.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serviceRepository</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>репозиторий для работы с услугами. Не должен быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>serviceRepository</javadoccode> равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/ServiceService.java" line="52" column="12" bodyfile="src/main/java/com/price/service/ServiceService.java" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_service_service_1acdc197865b29315c29a58a29b0474d8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref> &gt;</type>
+        <definition>List&lt; ServiceC &gt; com.price.service.ServiceService.getAllService</definition>
+        <argsstring>()</argsstring>
+        <name>getAllService</name>
+        <qualifiedname>com.price.service.ServiceService.getAllService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Получает все услуги автомоек.</para>
+<para><simplesect kind="return"><para>список всех услуг. Возвращает пустой список, если услуги отсутствуют</para>
+</simplesect>
+<simplesect kind="see"><para>ServiceRepository#findAll() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/ServiceService.java" line="63" column="17" bodyfile="src/main/java/com/price/service/ServiceService.java" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_service_service_1a9afd92d8fc8988cdd8507e7f13bcc97f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Optional&lt; <ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref> &gt;</type>
+        <definition>Optional&lt; ServiceC &gt; com.price.service.ServiceService.getServiceCById</definition>
+        <argsstring>(Long idService)</argsstring>
+        <name>getServiceCById</name>
+        <qualifiedname>com.price.service.ServiceService.getServiceCById</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>idService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Находит услугу по её идентификатору.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор услуги. Не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput><ref refid="" kindref="compound">Optional</ref></computeroutput> с найденной услугой или пустой <computeroutput><ref refid="" kindref="compound">Optional</ref></computeroutput>, если услуга с указанным ID не найдена</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>idService</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>ServiceRepository#findById(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/ServiceService.java" line="78" column="21" bodyfile="src/main/java/com/price/service/ServiceService.java" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_service_service_1a64dff8d0a0f3a886f389a48eb69d2119" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref></type>
+        <definition>ServiceC com.price.service.ServiceService.saveServiceC</definition>
+        <argsstring>(ServiceC serviceC)</argsstring>
+        <name>saveServiceC</name>
+        <qualifiedname>com.price.service.ServiceService.saveServiceC</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref></type>
+          <declname>serviceC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сохраняет новую услугу. </para>
+<para>Если передаваемый объект уже имеет идентификатор, метод выполнит обновление существующей записи. В противном случае будет создана новая запись.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serviceC</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект услуги для сохранения. Не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>сохраненный объект услуги</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>serviceC</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>ServiceRepository#save(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/ServiceService.java" line="95" column="21" bodyfile="src/main/java/com/price/service/ServiceService.java" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_service_service_1abacbb3335579aee5ac435a1d195d688e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref></type>
+        <definition>ServiceC com.price.service.ServiceService.updateServiceC</definition>
+        <argsstring>(Long idService, ServiceC serviceCDetails)</argsstring>
+        <name>updateServiceC</name>
+        <qualifiedname>com.price.service.ServiceService.updateServiceC</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>idService</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref></type>
+          <declname>serviceCDetails</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обновляет существующую услугу. </para>
+<para>Находит услугу по идентификатору и обновляет её название и описание.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор обновляемой услуги. Не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>serviceCDetails</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект с новыми данными для обновления. Не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>обновленный объект услуги</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>idService</javadoccode> или <javadoccode>serviceCDetails</javadoccode> равны <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RuntimeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если услуга с указанным ID не найдена</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>ServiceRepository#findById(Object) </para>
+</simplesect>
+<simplesect kind="see"><para>ServiceRepository#save(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/ServiceService.java" line="115" column="21" bodyfile="src/main/java/com/price/service/ServiceService.java" bodystart="115" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_service_service_1a6282b3c1b27645b351129eaebb679cec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.service.ServiceService.deleteServiceC</definition>
+        <argsstring>(Long idService)</argsstring>
+        <name>deleteServiceC</name>
+        <qualifiedname>com.price.service.ServiceService.deleteServiceC</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>idService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Удаляет услугу по идентификатору. </para>
+<para>Если услуга с указанным ID не существует, метод не выбрасывает исключение.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор услуги для удаления. Не должен быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>idService</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>ServiceRepository#deleteById(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/ServiceService.java" line="134" column="17" bodyfile="src/main/java/com/price/service/ServiceService.java" bodystart="134" bodyend="136"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Сервис для работы с услугами автомоек. </para>
+<para>Предоставляет бизнес-логику для операций с сущностью <computeroutput><ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref></computeroutput>, включая создание, чтение, обновление и удаление записей об услугах автомоек. Все операции выполняются в транзакционном контексте.</para>
+<para><bold>Примечание:</bold> Класс сущности назван <javadoccode>ServiceC</javadoccode> во избежание конфликта имен с зарезервированным словом &quot;service&quot; в некоторых контекстах.</para>
+<para><bold>Основные возможности:</bold> <itemizedlist>
+<listitem>
+<para>Получение всех услуг </para>
+</listitem>
+<listitem>
+<para>Поиск услуги по идентификатору </para>
+</listitem>
+<listitem>
+<para>Сохранение новой услуги </para>
+</listitem>
+<listitem>
+<para>Обновление существующей услуги </para>
+</listitem>
+<listitem>
+<para>Удаление услуги </para>
+</listitem>
+</itemizedlist>
+</para>
+<para><simplesect kind="see"><para>Service </para>
+</simplesect>
+<simplesect kind="see"><para>Transactional </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="interfacecom_1_1price_1_1repository_1_1_service_repository" kindref="compound">ServiceRepository</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/service/ServiceService.java" line="38" column="7" bodyfile="src/main/java/com/price/service/ServiceService.java" bodystart="38" bodyend="137"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1service_1_1_service_service_1a6282b3c1b27645b351129eaebb679cec" prot="public" virt="non-virtual"><scope>com::price::service::ServiceService</scope><name>deleteServiceC</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_service_service_1acdc197865b29315c29a58a29b0474d8f" prot="public" virt="non-virtual"><scope>com::price::service::ServiceService</scope><name>getAllService</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_service_service_1a9afd92d8fc8988cdd8507e7f13bcc97f" prot="public" virt="non-virtual"><scope>com::price::service::ServiceService</scope><name>getServiceCById</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_service_service_1a64dff8d0a0f3a886f389a48eb69d2119" prot="public" virt="non-virtual"><scope>com::price::service::ServiceService</scope><name>saveServiceC</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_service_service_1a98f5771f1ba83ed05bc69cf8cf59c4e3" prot="private" virt="non-virtual"><scope>com::price::service::ServiceService</scope><name>serviceRepository</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_service_service_1aa700a46e6f14c3c11c2ad7cf5bd65f3b" prot="public" virt="non-virtual"><scope>com::price::service::ServiceService</scope><name>ServiceService</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_service_service_1abacbb3335579aee5ac435a1d195d688e" prot="public" virt="non-virtual"><scope>com::price::service::ServiceService</scope><name>updateServiceC</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

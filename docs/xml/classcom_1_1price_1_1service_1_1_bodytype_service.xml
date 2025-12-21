@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1service_1_1_bodytype_service" kind="class" language="Java" prot="public">
+    <compoundname>com::price::service::BodytypeService</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1price_1_1service_1_1_bodytype_service_1ab04f02e6fcd77c480e8242b888872954" prot="private" static="no" mutable="no">
+        <type>final <ref refid="interfacecom_1_1price_1_1repository_1_1_bodytype_repository" kindref="compound">BodytypeRepository</ref></type>
+        <definition>final BodytypeRepository com.price.service.BodytypeService.bodytypeRepository</definition>
+        <argsstring></argsstring>
+        <name>bodytypeRepository</name>
+        <qualifiedname>com.price.service.BodytypeService.bodytypeRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Репозиторий для работы с типами кузовов. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/BodytypeService.java" line="39" column="38" bodyfile="src/main/java/com/price/service/BodytypeService.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_bodytype_service_1a32840f3034fbae6db4285f465c8e735a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.service.BodytypeService.BodytypeService</definition>
+        <argsstring>(BodytypeRepository bodytypeRepository)</argsstring>
+        <name>BodytypeService</name>
+        <qualifiedname>com.price.service.BodytypeService.BodytypeService</qualifiedname>
+        <param>
+          <type><ref refid="interfacecom_1_1price_1_1repository_1_1_bodytype_repository" kindref="compound">BodytypeRepository</ref></type>
+          <declname>bodytypeRepository</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор с инъекцией зависимости репозитория.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bodytypeRepository</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>репозиторий для работы с типами кузовов. Не должен быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>bodytypeRepository</javadoccode> равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/BodytypeService.java" line="49" column="12" bodyfile="src/main/java/com/price/service/BodytypeService.java" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_bodytype_service_1a40eba98cce02158dfa731d3143224316" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref> &gt;</type>
+        <definition>List&lt; Bodytype &gt; com.price.service.BodytypeService.getAllBodytype</definition>
+        <argsstring>()</argsstring>
+        <name>getAllBodytype</name>
+        <qualifiedname>com.price.service.BodytypeService.getAllBodytype</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Получает все типы кузовов автомобилей.</para>
+<para><simplesect kind="return"><para>список всех типов кузовов. Возвращает пустой список, если типы кузовов отсутствуют</para>
+</simplesect>
+<simplesect kind="see"><para>BodytypeRepository#findAll() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/BodytypeService.java" line="60" column="17" bodyfile="src/main/java/com/price/service/BodytypeService.java" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_bodytype_service_1a80b8379cf3a783e61ce61dffcc15b716" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Optional&lt; <ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref> &gt;</type>
+        <definition>Optional&lt; Bodytype &gt; com.price.service.BodytypeService.getBodytypeById</definition>
+        <argsstring>(Long idBodytype)</argsstring>
+        <name>getBodytypeById</name>
+        <qualifiedname>com.price.service.BodytypeService.getBodytypeById</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>idBodytype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Находит тип кузова по его идентификатору.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idBodytype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор типа кузова. Не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput><ref refid="" kindref="compound">Optional</ref></computeroutput> с найденным типом кузова или пустой <computeroutput><ref refid="" kindref="compound">Optional</ref></computeroutput>, если тип кузова с указанным ID не найден</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>idBodytype</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>BodytypeRepository#findById(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/BodytypeService.java" line="75" column="21" bodyfile="src/main/java/com/price/service/BodytypeService.java" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_bodytype_service_1ab90f5b69ea669de6c7da84f316e75656" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref></type>
+        <definition>Bodytype com.price.service.BodytypeService.saveBodytype</definition>
+        <argsstring>(Bodytype bodytype)</argsstring>
+        <name>saveBodytype</name>
+        <qualifiedname>com.price.service.BodytypeService.saveBodytype</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref></type>
+          <declname>bodytype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сохраняет новый тип кузова. </para>
+<para>Если передаваемый объект уже имеет идентификатор, метод выполнит обновление существующей записи. В противном случае будет создана новая запись.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bodytype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект типа кузова для сохранения; не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>сохраненный объект типа кузова</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>bodytype</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>BodytypeRepository#save(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/BodytypeService.java" line="92" column="21" bodyfile="src/main/java/com/price/service/BodytypeService.java" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_bodytype_service_1abd8fdbd97e252ef045ff1a64b3744002" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref></type>
+        <definition>Bodytype com.price.service.BodytypeService.updateBodytype</definition>
+        <argsstring>(Long idBodytype, Bodytype bodytypeDetails)</argsstring>
+        <name>updateBodytype</name>
+        <qualifiedname>com.price.service.BodytypeService.updateBodytype</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>idBodytype</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref></type>
+          <declname>bodytypeDetails</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обновляет существующий тип кузова. </para>
+<para>Находит тип кузова по идентификатору и обновляет его название.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idBodytype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор обновляемого типа кузова. Не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bodytypeDetails</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект с новыми данными для обновления. Не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>обновленный объект типа кузова</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>idBodytype</javadoccode> или <javadoccode>bodytypeDetails</javadoccode> равны <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RuntimeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если тип кузова с указанным ID не найден</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>BodytypeRepository#findById(Object) </para>
+</simplesect>
+<simplesect kind="see"><para>BodytypeRepository#save(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/BodytypeService.java" line="110" column="21" bodyfile="src/main/java/com/price/service/BodytypeService.java" bodystart="110" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_bodytype_service_1add3496ab107e9a9e9518c872b7c2c4cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.service.BodytypeService.deleteBodytype</definition>
+        <argsstring>(Long id)</argsstring>
+        <name>deleteBodytype</name>
+        <qualifiedname>com.price.service.BodytypeService.deleteBodytype</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Удаляет тип кузова по идентификатору. </para>
+<para>Если тип кузова с указанным ID не существует, метод не выбрасывает исключение.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор типа кузова для удаления. Не должен быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>id</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>BodytypeRepository#deleteById(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/BodytypeService.java" line="128" column="17" bodyfile="src/main/java/com/price/service/BodytypeService.java" bodystart="128" bodyend="130"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Сервис для работы с типами кузовов автомобилей. </para>
+<para>Предоставляет бизнес-логику для операций с сущностью <computeroutput><ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref></computeroutput>, включая создание, чтение, обновление и удаление типов кузовов. Все операции выполняются в транзакционном контексте.</para>
+<para><bold>Основные возможности:</bold> <itemizedlist>
+<listitem>
+<para>Получение всех типов кузовов </para>
+</listitem>
+<listitem>
+<para>Поиск типа кузова по идентификатору </para>
+</listitem>
+<listitem>
+<para>Сохранение нового типа кузова </para>
+</listitem>
+<listitem>
+<para>Обновление существующего типа кузова </para>
+</listitem>
+<listitem>
+<para>Удаление типа кузова </para>
+</listitem>
+</itemizedlist>
+</para>
+<para><simplesect kind="see"><para>Service </para>
+</simplesect>
+<simplesect kind="see"><para>Transactional </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="interfacecom_1_1price_1_1repository_1_1_bodytype_repository" kindref="compound">BodytypeRepository</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/service/BodytypeService.java" line="35" column="7" bodyfile="src/main/java/com/price/service/BodytypeService.java" bodystart="35" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1service_1_1_bodytype_service_1ab04f02e6fcd77c480e8242b888872954" prot="private" virt="non-virtual"><scope>com::price::service::BodytypeService</scope><name>bodytypeRepository</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_bodytype_service_1a32840f3034fbae6db4285f465c8e735a" prot="public" virt="non-virtual"><scope>com::price::service::BodytypeService</scope><name>BodytypeService</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_bodytype_service_1add3496ab107e9a9e9518c872b7c2c4cd" prot="public" virt="non-virtual"><scope>com::price::service::BodytypeService</scope><name>deleteBodytype</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_bodytype_service_1a40eba98cce02158dfa731d3143224316" prot="public" virt="non-virtual"><scope>com::price::service::BodytypeService</scope><name>getAllBodytype</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_bodytype_service_1a80b8379cf3a783e61ce61dffcc15b716" prot="public" virt="non-virtual"><scope>com::price::service::BodytypeService</scope><name>getBodytypeById</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_bodytype_service_1ab90f5b69ea669de6c7da84f316e75656" prot="public" virt="non-virtual"><scope>com::price::service::BodytypeService</scope><name>saveBodytype</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_bodytype_service_1abd8fdbd97e252ef045ff1a64b3744002" prot="public" virt="non-virtual"><scope>com::price::service::BodytypeService</scope><name>updateBodytype</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="interfacecom_1_1price_1_1repository_1_1_service_price_repository" kind="interface" language="Java" prot="public">
+    <compoundname>com::price::repository::ServicePriceRepository</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JpaRepository&lt; ServicePrice, Long &gt;</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Репозиторий для работы с сущностью <computeroutput><ref refid="classcom_1_1price_1_1entity_1_1_service_price" kindref="compound">ServicePrice</ref></computeroutput>. </para>
+<para>Предоставляет стандартные CRUD-операции для управления ценами на услуги автомоек. Все базовые операции наследуются от <computeroutput><ref refid="" kindref="compound">JpaRepository</ref></computeroutput>.</para>
+<para><bold>Доступные операции (наследуемые от JpaRepository):</bold> <itemizedlist>
+<listitem>
+<para><bold>Создание/Обновление:</bold> <computeroutput><ref refid="" kindref="compound">save(ServicePrice)</ref></computeroutput> </para>
+</listitem>
+<listitem>
+<para><bold>Поиск по ID:</bold> <computeroutput><ref refid="" kindref="compound">findById(Long)</ref></computeroutput> </para>
+</listitem>
+<listitem>
+<para><bold>Получение всех записей:</bold> <computeroutput><ref refid="" kindref="compound">findAll()</ref></computeroutput> </para>
+</listitem>
+<listitem>
+<para><bold>Удаление:</bold> <computeroutput><ref refid="" kindref="compound">delete(ServicePrice)</ref></computeroutput> </para>
+</listitem>
+<listitem>
+<para><bold>Удаление по ID:</bold> <computeroutput><ref refid="" kindref="compound">deleteById(Long)</ref></computeroutput> </para>
+</listitem>
+<listitem>
+<para><bold>Проверка существования:</bold> <computeroutput><ref refid="" kindref="compound">existsById(Long)</ref></computeroutput> </para>
+</listitem>
+<listitem>
+<para><bold>Подсчет записей:</bold> <computeroutput><ref refid="" kindref="compound">count()</ref></computeroutput> </para>
+</listitem>
+</itemizedlist>
+</para>
+<para><simplesect kind="see"><para>JpaRepository </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_service_price" kindref="compound">ServicePrice</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/repository/ServicePriceRepository.java" line="26" column="18" bodyfile="src/main/java/com/price/repository/ServicePriceRepository.java" bodystart="26" bodyend="27"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

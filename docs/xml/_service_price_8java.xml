@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_service_price_8java" kind="file" language="Java">
+    <compoundname>ServicePrice.java</compoundname>
+    <includes local="no">jakarta.persistence.*</includes>
+    <includes local="no">jakarta.validation.constraints.Max</includes>
+    <includes local="no">jakarta.validation.constraints.Min</includes>
+    <includes local="no">jakarta.validation.constraints.NotNull</includes>
+    <includes local="no">java.time.LocalDate</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/main/java/com/price/entity/ServicePrice.java</label>
+        <link refid="_service_price_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>jakarta.persistence.*</label>
+      </node>
+      <node id="3">
+        <label>jakarta.validation.constraints.Max</label>
+      </node>
+      <node id="4">
+        <label>jakarta.validation.constraints.Min</label>
+      </node>
+      <node id="5">
+        <label>jakarta.validation.constraints.NotNull</label>
+      </node>
+      <node id="6">
+        <label>java.time.LocalDate</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classcom_1_1price_1_1entity_1_1_service_price" prot="public">com::price::entity::ServicePrice</innerclass>
+    <innernamespace refid="namespacecom_1_1price_1_1entity">com::price::entity</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/price/entity/ServicePrice.java"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1service_1_1_all_price_service" kind="class" language="Java" prot="public">
+    <compoundname>com::price::service::AllPriceService</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1price_1_1service_1_1_all_price_service_1a8e94f75c66bd0d5f871f77105e79f697" prot="private" static="no" mutable="no">
+        <type>final <ref refid="interfacecom_1_1price_1_1repository_1_1_all_price_repository" kindref="compound">AllPriceRepository</ref></type>
+        <definition>final AllPriceRepository com.price.service.AllPriceService.allPriceRepository</definition>
+        <argsstring></argsstring>
+        <name>allPriceRepository</name>
+        <qualifiedname>com.price.service.AllPriceService.allPriceRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Репозиторий для работы с ценами. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/AllPriceService.java" line="42" column="38" bodyfile="src/main/java/com/price/service/AllPriceService.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1service_1_1_all_price_service_1aa4fccedcc34cbbcb776edf19eea23bdf" prot="private" static="no" mutable="no">
+        <type>JdbcTemplate</type>
+        <definition>JdbcTemplate com.price.service.AllPriceService.jdbcTemplate</definition>
+        <argsstring></argsstring>
+        <name>jdbcTemplate</name>
+        <qualifiedname>com.price.service.AllPriceService.jdbcTemplate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Шаблон для выполнения SQL-запросов. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/AllPriceService.java" line="48" column="26" bodyfile="src/main/java/com/price/service/AllPriceService.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_all_price_service_1a3bc9eb2396cce8fcbb8d714514d90703" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.service.AllPriceService.AllPriceService</definition>
+        <argsstring>(AllPriceRepository allPriceRepository)</argsstring>
+        <name>AllPriceService</name>
+        <qualifiedname>com.price.service.AllPriceService.AllPriceService</qualifiedname>
+        <param>
+          <type><ref refid="interfacecom_1_1price_1_1repository_1_1_all_price_repository" kindref="compound">AllPriceRepository</ref></type>
+          <declname>allPriceRepository</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор с инъекцией зависимости репозитория.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allPriceRepository</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>репозиторий для работы с ценами. Не должен быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>allPriceRepository</javadoccode> равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/AllPriceService.java" line="58" column="12" bodyfile="src/main/java/com/price/service/AllPriceService.java" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_all_price_service_1aaa453bfa69f7c8331475cbf0a1d993e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Optional&lt; <ref refid="classcom_1_1price_1_1entity_1_1_all_price" kindref="compound">AllPrice</ref> &gt;</type>
+        <definition>Optional&lt; AllPrice &gt; com.price.service.AllPriceService.getAllPriceById</definition>
+        <argsstring>(AllPriceId id)</argsstring>
+        <name>getAllPriceById</name>
+        <qualifiedname>com.price.service.AllPriceService.getAllPriceById</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id" kindref="compound">AllPriceId</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Находит запись о цене по составному идентификатору.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>составной идентификатор цены; не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput><ref refid="" kindref="compound">Optional</ref></computeroutput> с найденной записью о цене или пустой <computeroutput><ref refid="" kindref="compound">Optional</ref></computeroutput>, если запись не найдена</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>id</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>AllPriceRepository#findById(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/AllPriceService.java" line="73" column="21" bodyfile="src/main/java/com/price/service/AllPriceService.java" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_all_price_service_1a2b77e5f8f2e8049d346b3c99e33473d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1price_1_1entity_1_1_all_price" kindref="compound">AllPrice</ref></type>
+        <definition>AllPrice com.price.service.AllPriceService.saveAllPrice</definition>
+        <argsstring>(AllPrice allPrice)</argsstring>
+        <name>saveAllPrice</name>
+        <qualifiedname>com.price.service.AllPriceService.saveAllPrice</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_all_price" kindref="compound">AllPrice</ref></type>
+          <declname>allPrice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сохраняет или обновляет запись о цене. </para>
+<para>Если запись с таким идентификатором уже существует, она будет обновлена. В противном случае будет создана новая запись.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allPrice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>объект цены для сохранения. Не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>сохраненный объект цены</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>allPrice</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>AllPriceRepository#save(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/AllPriceService.java" line="90" column="21" bodyfile="src/main/java/com/price/service/AllPriceService.java" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_all_price_service_1ac473b45c63ad622831b9a0fefdd27b24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.service.AllPriceService.updateAllPrice</definition>
+        <argsstring>(AllPriceId oldId, AllPriceId newId, AllPrice newData)</argsstring>
+        <name>updateAllPrice</name>
+        <qualifiedname>com.price.service.AllPriceService.updateAllPrice</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id" kindref="compound">AllPriceId</ref></type>
+          <declname>oldId</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id" kindref="compound">AllPriceId</ref></type>
+          <declname>newId</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_all_price" kindref="compound">AllPrice</ref></type>
+          <declname>newData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Обновляет существующую запись о цене. </para>
+<para>Выполняет прямое обновление в базе данных через <computeroutput><ref refid="" kindref="compound">JdbcTemplate</ref></computeroutput>, что позволяет изменять значения составного ключа.</para>
+<para><bold>Важно:</bold> Этот метод изменяет не только данные записи, но и значения составного ключа при необходимости.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>oldId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>исходный идентификатор записи для обновления; не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новый идентификатор для записи (может совпадать с oldId); не должен быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новые данные для записи; не должен быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если любой из параметров равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>RuntimeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если запись не была найдена и обновлена</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>JdbcTemplate#update(String, Object...) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/AllPriceService.java" line="113" column="17" bodyfile="src/main/java/com/price/service/AllPriceService.java" bodystart="113" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_all_price_service_1af0325cf58006cba5dab6f322baa8f90d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.service.AllPriceService.deleteAllPrice</definition>
+        <argsstring>(AllPriceId id)</argsstring>
+        <name>deleteAllPrice</name>
+        <qualifiedname>com.price.service.AllPriceService.deleteAllPrice</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id" kindref="compound">AllPriceId</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Удаляет запись о цене по составному идентификатору.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>идентификатор записи для удаления; не должен быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>id</javadoccode> равен <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>AllPriceRepository#deleteById(Object) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/AllPriceService.java" line="158" column="17" bodyfile="src/main/java/com/price/service/AllPriceService.java" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1service_1_1_all_price_service_1a2957e2848e9f84f8bc78a4fa67562b30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcom_1_1price_1_1entity_1_1_all_price" kindref="compound">AllPrice</ref> &gt;</type>
+        <definition>List&lt; AllPrice &gt; com.price.service.AllPriceService.getActualPrices</definition>
+        <argsstring>()</argsstring>
+        <name>getActualPrices</name>
+        <qualifiedname>com.price.service.AllPriceService.getActualPrices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Получает все актуальные цены на услуги автомоек. <simplesect kind="return"><para>список актуальных цен. Возвращает пустой список, если нет данных</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="interfacecom_1_1price_1_1repository_1_1_all_price_repository_1a2ec7d37056d2d06482ffdfdce4d507ce" kindref="member">AllPriceRepository.findActualPrices()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/service/AllPriceService.java" line="168" column="17" bodyfile="src/main/java/com/price/service/AllPriceService.java" bodystart="168" bodyend="170"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Сервис для работы с ценами услуг автомоек. </para>
+<para>Предоставляет бизнес-логику для операций с сущностью <computeroutput><ref refid="classcom_1_1price_1_1entity_1_1_all_price" kindref="compound">AllPrice</ref></computeroutput>, включая получение, сохранение, обновление и удаление записей о ценах. Использует как Spring Data JPA репозиторий, так и прямой доступ через <computeroutput><ref refid="" kindref="compound">JdbcTemplate</ref></computeroutput> для сложных операций обновления.</para>
+<para><bold>Основные возможности:</bold> <itemizedlist>
+<listitem>
+<para>Получение актуальных цен </para>
+</listitem>
+<listitem>
+<para>Поиск цен по составному ключу </para>
+</listitem>
+<listitem>
+<para>Сохранение новых цен </para>
+</listitem>
+<listitem>
+<para>Обновление существующих записей </para>
+</listitem>
+<listitem>
+<para>Удаление записей </para>
+</listitem>
+</itemizedlist>
+</para>
+<para><simplesect kind="see"><para>Service </para>
+</simplesect>
+<simplesect kind="see"><para>Transactional </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_all_price" kindref="compound">AllPrice</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classcom_1_1price_1_1entity_1_1_all_price_id" kindref="compound">AllPriceId</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/service/AllPriceService.java" line="38" column="7" bodyfile="src/main/java/com/price/service/AllPriceService.java" bodystart="38" bodyend="171"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1service_1_1_all_price_service_1a8e94f75c66bd0d5f871f77105e79f697" prot="private" virt="non-virtual"><scope>com::price::service::AllPriceService</scope><name>allPriceRepository</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_all_price_service_1a3bc9eb2396cce8fcbb8d714514d90703" prot="public" virt="non-virtual"><scope>com::price::service::AllPriceService</scope><name>AllPriceService</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_all_price_service_1af0325cf58006cba5dab6f322baa8f90d" prot="public" virt="non-virtual"><scope>com::price::service::AllPriceService</scope><name>deleteAllPrice</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_all_price_service_1a2957e2848e9f84f8bc78a4fa67562b30" prot="public" virt="non-virtual"><scope>com::price::service::AllPriceService</scope><name>getActualPrices</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_all_price_service_1aaa453bfa69f7c8331475cbf0a1d993e2" prot="public" virt="non-virtual"><scope>com::price::service::AllPriceService</scope><name>getAllPriceById</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_all_price_service_1aa4fccedcc34cbbcb776edf19eea23bdf" prot="private" virt="non-virtual"><scope>com::price::service::AllPriceService</scope><name>jdbcTemplate</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_all_price_service_1a2b77e5f8f2e8049d346b3c99e33473d1" prot="public" virt="non-virtual"><scope>com::price::service::AllPriceService</scope><name>saveAllPrice</name></member>
+      <member refid="classcom_1_1price_1_1service_1_1_all_price_service_1ac473b45c63ad622831b9a0fefdd27b24" prot="public" virt="non-virtual"><scope>com::price::service::AllPriceService</scope><name>updateAllPrice</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

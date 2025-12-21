@@ -1,0 +1,690 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="classcom_1_1price_1_1entity_1_1_service_price" kind="class" language="Java" prot="public">
+    <compoundname>com::price::entity::ServicePrice</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_service_price_1ac46f716f59832864b0faad5abbf3e14c" prot="private" static="no" mutable="no">
+        <type>Long</type>
+        <definition>Long com.price.entity.ServicePrice.idServicePrice</definition>
+        <argsstring></argsstring>
+        <name>idServicePrice</name>
+        <qualifiedname>com.price.entity.ServicePrice.idServicePrice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Уникальный идентификатор записи о цене услуги. </para>
+<para>Генерируется автоматически базой данных при вставке новой записи. Используется стратегия идентификации <computeroutput><ref refid="" kindref="compound">GenerationType#IDENTITY</ref></computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="46" column="18" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_service_price_1a220a1a542758c259730a46c2b7d0c04a" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref></type>
+        <definition>ServiceC com.price.entity.ServicePrice.service</definition>
+        <argsstring></argsstring>
+        <name>service</name>
+        <qualifiedname>com.price.entity.ServicePrice.service</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Услуга, для которой установлена цена. </para>
+<para>Связь многие-к-одному с сущностью <computeroutput><ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref></computeroutput>. Не может быть <javadoccode>null</javadoccode>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="56" column="22" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_service_price_1a4357b35744d44f5559ff9a58897d6ed9" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref></type>
+        <definition>Carwash com.price.entity.ServicePrice.carwash</definition>
+        <argsstring></argsstring>
+        <name>carwash</name>
+        <qualifiedname>com.price.entity.ServicePrice.carwash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Автомойка, предоставляющая услугу. </para>
+<para>Связь многие-к-одному с сущностью <computeroutput><ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref></computeroutput>. Не может быть <javadoccode>null</javadoccode>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="66" column="21" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_service_price_1a369cc8b5e088b8af06664efd6e6176a7" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref></type>
+        <definition>Bodytype com.price.entity.ServicePrice.bodytype</definition>
+        <argsstring></argsstring>
+        <name>bodytype</name>
+        <qualifiedname>com.price.entity.ServicePrice.bodytype</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Тип кузова, для которого предназначена услуга. </para>
+<para>Связь многие-к-одному с сущностью <computeroutput><ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref></computeroutput>. Не может быть <javadoccode>null</javadoccode>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="76" column="22" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_service_price_1a9f729673dcfbcd831041b459f1747e70" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer com.price.entity.ServicePrice.leadTime</definition>
+        <argsstring></argsstring>
+        <name>leadTime</name>
+        <qualifiedname>com.price.entity.ServicePrice.leadTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Время выполнения услуги в минутах. </para>
+<para>Должно быть в диапазоне от 1 до 600 минут. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="87" column="21" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_service_price_1aa5b22678cd231c0dde2d4eb689f0e1e2" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer com.price.entity.ServicePrice.price</definition>
+        <argsstring></argsstring>
+        <name>price</name>
+        <qualifiedname>com.price.entity.ServicePrice.price</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Стоимость услуги в рублях. </para>
+<para>Должна быть в диапазоне от 0 до 1,000,000 рублей. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="98" column="21" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1price_1_1entity_1_1_service_price_1a9753974d3975786db8729d501716021e" prot="private" static="no" mutable="no">
+        <type>LocalDate</type>
+        <definition>LocalDate com.price.entity.ServicePrice.priceDate</definition>
+        <argsstring></argsstring>
+        <name>priceDate</name>
+        <qualifiedname>com.price.entity.ServicePrice.priceDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Дата установки цены. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="105" column="23" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="105" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1a06e8a864fa31584f6c6b21a523a30301" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.entity.ServicePrice.ServicePrice</definition>
+        <argsstring>()</argsstring>
+        <name>ServicePrice</name>
+        <qualifiedname>com.price.entity.ServicePrice.ServicePrice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор по умолчанию. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="110" column="12" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="110" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1a3585bd9e16b34604ccef173a3fc712ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.price.entity.ServicePrice.ServicePrice</definition>
+        <argsstring>(ServiceC service, Carwash carwash, Bodytype bodytype, int leadTime, int price, LocalDate priceDate)</argsstring>
+        <name>ServicePrice</name>
+        <qualifiedname>com.price.entity.ServicePrice.ServicePrice</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref></type>
+          <declname>service</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref></type>
+          <declname>carwash</declname>
+        </param>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref></type>
+          <declname>bodytype</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>leadTime</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>LocalDate</type>
+          <declname>priceDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Создает новую запись о цене услуги с указанными параметрами.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>услуга; не должно быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>carwash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>автомойка; не должно быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bodytype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>тип кузова; не должно быть <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>leadTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>время выполнения в минутах; должно быть от 1 до 600 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>стоимость в рублях; должно быть от 0 до 1,000,000 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priceDate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>дата установки цены; не должно быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если любой из параметров не соответствует ограничениям </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="125" column="12" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="125" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1a1d534611980bdb253112affe46fb5f03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Long</type>
+        <definition>Long com.price.entity.ServicePrice.getIdServicePrice</definition>
+        <argsstring>()</argsstring>
+        <name>getIdServicePrice</name>
+        <qualifiedname>com.price.entity.ServicePrice.getIdServicePrice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает уникальный идентификатор записи о цене.</para>
+<para><simplesect kind="return"><para>идентификатор записи </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="140" column="17" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="140" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1ae7e0f7838d5a04badc942c01ed2adf49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.ServicePrice.setIdServicePrice</definition>
+        <argsstring>(Long idServicePrice)</argsstring>
+        <name>setIdServicePrice</name>
+        <qualifiedname>com.price.entity.ServicePrice.setIdServicePrice</qualifiedname>
+        <param>
+          <type>Long</type>
+          <declname>idServicePrice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает уникальный идентификатор записи о цене. </para>
+<para>Обычно вызывается фреймворком JPA, не рекомендуется для ручного использования.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idServicePrice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новый идентификатор </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="151" column="17" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1a5b38faa4fd8b86af7cb2ac5af26e1d2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref></type>
+        <definition>ServiceC com.price.entity.ServicePrice.getService</definition>
+        <argsstring>()</argsstring>
+        <name>getService</name>
+        <qualifiedname>com.price.entity.ServicePrice.getService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает услугу, для которой установлена цена.</para>
+<para><simplesect kind="return"><para>услуга </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="160" column="21" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="160" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1a75813861a495534d16d4a26f29b0469c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.ServicePrice.setService</definition>
+        <argsstring>(ServiceC service)</argsstring>
+        <name>setService</name>
+        <qualifiedname>com.price.entity.ServicePrice.setService</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_service_c" kindref="compound">ServiceC</ref></type>
+          <declname>service</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает услугу, для которой устанавливается цена.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>услуга. Не должно быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>service</javadoccode> равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="171" column="17" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="171" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1a97f568c6f630da8308f60223538eb8e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref></type>
+        <definition>Carwash com.price.entity.ServicePrice.getCarwash</definition>
+        <argsstring>()</argsstring>
+        <name>getCarwash</name>
+        <qualifiedname>com.price.entity.ServicePrice.getCarwash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает автомойку, предоставляющую услугу.</para>
+<para><simplesect kind="return"><para>автомойка </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="180" column="20" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="180" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1ab1a4bcc70ac573f78eaea809a2d734a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.ServicePrice.setCarwash</definition>
+        <argsstring>(Carwash carwash)</argsstring>
+        <name>setCarwash</name>
+        <qualifiedname>com.price.entity.ServicePrice.setCarwash</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_carwash" kindref="compound">Carwash</ref></type>
+          <declname>carwash</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает автомойку, предоставляющую услугу.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>carwash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>автомойка. Не должно быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>carwash</javadoccode> равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="191" column="17" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="191" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1ae5cd198dd8f2f717a01d55f944efe403" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref></type>
+        <definition>Bodytype com.price.entity.ServicePrice.getBodytype</definition>
+        <argsstring>()</argsstring>
+        <name>getBodytype</name>
+        <qualifiedname>com.price.entity.ServicePrice.getBodytype</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает тип кузова, для которого предназначена услуга.</para>
+<para><simplesect kind="return"><para>тип кузова </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="200" column="21" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="200" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1af2d17da05b60a023a1ac24ed87cd3fe0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.ServicePrice.setBodytype</definition>
+        <argsstring>(Bodytype bodytype)</argsstring>
+        <name>setBodytype</name>
+        <qualifiedname>com.price.entity.ServicePrice.setBodytype</qualifiedname>
+        <param>
+          <type><ref refid="classcom_1_1price_1_1entity_1_1_bodytype" kindref="compound">Bodytype</ref></type>
+          <declname>bodytype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает тип кузова, для которого предназначена услуга.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bodytype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>тип кузова. Не должно быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>bodytype</javadoccode> равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="211" column="17" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="211" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1ad30bed50d736b41141a275c3d35b5a73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer com.price.entity.ServicePrice.getPrice</definition>
+        <argsstring>()</argsstring>
+        <name>getPrice</name>
+        <qualifiedname>com.price.entity.ServicePrice.getPrice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает стоимость услуги.</para>
+<para><simplesect kind="return"><para>стоимость в рублях </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="220" column="20" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="220" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1ace17b61dc02cffe093c8c681134c4815" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.ServicePrice.setPrice</definition>
+        <argsstring>(Integer price)</argsstring>
+        <name>setPrice</name>
+        <qualifiedname>com.price.entity.ServicePrice.setPrice</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>price</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает стоимость услуги.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новая стоимость в рублях; должно быть от 0 до 1,000,000</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>price</javadoccode> не соответствует ограничениям </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="231" column="17" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="231" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1aada6eeea2c8c0f1940f4c63605fd4490" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer com.price.entity.ServicePrice.getLeadTime</definition>
+        <argsstring>()</argsstring>
+        <name>getLeadTime</name>
+        <qualifiedname>com.price.entity.ServicePrice.getLeadTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает время выполнения услуги.</para>
+<para><simplesect kind="return"><para>время выполнения в минутах </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="240" column="20" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="240" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1a95eee5c006b328a6fdd0f5dcabcf289a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.ServicePrice.setLeadTime</definition>
+        <argsstring>(Integer leadTime)</argsstring>
+        <name>setLeadTime</name>
+        <qualifiedname>com.price.entity.ServicePrice.setLeadTime</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>leadTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает время выполнения услуги.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>leadTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новое время выполнения в минутах; должно быть от 1 до 600</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>leadTime</javadoccode> не соответствует ограничениям </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="251" column="17" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="251" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1a00fbbfea8317425591644311ae7be250" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LocalDate</type>
+        <definition>LocalDate com.price.entity.ServicePrice.getPriceDate</definition>
+        <argsstring>()</argsstring>
+        <name>getPriceDate</name>
+        <qualifiedname>com.price.entity.ServicePrice.getPriceDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает дату установки цены.</para>
+<para><simplesect kind="return"><para>дата установки цены </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="260" column="22" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="260" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1a210fd1490d9938e7d634f44c651aa630" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.price.entity.ServicePrice.setPriceDate</definition>
+        <argsstring>(LocalDate priceDate)</argsstring>
+        <name>setPriceDate</name>
+        <qualifiedname>com.price.entity.ServicePrice.setPriceDate</qualifiedname>
+        <param>
+          <type>LocalDate</type>
+          <declname>priceDate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Устанавливает дату установки цены.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>priceDate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>новая дата установки цены. Не должно быть <javadoccode>null</javadoccode></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>если <javadoccode>priceDate</javadoccode> равен <javadoccode>null</javadoccode> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="271" column="17" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="271" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1price_1_1entity_1_1_service_price_1a1dbe2a26b563611c7b88ed72ba05483f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.price.entity.ServicePrice.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>com.price.entity.ServicePrice.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Возвращает строковое представление объекта. </para>
+<para>Формат: <javadoccode>ServicePrice{idServiceprice = ..., serviceId = ...,
+carwashId = ..., bodytypeId = ..., price = ..., leadTime = ..., priceDate = ...}</javadoccode></para>
+<para><simplesect kind="return"><para>строковое представление объекта </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/main/java/com/price/entity/ServicePrice.java" line="284" column="19" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="284" bodyend="293"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Сущность, представляющая цену на услугу автомойки. </para>
+<para>Этот класс отображается на таблицу <javadoccode>servicesprice</javadoccode> в базе данных и содержит информацию о стоимости услуги для конкретной автомойки, типа кузова и даты. Обеспечивает уникальность комбинации услуги, автомойки, типа кузова и даты через ограничение уникальности базы данных.</para>
+<para><bold>Бизнес-правила:</bold> <itemizedlist>
+<listitem>
+<para>Для одной и той же услуги, автомойки и типа кузова не может быть двух цен на одну дату </para>
+</listitem>
+<listitem>
+<para>Время выполнения услуги должно быть от 1 до 600 минут </para>
+</listitem>
+<listitem>
+<para>Стоимость услуги должна быть от 0 до 1,000,000 рублей </para>
+</listitem>
+</itemizedlist>
+</para>
+<para><simplesect kind="see"><para>Entity </para>
+</simplesect>
+<simplesect kind="see"><para>Table </para>
+</simplesect>
+<simplesect kind="see"><para>UniqueConstraint </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/main/java/com/price/entity/ServicePrice.java" line="36" column="7" bodyfile="src/main/java/com/price/entity/ServicePrice.java" bodystart="36" bodyend="294"/>
+    <listofallmembers>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1a369cc8b5e088b8af06664efd6e6176a7" prot="private" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>bodytype</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1a4357b35744d44f5559ff9a58897d6ed9" prot="private" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>carwash</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1ae5cd198dd8f2f717a01d55f944efe403" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>getBodytype</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1a97f568c6f630da8308f60223538eb8e5" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>getCarwash</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1a1d534611980bdb253112affe46fb5f03" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>getIdServicePrice</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1aada6eeea2c8c0f1940f4c63605fd4490" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>getLeadTime</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1ad30bed50d736b41141a275c3d35b5a73" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>getPrice</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1a00fbbfea8317425591644311ae7be250" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>getPriceDate</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1a5b38faa4fd8b86af7cb2ac5af26e1d2e" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>getService</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1ac46f716f59832864b0faad5abbf3e14c" prot="private" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>idServicePrice</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1a9f729673dcfbcd831041b459f1747e70" prot="private" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>leadTime</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1aa5b22678cd231c0dde2d4eb689f0e1e2" prot="private" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>price</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1a9753974d3975786db8729d501716021e" prot="private" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>priceDate</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1a220a1a542758c259730a46c2b7d0c04a" prot="private" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>service</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1a06e8a864fa31584f6c6b21a523a30301" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>ServicePrice</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1a3585bd9e16b34604ccef173a3fc712ff" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>ServicePrice</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1af2d17da05b60a023a1ac24ed87cd3fe0" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>setBodytype</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1ab1a4bcc70ac573f78eaea809a2d734a9" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>setCarwash</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1ae7e0f7838d5a04badc942c01ed2adf49" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>setIdServicePrice</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1a95eee5c006b328a6fdd0f5dcabcf289a" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>setLeadTime</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1ace17b61dc02cffe093c8c681134c4815" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>setPrice</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1a210fd1490d9938e7d634f44c651aa630" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>setPriceDate</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1a75813861a495534d16d4a26f29b0469c" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>setService</name></member>
+      <member refid="classcom_1_1price_1_1entity_1_1_service_price_1a1dbe2a26b563611c7b88ed72ba05483f" prot="public" virt="non-virtual"><scope>com::price::entity::ServicePrice</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

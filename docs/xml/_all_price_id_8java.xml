@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_all_price_id_8java" kind="file" language="Java">
+    <compoundname>AllPriceId.java</compoundname>
+    <includes local="no">jakarta.persistence.Column</includes>
+    <includes local="no">jakarta.persistence.Embeddable</includes>
+    <includes local="no">java.io.Serializable</includes>
+    <includes local="no">java.time.LocalDate</includes>
+    <includes local="no">java.util.Objects</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/main/java/com/price/entity/AllPriceId.java</label>
+        <link refid="_all_price_id_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>jakarta.persistence.Column</label>
+      </node>
+      <node id="3">
+        <label>jakarta.persistence.Embeddable</label>
+      </node>
+      <node id="4">
+        <label>java.io.Serializable</label>
+      </node>
+      <node id="5">
+        <label>java.time.LocalDate</label>
+      </node>
+      <node id="6">
+        <label>java.util.Objects</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classcom_1_1price_1_1entity_1_1_all_price_id" prot="public">com::price::entity::AllPriceId</innerclass>
+    <innernamespace refid="namespacecom_1_1price_1_1entity">com::price::entity</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/main/java/com/price/entity/AllPriceId.java"/>
+  </compounddef>
+</doxygen>
