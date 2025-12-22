@@ -2,6 +2,9 @@ package com.price.controller;
 
 import com.price.entity.AllPrice;
 import com.price.entity.AllPriceId;
+import com.price.repository.BodytypeRepository;
+import com.price.repository.CarwashRepository;
+import com.price.repository.ServiceRepository;
 import com.price.service.AllPriceService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,15 +64,66 @@ public class AllPriceController {
     private final AllPriceService allPriceService;
 
     /**
-     * Конструктор с инъекцией зависимости сервиса.
+     * Репозиторий для работы с сущностью {@link com.price.entity.Carwash}.
+     * <p>
+     * Предоставляет доступ к данным об автомойках, включая
+     * их названия и адреса. Используется для заполнения
+     * выпадающих списков в формах создания и редактирования цен.
+     *
+     * @see com.price.entity.Carwash
+     */
+    private final CarwashRepository carwashRepository;
+
+    /**
+     * Репозиторий для работы с сущностью {@link com.price.entity.ServiceC}.
+     * <p>
+     * Обеспечивает доступ к данным об услугах автомоек,
+     * включая названия услуг и их описания. Используется
+     * для предварительного заполнения информации об услугах
+     * в формах ввода данных.
+     *
+     * @see com.price.entity.ServiceC
+     */
+    private final ServiceRepository serviceRepository;
+
+    /**
+     * Репозиторий для работы с сущностью {@link com.price.entity.Bodytype}.
+     * <p>
+     * Предоставляет методы доступа к данным о типах кузова
+     * автомобилей. Используется для ограничения выбора типов
+     * кузова только существующими значениями из базы данных.
+     *
+     * @see com.price.entity.Bodytype
+     */
+    private final BodytypeRepository bodytypeRepository;
+
+    /**
+     * Конструктор с инъекцией зависимостей.
+     * <p>
+     * Инициализирует все необходимые компоненты для работы контроллера:
+     * сервис для работы с ценами и репозитории для доступа к справочным данным.
      *
      * @param allPriceService сервис для работы с агрегированными данными о ценах; не должен быть {@code null}
+     * @param carwashRepository репозиторий для доступа к данным об автомойках; не должен быть {@code null}
+     * @param serviceRepository репозиторий для доступа к данным об услугах; не должен быть {@code null}
+     * @param bodytypeRepository репозиторий для доступа к данным о типах кузова; не должен быть {@code null}
      *
-     * @throws IllegalArgumentException если {@code allPriceService} равен {@code null}
+     * @throws IllegalArgumentException если любой из параметров равен {@code null}
+     *
+     * @see AllPriceService
+     * @see CarwashRepository
+     * @see ServiceRepository
+     * @see BodytypeRepository
      */
     @Autowired
-    public AllPriceController(AllPriceService allPriceService) {
+    public AllPriceController(AllPriceService allPriceService,
+                              CarwashRepository carwashRepository,
+                              ServiceRepository serviceRepository,
+                              BodytypeRepository bodytypeRepository) {
         this.allPriceService = allPriceService;
+        this.carwashRepository = carwashRepository;
+        this.serviceRepository = serviceRepository;
+        this.bodytypeRepository = bodytypeRepository;
     }
 
     /**
@@ -95,16 +149,28 @@ public class AllPriceController {
 
     /**
      * Отображает форму для создания новой записи о цене.
+     * <p>
+     * Загружает все справочные данные (автомойки, услуги, типы кузова) из базы данных
+     * и передает их в представление для заполнения выпадающих списков.
+     * Также инициализирует пустой объект {@link AllPrice} с составным идентификатором.
      *
      * @param model объект модели для передачи данных в представление
      * @return имя шаблона представления формы создания записи о цене
      *
      * @see Model
      * @see GetMapping
+     * @see CarwashRepository#findAll()
+     * @see ServiceRepository#findAll()
+     * @see BodytypeRepository#findAll()
      */
     @GetMapping("/newAllPrice")
     public String showCreateForm(Model model) {
-        model.addAttribute("allPrice", new AllPrice());
+        model.addAttribute("carwashes", carwashRepository.findAll());
+        model.addAttribute("services", serviceRepository.findAll());
+        model.addAttribute("bodytypes", bodytypeRepository.findAll());
+        AllPrice allPrice = new AllPrice();
+        allPrice.setId(new AllPriceId());
+        model.addAttribute("allPrice", allPrice);
         model.addAttribute("action", "create");
         return "allPrices/form";
     }
@@ -146,8 +212,9 @@ public class AllPriceController {
     /**
      * Отображает форму для редактирования существующей записи о цене.
      * <p>
-     * Декодирует строковый идентификатор, находит соответствующую запись и
-     * отображает форму для её редактирования.
+     * Декодирует строковый идентификатор, находит соответствующую запись,
+     * загружает все справочные данные и отображает форму для редактирования
+     * с предзаполненными значениями.
      *
      * @param idStr строковое представление составного идентификатора; не должно быть {@code null}
      * @param model объект модели для передачи данных в представление
@@ -159,6 +226,10 @@ public class AllPriceController {
      * @see GetMapping
      * @see PathVariable
      * @see AllPriceId#fromString(String)
+     * @see AllPriceService#getAllPriceById(AllPriceId)
+     * @see CarwashRepository#findAll()
+     * @see ServiceRepository#findAll()
+     * @see BodytypeRepository#findAll()
      * @see RedirectAttributes
      */
     @GetMapping("/editAllPrice/{id}")
@@ -173,6 +244,9 @@ public class AllPriceController {
                 redirectAttributes.addFlashAttribute("errorMessage", "Информация не найдена");
                 return "redirect:/allPrices";
             }
+            model.addAttribute("carwashs", carwashRepository.findAll());
+            model.addAttribute("services", serviceRepository.findAll());
+            model.addAttribute("bodytypes", bodytypeRepository.findAll());
             model.addAttribute("allPrice", allPriceOpt.get());
             model.addAttribute("action", "edit");
             return "allPrices/form";
