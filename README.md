@@ -1,7 +1,7 @@
 # JavaProjectPrice
 
-БАЗА ДАННЫХ:
-
+База данных PostgreSQL:
+ 
 CREATE USER java_user WITH PASSWORD 'test123';
 GRANT ALL PRIVILEGES ON DATABASE javaproject TO java_user;
 GRANT ALL PRIVILEGES ON SCHEMA public TO java_user;
